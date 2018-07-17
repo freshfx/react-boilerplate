@@ -1,0 +1,102 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:all",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "import",
+    "redux-saga",
+    "react",
+    "jsx-a11y"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "arrow-body-style": [2, "as-needed"],
+    "arrow-parens": [2, "as-needed"],
+    "class-methods-use-this": 0,
+    "dot-location": [2, "property"],
+    "func-style": ["error", "declaration", {
+      "allowArrowFunctions": true
+    }],
+    "implicit-arrow-linebreak": 0,
+    "import/first": [2, "absolute-first"],
+    "import/newline-after-import": 2,
+    "import/no-dynamic-require": 2,
+    "import/no-extraneous-dependencies": 2,
+    "import/no-named-as-default": 0,
+    "import/no-unresolved": 2,
+    "import/no-webpack-loader-syntax": 2,
+    "import/prefer-default-export": 2,
+    "indent": [2, 2, {
+        "SwitchCase": 1
+    }],
+    "jsx-a11y/aria-props": 2,
+    "jsx-a11y/heading-has-content": 2,
+    "jsx-a11y/label-has-for": [ 2, {
+      "components": ["Label"],
+      "required": {
+        "every": ["nesting", "id"]
+      },
+      "allowChildren": true
+    }],
+    "jsx-a11y/mouse-events-have-key-events": 2,
+    "jsx-a11y/role-has-required-aria-props": 2,
+    "jsx-a11y/role-supports-aria-props": 2,
+    "lines-around-comment": [2, {
+      "beforeBlockComment": true,
+      "allowBlockStart": true
+    }],
+    "max-len": [2, {
+      "code": 120
+    }],
+    "max-lines-per-function": 0,
+    "new-cap": [2, {
+      "capIsNewExceptions": ["Loadable"]
+    }],
+    "no-empty-function": [2, {
+      "allow": ["arrowFunctions"]
+    }],
+    "no-extra-parens": [2, "all", {
+      "ignoreJSX": "multi-line"
+    }],
+    "one-var": [2, "never"],
+    "padded-blocks": [2, "never"],
+    "prefer-template": 2,
+    "quote-props": [2, "as-needed"],
+    "quotes": [2, "single"],
+    "react/forbid-prop-types": 0,
+    "react/jsx-closing-tag-location": 0,
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/require-default-props": 2,
+    "react/self-closing-comp": 2,
+    "react/sort-comp": 0,
+    "redux-saga/no-yield-in-race": 2,
+    "redux-saga/yield-effects": 2,
+    "require-jsdoc": 0,
+    "semi": [2, "never"],
+    "sort-imports": 0,
+    "space-before-function-paren": [2, "never"]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./internals/webpack/webpack.prod.babel.js"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+*
+!Dockerfile
+!build/
+!server/
+server/*
+!server/vhost.d/
