@@ -24,7 +24,7 @@ export default ({key, reducer}) => WrappedComponent => {
       WrappedComponent.name ||
       'Component'})`;
 
-    componentDidMount() {
+    injectReducer() {
       const {injectReducer} = this.injectors
 
       injectReducer(key, reducer)
@@ -35,6 +35,7 @@ export default ({key, reducer}) => WrappedComponent => {
     }
 
     render() {
+      this.injectReducer()
       return <WrappedComponent {...this.props} />
     }
   }

@@ -28,7 +28,7 @@ export default ({key, saga, mode}) => WrappedComponent => {
       WrappedComponent.name ||
       'Component'})`;
 
-    componentDidMount() {
+    injectSaga() {
       const {injectSaga} = this.injectors
 
       injectSaga(key, {
@@ -48,6 +48,7 @@ export default ({key, saga, mode}) => WrappedComponent => {
     }
 
     render() {
+      this.injectSaga()
       return <WrappedComponent {...this.props} />
     }
   }
