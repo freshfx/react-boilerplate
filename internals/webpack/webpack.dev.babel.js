@@ -24,7 +24,7 @@ const plugins = [
   }),
   new CircularDependencyPlugin({
     // Exclude node_modules
-    exclude: /a\.js|node_modules/,
+    exclude: /a\.js|node_modules/u,
     // Show a warning when there is a circular dependency
     failOnError: false
   })
@@ -34,7 +34,7 @@ if (dllPlugin) {
   glob.sync(`${dllPlugin.path}/*.dll.js`).forEach(dllPath => {
     plugins.push(new AddAssetHtmlPlugin({
       filepath: dllPath,
-      includeSourcemap: false
+      includeRelatedFiles: false
     }))
   })
 }

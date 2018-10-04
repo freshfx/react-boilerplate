@@ -42,7 +42,7 @@ const ReactBoilerplate = {
       'core-js',
       'lodash',
       'eventsource-polyfill',
-      'babel-polyfill'
+      '@babel/polyfill'
     ],
 
     // The path where the DLL manifest and bundle will get built

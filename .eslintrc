@@ -5,6 +5,7 @@
     "plugin:react/recommended"
   ],
   "plugins": [
+    "babel",
     "import",
     "redux-saga",
     "react",
@@ -24,8 +25,10 @@
     }
   },
   "rules": {
+    "array-element-newline": [2, "consistent"],
     "arrow-body-style": [2, "as-needed"],
     "arrow-parens": [2, "as-needed"],
+    "babel/no-invalid-this": 1,
     "class-methods-use-this": 0,
     "dot-location": [2, "property"],
     "func-style": ["error", "declaration", {
@@ -48,7 +51,7 @@
     "jsx-a11y/label-has-for": [ 2, {
       "components": ["Label"],
       "required": {
-        "every": ["nesting", "id"]
+        "some": ["nesting", "id"]
       },
       "allowChildren": true
     }],
@@ -63,14 +66,22 @@
       "code": 120
     }],
     "max-lines-per-function": 0,
+    "multiline-ternary": 0,
     "new-cap": [2, {
       "capIsNewExceptions": ["Loadable"]
     }],
+    "no-confusing-arrow": 0,
     "no-empty-function": [2, {
       "allow": ["arrowFunctions"]
     }],
     "no-extra-parens": [2, "all", {
       "ignoreJSX": "multi-line"
+    }],
+    "no-invalid-this": 0,
+    "no-process-env": 0,
+    "no-ternary": 0,
+    "object-property-newline": ["error", {
+      "allowAllPropertiesOnSameLine": true
     }],
     "one-var": [2, "never"],
     "padded-blocks": [2, "never"],
@@ -90,13 +101,28 @@
     "require-jsdoc": 0,
     "semi": [2, "never"],
     "sort-imports": 0,
-    "space-before-function-paren": [2, "never"]
+    "space-before-function-paren": [2, {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }]
   },
+  "overrides": [
+    {
+      "files": "*.test.js",
+      "rules": {
+        "no-magic-numbers": "off"
+      }
+    }
+  ],
   "settings": {
     "import/resolver": {
       "webpack": {
         "config": "./internals/webpack/webpack.prod.babel.js"
       }
+    },
+    "react": {
+      "version": "16.5"
     }
   }
 }

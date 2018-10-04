@@ -17,7 +17,7 @@ describe('<ReposList />', () => {
     const renderedComponent = mount(<IntlProvider locale="en">
       <ReposList loading={false} error={{message: 'Loading failed!'}} />
     </IntlProvider>)
-    expect(renderedComponent.text()).toMatch(/Something went wrong/)
+    expect(renderedComponent.text()).toMatch(/Something went wrong/u)
   })
 
   it('should render the repositories if loading was successful', () => {

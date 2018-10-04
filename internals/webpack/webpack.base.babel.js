@@ -29,8 +29,8 @@ module.exports = options => ({
     rules: [
       {
         // Transform all .js files required somewhere with Babel
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: /\.js$/u,
+        exclude: /node_modules/u,
         use: {
           loader: 'babel-loader',
           options: options.babelQuery
@@ -43,8 +43,8 @@ module.exports = options => ({
          * This is the place to add your own loaders (e.g. sass/less etc.)
          * for a list of loaders, see https://webpack.js.org/loaders/#styling
          */
-        test: /\.css$/,
-        exclude: /node_modules/,
+        test: /\.css$/u,
+        exclude: /node_modules/u,
         use: [
           'style-loader',
           'css-loader'
@@ -52,19 +52,19 @@ module.exports = options => ({
       },
       {
         // Preprocess 3rd party .css files located in node_modules
-        test: /\.css$/,
-        include: /node_modules/,
+        test: /\.css$/u,
+        include: /node_modules/u,
         use: [
           'style-loader',
           'css-loader'
         ]
       },
       {
-        test: /\.(eot|otf|ttf|woff|woff2)$/,
+        test: /\.(eot|otf|ttf|woff|woff2)$/u,
         use: 'file-loader'
       },
       {
-        test: /\.svg$/,
+        test: /\.svg$/u,
         use: [
           {
             loader: 'svg-url-loader',
@@ -77,7 +77,7 @@ module.exports = options => ({
         ]
       },
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(jpg|png|gif)$/u,
         use: [
           {
             loader: 'url-loader',
@@ -114,11 +114,11 @@ module.exports = options => ({
         ]
       },
       {
-        test: /\.html$/,
+        test: /\.html$/u,
         use: 'html-loader'
       },
       {
-        test: /\.(mp4|webm)$/,
+        test: /\.(mp4|webm)$/u,
         use: {
           loader: 'url-loader',
           options: {

@@ -4,7 +4,7 @@ import {
 } from 'polished'
 
 export const divide = (dividend, divisor) => {
-  const [unit] = dividend.match(/[a-zA-Z%]*$/)
+  const [unit] = dividend.match(/[a-zA-Z%]*$/u)
   return `${parseFloat(dividend) / divisor}${unit}`
 }
 
