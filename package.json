@@ -18,6 +18,7 @@
     "analyze": "node ./internals/scripts/analyze.js",
     "extract-intl": "node ./internals/scripts/extract-intl.js",
     "npmcheckversion": "node ./internals/scripts/npmcheckversion.js",
+    "gitcheckremote": "node ./internals/scripts/git-check-remote.js",
     "preinstall": "npm run npmcheckversion",
     "postinstall": "npm run build:dll",
     "prebuild": "npm run build:clean",
@@ -40,7 +41,7 @@
     "test": "cross-env NODE_ENV=test jest --coverage --config jest.config.json",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll --config jest.config.json",
     "prettify": "prettier --write",
-    "prepush": "npm test"
+    "prepush": "npm run gitcheckremote && npm test"
   },
   "lint-staged": {
     "*.js": [
