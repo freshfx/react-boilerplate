@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import App from '../index'
+import {App} from '../index'
 
 const one = 1
 const zero = 0

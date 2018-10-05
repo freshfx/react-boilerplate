@@ -1,16 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<A /> should match the snapshot 1`] = `
-.c0 {
+.c1 {
   color: #41addd;
-  padding: 2em 0;
 }
 
-.c0:hover {
+.c1:hover {
   color: #6cc0e5;
 }
 
+.c0 {
+  padding: 2em 0;
+}
+
 <a
-  className="c0"
+  className="c0 c1"
 />
 `;
