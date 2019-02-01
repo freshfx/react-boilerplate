@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CenteredSection /> should match snapshot 1`] = `
+.c0 {
+  margin: 3em auto;
+  text-align: center;
+}
+
+.c0:first-child {
+  margin-top: 0;
+}
+
+<CenteredSection>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "CenteredSection-sc-6zy0wx-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "margin:3em auto;&:first-child{margin-top:0;}",
+            "text-align:center;",
+          ],
+        },
+        "displayName": "CenteredSection",
+        "foldedComponentIds": Array [
+          "Section-sc-1eulrsm-0",
+        ],
+        "render": [Function],
+        "styledComponentId": "CenteredSection-sc-6zy0wx-0",
+        "target": "section",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <section
+      className="c0"
+    />
+  </StyledComponent>
+</CenteredSection>
+`;

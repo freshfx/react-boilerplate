@@ -12,16 +12,22 @@ import '@babel/polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
-import {ConnectedRouter} from 'react-router-redux'
+import {ConnectedRouter} from 'connected-react-router/immutable'
 import FontFaceObserver from 'fontfaceobserver'
-import createHistory from 'history/createBrowserHistory'
+import {createBrowserHistory} from 'history'
 import 'sanitize.css/sanitize.css'
+
+import 'public/robots/robots.txt'
 
 // Import root app
 import App from 'containers/App'
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider'
+
+import ActionSubscription from 'containers/ActionSubscription'
+
+import loadFonts from 'components/FontIcon/fontFace'
 
 // Load the favicon and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */
@@ -35,7 +41,7 @@ import configureStore from './configure-store'
 import {translationMessages} from './i18n'
 
 // Import CSS reset and Global Styles
-import './global-styles'
+import GlobalStyles from './global-styles'
 
 /*
  * Observe loading of Open Sans (to remove open sans, remove the <link> tag in
@@ -49,14 +55,16 @@ openSansObserver.load().then(() => {
 })
 
 // Create redux store with history
+const actionEmitter = new ActionSubscription.ActionEmitter()
 const initialState = {}
-const history = createHistory()
-const store = configureStore(initialState, history)
+const history = createBrowserHistory()
+const store = configureStore(initialState, history, actionEmitter)
 const MOUNT_NODE = document.getElementById('app')
 
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
+      <GlobalStyles />
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
           <App />
@@ -64,6 +72,7 @@ const render = messages => {
       </LanguageProvider>
     </Provider>,
     MOUNT_NODE,
+    loadFonts
   )
 }
 
@@ -107,5 +116,36 @@ if (window.Intl) {
  */
 /* eslint-disable-next-line no-process-env */
 if (process.env.NODE_ENV === 'production') {
-  require('offline-plugin/runtime').install() // eslint-disable-line global-require
+  /* eslint-disable global-require, no-console, sort-keys */
+  const runtime = require('offline-plugin/runtime')
+
+  let runtimeOptions = {
+    onUpdateReady: () => {
+      // Tells to new SW to take control immediately
+      runtime.applyUpdate()
+    }
+  }
+
+  if (process.env.APP_ENV !== 'production') {
+    runtimeOptions = {
+      onUpdating: () => {
+        console.log('SW Event:', 'onUpdating')
+      },
+      onUpdateReady: () => {
+        console.log('SW Event:', 'onUpdateReady')
+        // Tells to new SW to take control immediately
+        runtime.applyUpdate()
+      },
+      onUpdated: () => {
+        console.log('SW Event:', 'onUpdated')
+        // Reload the webpage to load into the new version
+        window.location.reload()
+      },
+      onUpdateFailed: () => {
+        console.log('SW Event:', 'onUpdateFailed')
+      }
+    }
+  }
+
+  runtime.install(runtimeOptions)
 }

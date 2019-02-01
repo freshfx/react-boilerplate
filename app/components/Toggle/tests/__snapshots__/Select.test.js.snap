@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> should match snapshot 1`] = `
+.c0 {
+  line-height: 1em;
+  height: 20px;
+}
+
+<Select>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Select-sc-1sm01tk-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "line-height:1em;height:20px;",
+          ],
+        },
+        "displayName": "Select",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Select-sc-1sm01tk-0",
+        "target": "select",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <select
+      className="c0"
+    />
+  </StyledComponent>
+</Select>
+`;

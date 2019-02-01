@@ -4,8 +4,12 @@
  * COMMON WEBPACK CONFIGURATION
  */
 
+const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
+
+const configFiles = fs.readdirSync(path.resolve(process.cwd(), 'app/config'))
+const robotFiles = fs.readdirSync(path.resolve(process.cwd(), 'app/public/robots'))
 
 /*
  * Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
@@ -62,6 +66,15 @@ module.exports = options => ({
       {
         test: /\.(eot|otf|ttf|woff|woff2)$/u,
         use: 'file-loader'
+      },
+      {
+        test: /\/robots(\.\w+)?\.txt$/u,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'robots.txt'
+          }
+        }
       },
       {
         test: /\.svg$/u,
@@ -141,12 +154,43 @@ module.exports = options => ({
      */
     new webpack.DefinePlugin({
       'process.env': {
-        /* eslint-disable-next-line no-process-env */
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        BUILD_NUMBER: JSON.stringify(process.env.BUILD_NUMBER),
+        BUILD_ID: JSON.stringify(process.env.BUILD_ID),
+        BUILD_TAG: JSON.stringify(process.env.BUILD_TAG),
+        GIT_COMMIT: JSON.stringify(process.env.GIT_COMMIT),
+        GIT_BRANCH: JSON.stringify(process.env.GIT_BRANCH),
+        PORT: JSON.stringify(process.env.PORT || 3000),
+        APP_ENV: JSON.stringify(process.env.APP_ENV)
       }
+    }),
+    new webpack.NormalModuleReplacementPlugin(/app\/config\/index.js/u, result => {
+      const appEnv = process.env.APP_ENV || 'index'
+      const filename = configFiles.find(file => file.indexOf(appEnv) === 0) || 'index.js'
+      const request = result.request.replace(/app\/config\/.+$/u, `app/config/${filename}`)
+      const resource = result.resource.replace(/app\/config\/.+$/u, `app/config/${filename}`)
+      Object.assign(result, {
+        request,
+        resource
+      })
+    }),
+    new webpack.NormalModuleReplacementPlugin(/^(\.\/)?public\/robots\/robots\.txt/u, result => {
+      if (!process.env.APP_ENV) {
+        return
+      }
+      const appEnv = process.env.APP_ENV
+      const filename = robotFiles.find(file => file.indexOf(`robots.${appEnv}.txt`) === 0) || 'robots.txt'
+      const request = result.request.replace(/public\/robots\/robots\.txt$/u, `public/robots/${filename}`)
+      Object.assign(result, {
+        request,
+        resource: request
+      })
     })
   ]),
   resolve: {
+    alias: {
+      moment$: 'moment/moment.js'
+    },
     modules: [
       'node_modules',
       'app'

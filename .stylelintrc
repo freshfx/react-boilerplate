@@ -3,5 +3,12 @@
   "extends": [
     "stylelint-config-recommended",
     "stylelint-config-styled-components"
-  ]
+  ],
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-duplicate-selectors": null,
+    "selector-type-no-unknown": [true, {
+      "ignore": ["custom-elements", "default-namespace"]
+    }]
+  }
 }

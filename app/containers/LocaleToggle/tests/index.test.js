@@ -1,6 +1,6 @@
 import React from 'react'
 import {Provider} from 'react-redux'
-import {browserHistory} from 'react-router-dom'
+import createHistory from 'history/createMemoryHistory'
 import {mount, shallow} from 'enzyme'
 
 import LocaleToggle, {mapDispatchToProps} from '../index'
@@ -10,11 +10,13 @@ import LanguageProvider from '../../LanguageProvider'
 import configureStore from '../../../configure-store'
 import {translationMessages} from '../../../i18n'
 
+const history = createHistory()
+
 describe('<LocaleToggle />', () => {
   let store = {}
 
   beforeAll(() => {
-    store = configureStore({}, browserHistory)
+    store = configureStore({}, history)
   })
 
   it('should render the default language messages', () => {

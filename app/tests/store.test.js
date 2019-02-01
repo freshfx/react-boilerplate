@@ -2,14 +2,16 @@
  * Test store addons
  */
 
-import {browserHistory} from 'react-router-dom'
+import createHistory from 'history/createMemoryHistory'
 import configureStore from '../configure-store'
+
+const history = createHistory()
 
 describe('configureStore', () => {
   let store = {}
 
   beforeAll(() => {
-    store = configureStore({}, browserHistory)
+    store = configureStore({}, history)
   })
 
   describe('injectedReducers', () => {
@@ -37,7 +39,7 @@ describe('configureStore params', () => {
     const compose = jest.fn()
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ = () => compose
     /* eslint-disable-next-line no-undefined */
-    configureStore(undefined, browserHistory)
+    configureStore(undefined, history)
     expect(compose).toHaveBeenCalled()
     /* eslint-enable */
   })

@@ -3,7 +3,7 @@
  * Test injectors
  */
 
-import {memoryHistory} from 'react-router-dom'
+import createHistory from 'history/createMemoryHistory'
 import {put} from 'redux-saga/effects'
 
 import configureStore from '../../configure-store'
@@ -20,8 +20,9 @@ function *testSaga() {
   })
 }
 
+const history = createHistory()
+
 describe('injectors', () => {
-  /* eslint-disable-next-line no-process-env */
   const originalNodeEnv = process.env.NODE_ENV
   let store = {}
   let injectSaga = () => {}
@@ -29,7 +30,7 @@ describe('injectors', () => {
 
   describe('getInjectors', () => {
     beforeEach(() => {
-      store = configureStore({}, memoryHistory)
+      store = configureStore({}, history)
     })
 
     it('should return injectors', () => {
@@ -49,7 +50,7 @@ describe('injectors', () => {
   /* eslint-disable-next-line max-lines-per-function */
   describe('ejectSaga helper', () => {
     beforeEach(() => {
-      store = configureStore({}, memoryHistory)
+      store = configureStore({}, history)
       injectSaga = injectSagaFactory(store, true)
       ejectSaga = ejectSagaFactory(store, true)
     })
@@ -116,7 +117,6 @@ describe('injectors', () => {
 
       expect(store.injectedSagas.test).toBe('done')
       expect(store.injectedSagas.test1).toBe('done')
-      /* eslint-disable-next-line no-process-env */
       process.env.NODE_ENV = originalNodeEnv
     })
 
@@ -130,7 +130,6 @@ describe('injectors', () => {
       ejectSaga('test')
 
       expect(store.injectedSagas.test.saga).toBe(testSaga)
-      /* eslint-disable-next-line no-process-env */
       process.env.NODE_ENV = originalNodeEnv
     })
 
@@ -148,7 +147,7 @@ describe('injectors', () => {
   /* eslint-disable-next-line max-statements */
   describe('injectSaga helper', () => {
     beforeEach(() => {
-      store = configureStore({}, memoryHistory)
+      store = configureStore({}, history)
       injectSaga = injectSagaFactory(store, true)
       ejectSaga = ejectSagaFactory(store, true)
     })
@@ -296,7 +295,6 @@ describe('injectors', () => {
 
       /* eslint-disable-next-line no-magic-numbers */
       expect(cancel).toHaveBeenCalledTimes(0)
-      /* eslint-disable-next-line no-process-env */
       process.env.NODE_ENV = originalNodeEnv
     })
 

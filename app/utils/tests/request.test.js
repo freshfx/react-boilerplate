@@ -2,7 +2,7 @@
  * Test the request function
  */
 
-import request from '../request'
+import request, {getText, requestText} from '../request'
 
 describe('request', () => {
   // Before each test, stub the fetch function
@@ -36,7 +36,7 @@ describe('request', () => {
   describe('stubbing 204 response', () => {
     // Before each test, pretend we got a successful response
     beforeEach(() => {
-      const res = new Response('', {
+      const res = new Response('null', {
         status: 204,
         statusText: 'No Content'
       })
@@ -77,5 +77,45 @@ describe('request', () => {
         done()
       })
     })
+  })
+})
+
+describe('requestText', () => {
+  // Before each test, stub the fetch function
+  beforeEach(() => {
+    window.fetch = jest.fn()
+  })
+
+  describe('stubbing successful response', () => {
+    // Before each test, pretend we got a successful response
+    beforeEach(() => {
+      const res = new Response('<svg viewBox="0 0 0 0"><path d="M0" /></svg>', {
+        headers: {
+          'Content-type': 'image/svg+xml'
+        },
+        status: 200
+      })
+
+      window.fetch.mockReturnValue(Promise.resolve(res))
+    })
+
+    it('should format the response correctly', done => {
+      requestText('http://thisurliscorrect.at/test.svg')
+        .catch(done)
+        .then(text => {
+          expect(text).toBe('<svg viewBox="0 0 0 0"><path d="M0" /></svg>')
+          done()
+        })
+    })
+  })
+})
+describe('getText', () => {
+  it('should return null on rejection', async () => {
+    const response = {
+      text: () => Promise.reject(new Error(''))
+    }
+
+    const result = await getText(response)
+    expect(result).toEqual(null)
   })
 })

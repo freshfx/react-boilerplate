@@ -11,6 +11,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
 const CircularDependencyPlugin = require('circular-dependency-plugin')
+const {UnusedFilesWebpackPlugin} = require('unused-files-webpack-plugin')
 const logger = require('../../server/logger')
 const {dllPlugin} = require('../config')
 
@@ -34,7 +35,7 @@ if (dllPlugin) {
   glob.sync(`${dllPlugin.path}/*.dll.js`).forEach(dllPath => {
     plugins.push(new AddAssetHtmlPlugin({
       filepath: dllPath,
-      includeRelatedFiles: false
+      includeSourcemap: false
     }))
   })
 }
@@ -49,7 +50,6 @@ if (dllPlugin) {
  */
 const dependencyHandlers = () => {
   // Don't do anything during the DLL Build step
-  /* eslint-disable-next-line no-process-env */
   if (process.env.BUILDING_DLL) {
     return []
   }
@@ -110,7 +110,21 @@ module.exports = require('./webpack.base.babel')({
   },
 
   // Add development plugins
-  plugins: dependencyHandlers().concat(plugins), // eslint-disable-line no-use-before-define
+  plugins: [
+    ...dependencyHandlers(),
+    new UnusedFilesWebpackPlugin({
+      patterns: ['app/**/*.*'],
+      globOptions: {
+        ignore: [
+          'app/**/*.test.*',
+          'app/config/*.js',
+          'app/public/robots/*.txt',
+          'app/public/icon-512x512.png'
+        ]
+      }
+    }),
+    ...plugins
+  ],
 
   /*
    * Emit a source map for easier debugging

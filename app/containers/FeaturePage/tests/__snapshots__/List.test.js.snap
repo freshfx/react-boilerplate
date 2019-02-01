@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> should match snapshot 1`] = `
+.c0 {
+  font-family: Georgia,Times,'Times New Roman',serif;
+  padding-left: 1.75em;
+}
+
+<List>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "List-sc-1aai6b-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "font-family:Georgia,Times,'Times New Roman',serif;padding-left:1.75em;",
+          ],
+        },
+        "displayName": "List",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "List-sc-1aai6b-0",
+        "target": "ul",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <ul
+      className="c0"
+    />
+  </StyledComponent>
+</List>
+`;

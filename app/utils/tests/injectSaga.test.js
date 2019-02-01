@@ -2,7 +2,7 @@
  * Test injectors
  */
 
-import {memoryHistory} from 'react-router-dom'
+import createHistory from 'history/createMemoryHistory'
 import {put} from 'redux-saga/effects'
 import {shallow} from 'enzyme'
 import React from 'react'
@@ -13,6 +13,8 @@ import * as sagaInjectors from '../sagaInjectors'
 
 // Fixtures
 const Component = () => null
+
+const history = createHistory()
 
 function *testSaga() {
   yield put({
@@ -31,7 +33,7 @@ describe('injectSaga decorator', () => {
   })
 
   beforeEach(() => {
-    store = configureStore({}, memoryHistory)
+    store = configureStore({}, history)
     injectors = {
       ejectSaga: jest.fn(),
       injectSaga: jest.fn()

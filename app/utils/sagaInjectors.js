@@ -39,7 +39,7 @@ const injectSagaFactory = (store, isValid) => {
 
     const newDescriptor = {
       ...descriptor,
-      mode: descriptor.mode || RESTART_ON_REMOUNT
+      mode: descriptor.mode || DAEMON
     }
     const {saga, mode} = newDescriptor
 
@@ -48,7 +48,6 @@ const injectSagaFactory = (store, isValid) => {
 
     let hasSaga = Reflect.has(store.injectedSagas, key)
 
-    /* eslint-disable-next-line no-process-env */
     if (process.env.NODE_ENV !== 'production') {
       const oldDescriptor = store.injectedSagas[key]
       // Enable hot reloading of daemon and once-till-unmount sagas

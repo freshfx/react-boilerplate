@@ -1,15 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<IssueLink /> should match the snapshot 1`] = `
-.c1 {
-  color: #41addd;
-}
-
-.c1:hover {
-  color: #6cc0e5;
-}
-
+exports[`<IssueLink /> should match snapshot 1`] = `
 .c0 {
+  color: #41addd;
   height: 100%;
   color: black;
   display: -webkit-box;
@@ -26,7 +19,42 @@ exports[`<IssueLink /> should match the snapshot 1`] = `
   justify-content: center;
 }
 
-<a
-  className="c0 c1"
-/>
+.c0:hover {
+  color: #6cc0e5;
+}
+
+<IssueLink>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "IssueLink-uyzonb-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "color:#41addd;&:hover{color:#6cc0e5;}",
+            "height:100%;color:black;display:flex;align-items:center;justify-content:center;",
+          ],
+        },
+        "displayName": "IssueLink",
+        "foldedComponentIds": Array [
+          "Anchor-aulrtc-0",
+        ],
+        "render": [Function],
+        "styledComponentId": "IssueLink-uyzonb-0",
+        "target": "a",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <a
+      className="c0"
+    />
+  </StyledComponent>
+</IssueLink>
 `;

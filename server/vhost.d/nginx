@@ -10,10 +10,10 @@ server {
     gzip_comp_level 6;
     gzip_buffers 16 8k;
     gzip_http_version 1.1;
-    gzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon;
+    gzip_types *;
 
     location / {
-      add_header Cache-Control "no-cache";
+      add_header Cache-Control "public, max-age=31536000";
       proxy_cache_bypass $http_pragma;
       proxy_cache_revalidate on;
       expires off;
@@ -21,8 +21,25 @@ server {
 
       try_files $uri $uri/ /index.html?/$request_uri;
 
-      root   /usr/share/nginx/html;
-      index  index.html;
+      root /usr/share/nginx/html;
+    }
+
+    location = /favicon.ico {
+      add_header Cache-Control "public, max-age=691200";
+      proxy_cache_bypass $http_pragma;
+      proxy_cache_revalidate on;
+      expires off;
+      access_log off;
+
+      try_files $uri $uri/ /index.html?/$request_uri;
+
+      root /usr/share/nginx/html;
+    }
+
+    location = /index.html {
+      add_header Cache-Control "no-cache";
+      root /usr/share/nginx/html;
+      index index.html;
     }
 
     location /sw.js {

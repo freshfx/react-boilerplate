@@ -21,7 +21,8 @@
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "legacyDecorators": true
     }
   },
   "rules": {
@@ -44,7 +45,7 @@
     "import/no-webpack-loader-syntax": 2,
     "import/prefer-default-export": 2,
     "indent": [2, 2, {
-        "SwitchCase": 1
+      "SwitchCase": 1
     }],
     "jsx-a11y/aria-props": 2,
     "jsx-a11y/heading-has-content": 2,
@@ -66,7 +67,7 @@
       "code": 120
     }],
     "max-lines-per-function": 0,
-    "multiline-ternary": 0,
+    "multiline-ternary": 2,
     "new-cap": [2, {
       "capIsNewExceptions": ["Loadable"]
     }],
@@ -79,7 +80,7 @@
     }],
     "no-invalid-this": 0,
     "no-process-env": 0,
-    "no-ternary": 0,
+    "no-ternary": 2,
     "object-property-newline": ["error", {
       "allowAllPropertiesOnSameLine": true
     }],
@@ -122,7 +123,7 @@
       }
     },
     "react": {
-      "version": "16.5"
+      "version": "16.4"
     }
   }
 }

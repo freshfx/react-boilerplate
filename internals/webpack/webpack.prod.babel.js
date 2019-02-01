@@ -5,6 +5,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 const OfflinePlugin = require('offline-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const {HashedModuleIdsPlugin} = require('webpack')
 
 module.exports = require('./webpack.base.babel')({
@@ -21,10 +22,17 @@ module.exports = require('./webpack.base.babel')({
 
   optimization: {
     minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        extractComments: true
+      })
+    ],
     nodeEnv: 'production',
     sideEffects: true,
     concatenateModules: true,
-    splitChunks: {chunks: 'all'},
+    splitChunks: {chunks: 'async'},
     runtimeChunk: true
   },
 
@@ -74,18 +82,27 @@ module.exports = require('./webpack.base.babel')({
       },
 
       // Removes warning for about `additional` section usage
-      safeToUseOptionalCaches: true
+      safeToUseOptionalCaches: true,
+
+      ServiceWorker: {
+        events: true
+      }
     }),
 
     new WebpackPwaManifest({
-      name: 'React Boilerplate',
-      short_name: 'React BP',
-      description: 'My React Boilerplate-based project!',
+      name: 'Red Bull Music',
+      short_name: 'Red Bull Music',
+      description: 'A Focused and Intuitive B2B Music Licensing Platform for ' +
+        'Film, Television and Advertising. Full songs, compositions and ' +
+        'hooks from the production music catalog “Sounds of Red Bull”, ' +
+        'pre-cleared and ready for instant use in a matter of clicks, are ' +
+        'easily searchable alongside artist driven repertoire from Red Bull ' +
+        'Records and Red Bull Music Publishing.',
       background_color: '#fafafa',
       theme_color: '#b1624d',
       icons: [
         {
-          src: path.resolve('app/images/icon-512x512.png'),
+          src: path.resolve('app/public/icon-512x512.png'),
           sizes: [
             72,
             96,

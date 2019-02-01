@@ -2,7 +2,7 @@
  * Test injectors
  */
 
-import {memoryHistory} from 'react-router-dom'
+import createHistory from 'history/createMemoryHistory'
 import {shallow} from 'enzyme'
 import React from 'react'
 import identity from 'lodash/identity'
@@ -15,6 +15,7 @@ import * as reducerInjectors from '../reducerInjectors'
 const Component = () => null
 
 const reducer = identity
+const history = createHistory()
 
 describe('injectReducer decorator', () => {
   let store = {}
@@ -26,7 +27,7 @@ describe('injectReducer decorator', () => {
   })
 
   beforeEach(() => {
-    store = configureStore({}, memoryHistory)
+    store = configureStore({}, history)
     injectors = {
       injectReducer: jest.fn()
     }

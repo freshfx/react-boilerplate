@@ -2,6 +2,7 @@ import {
   rgba,
   parseToRgb
 } from 'polished'
+import {keyframes} from 'styled-components'
 
 export const divide = (dividend, divisor) => {
   const [unit] = dividend.match(/[a-zA-Z%]*$/u)
@@ -12,3 +13,17 @@ export const addAlpha = (color, alpha) => rgba({
   ...parseToRgb(color),
   alpha
 })
+
+const DEFAULT_OPACITY_FROM = 0
+const DEFAULT_OPACITY_TO = 1
+export const createOpacityAnimation = (
+  from = DEFAULT_OPACITY_FROM,
+  to = DEFAULT_OPACITY_TO
+) => keyframes`
+  from {
+    opacity: ${from};
+  }
+  to {
+    opacity: ${to};
+  }
+`

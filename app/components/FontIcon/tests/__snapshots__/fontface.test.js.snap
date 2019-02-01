@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fontFace should match the snapshot 1`] = `
+"
+  @font-face {
+    font-family: 'icons';
+    src:  url('IMAGE_MOCK');
+    src:  url('IMAGE_MOCK#iefix') format('embedded-opentype'),
+      url('IMAGE_MOCK') format('truetype'),
+      url('IMAGE_MOCK') format('woff'),
+      url('IMAGE_MOCK#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+"
+`;

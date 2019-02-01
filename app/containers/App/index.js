@@ -64,4 +64,4 @@ const mapStateToProps = createStructuredSelector({})
 const withConnect = connect(mapStateToProps, mapDispatchToProps)
 // Example for Saga: injectSaga({key: 'appSaga', saga: appSaga})
 
-export default withRouter(compose(withConnect))
+export default withRouter(compose(withConnect)(App))

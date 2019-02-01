@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import hoistNonReactStatics from 'hoist-non-react-statics'
+import {ReactReduxContext} from 'react-redux'
 
 import getInjectors from './sagaInjectors'
 
@@ -18,40 +18,29 @@ import getInjectors from './sagaInjectors'
  */
 export default ({key, saga, mode}) => WrappedComponent => {
   class InjectSaga extends React.Component {
-    static WrappedComponent = WrappedComponent;
+    constructor(props, context) {
+      super(props, context)
 
-    static contextTypes = {
-      store: PropTypes.object.isRequired
-    };
+      this.injectors = getInjectors(context.store)
+      this.injectors.injectSaga(key, {mode, saga}, this.props)
+    }
+
+    static WrappedComponent = WrappedComponent
 
     static displayName = `withSaga(${WrappedComponent.displayName ||
       WrappedComponent.name ||
-      'Component'})`;
+      'Component'})`
 
-    injectSaga() {
-      const {injectSaga} = this.injectors
-
-      injectSaga(key, {
-        mode,
-        saga
-      }, this.props)
-    }
+    static contextType = ReactReduxContext
 
     componentWillUnmount() {
-      const {ejectSaga} = this.injectors
-
-      ejectSaga(key)
-    }
-
-    get injectors() {
-      return getInjectors(this.context.store)
+      this.injectors.ejectSaga(key)
     }
 
     render() {
-      this.injectSaga()
       return <WrappedComponent {...this.props} />
     }
   }
 
-  return hoistNonReactStatics(InjectSaga, WrappedComponent)
+  return hoistNonReactStatics(InjectSaga, WrappedComponent, {contextType: true})
 }

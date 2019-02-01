@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should match snapshot 1`] = `
+.c0 {
+  outline: none;
+  border-bottom: 1px dotted #999;
+}
+
+<Input>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Input-sc-19rkjmi-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "outline:none;border-bottom:1px dotted #999;",
+          ],
+        },
+        "displayName": "Input",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Input-sc-19rkjmi-0",
+        "target": "input",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <input
+      className="c0"
+    />
+  </StyledComponent>
+</Input>
+`;

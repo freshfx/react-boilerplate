@@ -1,15 +1,28 @@
-import {injectGlobal} from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
+import {
+  media,
+  BODY_BG,
+  BODY_COLOR,
+  FONT_SIZE_BASE,
+  FONT_SIZE_MOBILE
+} from 'styles/variables'
 
-/* eslint no-unused-expressions: 0 */
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
   html,
   body {
     height: 100%;
     width: 100%;
+    background-color: ${BODY_BG};
+    color: ${BODY_COLOR};
+    font-size: ${FONT_SIZE_MOBILE};
+    ${media.tablet`
+      font-size: ${FONT_SIZE_BASE};
+    `}
   }
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
   }
 
   body.fontLoaded {
@@ -17,14 +30,14 @@ injectGlobal`
   }
 
   #app {
-    background-color: #fafafa;
     min-height: 100%;
     min-width: 100%;
+    display: flex;
   }
 
-  p,
-  label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.5em;
+  .grecaptcha-badge {
+    z-index: 1;
   }
 `
+
+export default GlobalStyles
