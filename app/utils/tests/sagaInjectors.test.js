@@ -3,7 +3,7 @@
  * Test injectors
  */
 
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 import {put} from 'redux-saga/effects'
 
 import configureStore from '../../configure-store'

@@ -2,7 +2,7 @@
  * Test store addons
  */
 
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 import configureStore from '../configure-store'
 
 const history = createHistory()

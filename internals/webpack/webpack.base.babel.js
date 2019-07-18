@@ -64,11 +64,11 @@ module.exports = options => ({
         ]
       },
       {
-        test: /\.(eot|otf|ttf|woff|woff2)$/u,
+        test: /\.(eot|otf|ttf|woff|woff2)$/u, // eslint-disable-line prefer-named-capture-group
         use: 'file-loader'
       },
       {
-        test: /\/robots(\.\w+)?\.txt$/u,
+        test: /\/robots(\.\w+)?\.txt$/u, // eslint-disable-line prefer-named-capture-group
         use: {
           loader: 'file-loader',
           options: {
@@ -90,7 +90,7 @@ module.exports = options => ({
         ]
       },
       {
-        test: /\.(jpg|png|gif)$/u,
+        test: /\.(jpg|png|gif)$/u, // eslint-disable-line prefer-named-capture-group
         use: [
           {
             loader: 'url-loader',
@@ -131,7 +131,7 @@ module.exports = options => ({
         use: 'html-loader'
       },
       {
-        test: /\.(mp4|webm)$/u,
+        test: /\.(mp4|webm)$/u, // eslint-disable-line prefer-named-capture-group
         use: {
           loader: 'url-loader',
           options: {
@@ -174,6 +174,7 @@ module.exports = options => ({
         resource
       })
     }),
+    // eslint-disable-next-line prefer-named-capture-group
     new webpack.NormalModuleReplacementPlugin(/^(\.\/)?public\/robots\/robots\.txt/u, result => {
       if (!process.env.APP_ENV) {
         return

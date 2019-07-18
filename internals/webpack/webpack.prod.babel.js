@@ -129,6 +129,6 @@ module.exports = require('./webpack.base.babel')({
 
   performance: {
     assetFilter: assetFilename =>
-      !(/(\.map$)|(^(main\.|favicon\.))/u).test(assetFilename)
+      !(/(\.map$)|(^(main\.|favicon\.))/u).test(assetFilename) // eslint-disable-line prefer-named-capture-group
   }
 })

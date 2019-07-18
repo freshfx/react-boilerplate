@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import {App} from '../index'
+import {App, mapDispatchToProps} from '../index'
 
 const one = 1
 const zero = 0
@@ -23,5 +23,11 @@ describe('<App />', () => {
   it('should render the footer', () => {
     const renderedComponent = shallow(<App />)
     expect(renderedComponent.find(Footer).length).toBe(one)
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should return empty set', () => {
+      expect(mapDispatchToProps()).toStrictEqual({})
+    })
   })
 })

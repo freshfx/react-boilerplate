@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`styles variables mediaSize should match snapshot 1`] = `[Function]`;
+exports[`styles variables mediaSize should match snapshot 1`] = `" font-size: 0.8125rem; letter-spacing: 0.03125rem; margin: 0;"`;

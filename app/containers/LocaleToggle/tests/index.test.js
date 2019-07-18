@@ -1,6 +1,6 @@
 import React from 'react'
 import {Provider} from 'react-redux'
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 import {mount, shallow} from 'enzyme'
 
 import LocaleToggle, {mapDispatchToProps} from '../index'

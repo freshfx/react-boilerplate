@@ -2,7 +2,7 @@
  * Test injectors
  */
 
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 import {shallow} from 'enzyme'
 import React from 'react'
 import identity from 'lodash/identity'

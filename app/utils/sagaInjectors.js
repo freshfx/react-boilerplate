@@ -16,7 +16,7 @@ const allowedModes = [
 const checkKey = key =>
   invariant(
     isString(key) && !isEmpty(key),
-    '(app/utils...) injectSaga: Expected `key` to be a non empty string',
+    '(app/utils...) injectSaga: Expected `key` to be a non empty string'
   )
 
 const checkDescriptor = descriptor => {
@@ -26,7 +26,7 @@ const checkDescriptor = descriptor => {
   }
   invariant(
     conformsTo(descriptor, shape),
-    '(app/utils...) injectSaga: Expected a valid saga descriptor',
+    '(app/utils...) injectSaga: Expected a valid saga descriptor'
   )
 }
 

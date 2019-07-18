@@ -40,7 +40,7 @@ export default function configureStore(initialState = {}, history, actionEmitter
   const store = createStore(
     createReducer(history),
     fromJS(initialState),
-    composeEnhancers(...enhancers),
+    composeEnhancers(...enhancers)
   )
 
   // Extensions

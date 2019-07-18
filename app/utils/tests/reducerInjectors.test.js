@@ -2,7 +2,7 @@
  * Test injectors
  */
 
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 import {fromJS} from 'immutable'
 import identity from 'lodash/identity'
 

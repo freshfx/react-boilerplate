@@ -15,11 +15,12 @@ describe('styles variables', () => {
 
   describe('mediaSize', () => {
     it('should match snapshot', () => {
-      expect(() => mediaSize`
+      const result = mediaSize`
         font-size: 13px;
         letter-spacing: 0.5px;
         margin: 0;
-      `).toMatchSnapshot()
+      `
+      expect(result).toMatchSnapshot()
     })
 
     it('should not throw if called without any arguments', () => {

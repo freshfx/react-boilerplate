@@ -117,6 +117,7 @@
     }
   ],
   "settings": {
+    "import/core-modules": ["url", "path"],
     "import/resolver": {
       "webpack": {
         "config": "./internals/webpack/webpack.prod.babel.js"

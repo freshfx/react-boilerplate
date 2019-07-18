@@ -2,7 +2,7 @@ import React from 'react'
 import {mount, shallow} from 'enzyme'
 import {FormattedMessage, defineMessages} from 'react-intl'
 import {Provider} from 'react-redux'
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 
 import ConnectedLanguageProvider, {LanguageProvider} from '../index'
 import configureStore from '../../../configure-store'

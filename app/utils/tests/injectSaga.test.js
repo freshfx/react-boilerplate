@@ -2,7 +2,7 @@
  * Test injectors
  */
 
-import createHistory from 'history/createMemoryHistory'
+import {createMemoryHistory as createHistory} from 'history'
 import {put} from 'redux-saga/effects'
 import {shallow} from 'enzyme'
 import React from 'react'
@@ -58,7 +58,7 @@ describe('injectSaga decorator', () => {
         mode: 'testMode',
         saga: testSaga
       },
-      props,
+      props
     )
   })
 
