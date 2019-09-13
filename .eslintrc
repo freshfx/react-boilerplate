@@ -35,6 +35,7 @@
     "func-style": ["error", "declaration", {
       "allowArrowFunctions": true
     }],
+    "function-call-argument-newline": [2, "consistent"],
     "implicit-arrow-linebreak": 0,
     "import/first": [2, "absolute-first"],
     "import/newline-after-import": 2,

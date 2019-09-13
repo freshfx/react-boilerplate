@@ -6,7 +6,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {injectIntl, intlShape} from 'react-intl'
+import {injectIntl} from 'react-intl'
 
 class ToggleOption extends React.PureComponent {
   getMessage() {
@@ -29,7 +29,9 @@ class ToggleOption extends React.PureComponent {
 }
 
 ToggleOption.propTypes = {
-  intl: intlShape.isRequired,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired
+  }).isRequired,
   message: PropTypes.object,
   value: PropTypes.string.isRequired
 }

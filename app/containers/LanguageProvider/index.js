@@ -22,6 +22,7 @@ export class LanguageProvider extends React.PureComponent {
         locale={this.props.locale}
         key={this.props.locale}
         messages={this.props.messages[this.props.locale]}
+        textComponent="span"
       >
         {React.Children.only(this.props.children)}
       </IntlProvider>

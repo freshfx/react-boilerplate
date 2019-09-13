@@ -1,11 +1,11 @@
 /* eslint-disable */
 /**
  * This script will extract the internationalization messages from all components
-   and package them in the translation json files in the translations file.
+ and package them in the translation json files in the translations file.
  */
 const fs = require('fs');
 const nodeGlob = require('glob');
-const transform = require('babel-core').transform;
+const transformFileAsync = require('babel-core').transformFileAsync;
 
 const animateProgress = require('./helpers/progress');
 const addCheckmark = require('./helpers/checkmark');
@@ -52,13 +52,12 @@ const glob = pattern =>
     );
   });
 
-const readFile = fileName =>
-  new Promise((resolve, reject) => {
-    fs.readFile(
-      fileName,
-      (error, value) => (error ? reject(error) : resolve(value)),
-    );
-  });
+const readFile = fileName => new Promise((resolve, reject) => {
+  fs.readFile(
+    fileName,
+    (error, value) => (error ? reject(error) : resolve(value)),
+  );
+});
 
 const writeFile = (fileName, data) =>
   new Promise((resolve, reject) => {
@@ -113,10 +112,9 @@ for (const locale of locales) {
 plugins.push(['react-intl']);
 
 const extractFromFile = fileName => {
-  return readFile(fileName)
-    .then(code => {
-      // Use babel plugin to extract instances where react-intl is used
-      const { metadata: result } = transform(code, { presets, plugins });
+  return transformFileAsync(fileName, { presets, plugins })
+    .then(transformed => {
+      const { metadata: result } = transformed
 
       for (const message of result['react-intl'].messages) {
         for (const locale of locales) {
