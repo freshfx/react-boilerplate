@@ -32,7 +32,6 @@ import loadFonts from 'components/FontIcon/fontFace'
 // Load the favicon and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */
 import '!file-loader?name=[name].[ext]!./images/favicon.ico'
-import 'file-loader?name=[name].[ext]!./.htaccess'
 /* eslint-enable import/no-webpack-loader-syntax */
 
 import configureStore from './configure-store'
