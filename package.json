@@ -40,7 +40,7 @@
     "pretest": "npm run test:clean && npm run lint",
     "test:clean": "rimraf ./coverage",
     "test": "cross-env NODE_ENV=test jest --coverage --config jest.config.json",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll --config jest.config.json",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll --coverage --config jest.config.json",
     "prettify": "prettier --write"
   },
   "lint-staged": {
