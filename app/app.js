@@ -115,34 +115,20 @@ if (window.Intl) {
  */
 /* eslint-disable-next-line no-process-env */
 if (process.env.NODE_ENV === 'production') {
-  /* eslint-disable global-require, no-console, sort-keys */
+  /* eslint-disable global-require, sort-keys */
   const runtime = require('offline-plugin/runtime')
 
-  let runtimeOptions = {
+  const runtimeOptions = {
     onUpdateReady: () => {
-      // Tells to new SW to take control immediately
       runtime.applyUpdate()
-    }
-  }
 
-  if (process.env.APP_ENV !== 'production') {
-    runtimeOptions = {
-      onUpdating: () => {
-        console.log('SW Event:', 'onUpdating')
-      },
-      onUpdateReady: () => {
-        console.log('SW Event:', 'onUpdateReady')
-        // Tells to new SW to take control immediately
-        runtime.applyUpdate()
-      },
-      onUpdated: () => {
-        console.log('SW Event:', 'onUpdated')
-        // Reload the webpage to load into the new version
-        window.location.reload()
-      },
-      onUpdateFailed: () => {
-        console.log('SW Event:', 'onUpdateFailed')
-      }
+      /*
+       * TODO: remove applyUpdate and fire event to open a Dialog like
+       *  "There is a new version available. Do you want to apply it? (apply and refresh)"
+       */
+    },
+    onUpdated: () => {
+      window.location.reload()
     }
   }
 
