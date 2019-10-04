@@ -9,7 +9,12 @@ import identity from 'lodash/identity'
 
 import configureStore from '../../configure-store'
 import injectReducer from '../injectReducer'
-import * as reducerInjectors from '../reducerInjectors'
+
+const mockInjectReducer = jest.fn()
+
+jest.mock('../reducerInjectors', () => () => ({
+  injectReducer: mockInjectReducer
+}))
 
 // Fixtures
 const Component = () => null
@@ -19,35 +24,28 @@ const history = createHistory()
 
 describe('injectReducer decorator', () => {
   let store = {}
-  let injectors = {}
   let ComponentWithReducer = () => {}
-
-  beforeAll(() => {
-    reducerInjectors.default = jest.fn().mockImplementation(() => injectors)
-  })
 
   beforeEach(() => {
     store = configureStore({}, history)
-    injectors = {
-      injectReducer: jest.fn()
-    }
-    ComponentWithReducer = injectReducer({key: 'test',
-      reducer})(Component)
-    reducerInjectors.default.mockClear()
+    ComponentWithReducer = injectReducer({key: 'test', reducer})(Component)
+  })
+
+  afterEach(() => {
+    mockInjectReducer.mockRestore()
   })
 
   it('should inject a given reducer', () => {
     shallow(<ComponentWithReducer />, {context: {store}})
 
     /* eslint-disable-next-line no-magic-numbers */
-    expect(injectors.injectReducer).toHaveBeenCalledTimes(1)
-    expect(injectors.injectReducer).toHaveBeenCalledWith('test', reducer)
+    expect(mockInjectReducer).toHaveBeenCalledTimes(1)
+    expect(mockInjectReducer).toHaveBeenCalledWith('test', reducer)
   })
 
   it('should set a correct display name', () => {
     expect(ComponentWithReducer.displayName).toBe('withReducer(Component)')
-    expect(injectReducer({key: 'test',
-      reducer})(() => null).displayName).toBe('withReducer(Component)')
+    expect(injectReducer({key: 'test', reducer})(() => null).displayName).toBe('withReducer(Component)')
   })
 
   it('should propagate props', () => {

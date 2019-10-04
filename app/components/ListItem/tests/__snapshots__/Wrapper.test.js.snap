@@ -28,7 +28,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Wrapper-euo0oy-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "width:100%;height:3em;display:flex;align-items:center;position:relative;border-top:1px solid #eee;&:first-child{border-top:none;}",
@@ -40,6 +40,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "styledComponentId": "Wrapper-euo0oy-0",
         "target": "li",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

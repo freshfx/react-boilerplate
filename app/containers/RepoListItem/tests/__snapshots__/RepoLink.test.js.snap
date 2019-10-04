@@ -28,7 +28,7 @@ exports[`<RepoLink /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "RepoLink-pvpwpn-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "color:#41addd;&:hover{color:#6cc0e5;}",
@@ -43,6 +43,7 @@ exports[`<RepoLink /> should match snapshot 1`] = `
         "styledComponentId": "RepoLink-pvpwpn-0",
         "target": "a",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -14,7 +14,7 @@ exports[`<Select /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Select-sc-1sm01tk-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "line-height:1em;height:20px;",
@@ -26,6 +26,7 @@ exports[`<Select /> should match snapshot 1`] = `
         "styledComponentId": "Select-sc-1sm01tk-0",
         "target": "select",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

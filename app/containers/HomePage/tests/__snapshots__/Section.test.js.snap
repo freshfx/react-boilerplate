@@ -17,7 +17,7 @@ exports[`<Section /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Section-sc-1eulrsm-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "margin:3em auto;&:first-child{margin-top:0;}",
@@ -29,6 +29,7 @@ exports[`<Section /> should match snapshot 1`] = `
         "styledComponentId": "Section-sc-1eulrsm-0",
         "target": "section",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

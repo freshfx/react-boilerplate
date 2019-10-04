@@ -22,7 +22,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Wrapper-wcfdfo-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "display:flex;justify-content:space-between;padding:3em 0;border-top:1px solid #666;",
@@ -34,6 +34,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "styledComponentId": "Wrapper-wcfdfo-0",
         "target": "footer",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

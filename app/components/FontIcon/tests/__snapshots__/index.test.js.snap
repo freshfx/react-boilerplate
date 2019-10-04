@@ -46,6 +46,7 @@ exports[`<FontIcon /> should render all icons 1`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -107,6 +108,7 @@ exports[`<FontIcon /> should render all icons 2`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -168,6 +170,7 @@ exports[`<FontIcon /> should render all icons 3`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -229,6 +232,7 @@ exports[`<FontIcon /> should render all icons 4`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -290,6 +294,7 @@ exports[`<FontIcon /> should render all icons 5`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -351,6 +356,7 @@ exports[`<FontIcon /> should render all icons 6`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -412,6 +418,7 @@ exports[`<FontIcon /> should render all icons 7`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -473,6 +480,7 @@ exports[`<FontIcon /> should render all icons 8`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -534,6 +542,7 @@ exports[`<FontIcon /> should render all icons 9`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -595,6 +604,7 @@ exports[`<FontIcon /> should render all icons 10`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -656,6 +666,7 @@ exports[`<FontIcon /> should render all icons 11`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -717,6 +728,7 @@ exports[`<FontIcon /> should render all icons 12`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -778,6 +790,7 @@ exports[`<FontIcon /> should render all icons 13`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -839,6 +852,7 @@ exports[`<FontIcon /> should render all icons 14`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -900,6 +914,7 @@ exports[`<FontIcon /> should render all icons 15`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -961,6 +976,7 @@ exports[`<FontIcon /> should render all icons 16`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1022,6 +1038,7 @@ exports[`<FontIcon /> should render all icons 17`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1083,6 +1100,7 @@ exports[`<FontIcon /> should render all icons 18`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1144,6 +1162,7 @@ exports[`<FontIcon /> should render all icons 19`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1205,6 +1224,7 @@ exports[`<FontIcon /> should render all icons 20`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1266,6 +1286,7 @@ exports[`<FontIcon /> should render all icons 21`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1327,6 +1348,7 @@ exports[`<FontIcon /> should render all icons 22`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1388,6 +1410,7 @@ exports[`<FontIcon /> should render all icons 23`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1449,6 +1472,7 @@ exports[`<FontIcon /> should render all icons 24`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1510,6 +1534,7 @@ exports[`<FontIcon /> should render all icons 25`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1571,6 +1596,7 @@ exports[`<FontIcon /> should render all icons 26`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1632,6 +1658,7 @@ exports[`<FontIcon /> should render all icons 27`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1693,6 +1720,7 @@ exports[`<FontIcon /> should render all icons 28`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1754,6 +1782,7 @@ exports[`<FontIcon /> should render all icons 29`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1815,6 +1844,7 @@ exports[`<FontIcon /> should render all icons 30`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1876,6 +1906,7 @@ exports[`<FontIcon /> should render all icons 31`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1937,6 +1968,7 @@ exports[`<FontIcon /> should render all icons 32`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1998,6 +2030,7 @@ exports[`<FontIcon /> should render all icons 33`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2059,6 +2092,7 @@ exports[`<FontIcon /> should render all icons 34`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2120,6 +2154,7 @@ exports[`<FontIcon /> should render all icons 35`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2181,6 +2216,7 @@ exports[`<FontIcon /> should render all icons 36`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2242,6 +2278,7 @@ exports[`<FontIcon /> should render all icons 37`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2303,6 +2340,7 @@ exports[`<FontIcon /> should render all icons 38`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2364,6 +2402,7 @@ exports[`<FontIcon /> should render all icons 39`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2425,6 +2464,7 @@ exports[`<FontIcon /> should render all icons 40`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2486,6 +2526,7 @@ exports[`<FontIcon /> should render all icons 41`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2547,6 +2588,7 @@ exports[`<FontIcon /> should render all icons 42`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2608,6 +2650,7 @@ exports[`<FontIcon /> should render all icons 43`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2669,6 +2712,7 @@ exports[`<FontIcon /> should render all icons 44`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2730,6 +2774,7 @@ exports[`<FontIcon /> should render all icons 45`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2791,6 +2836,7 @@ exports[`<FontIcon /> should render all icons 46`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2852,6 +2898,7 @@ exports[`<FontIcon /> should render all icons 47`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2913,6 +2960,7 @@ exports[`<FontIcon /> should render all icons 48`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2974,6 +3022,7 @@ exports[`<FontIcon /> should render all icons 49`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3035,6 +3084,7 @@ exports[`<FontIcon /> should render all icons 50`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3096,6 +3146,7 @@ exports[`<FontIcon /> should render all icons 51`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3157,6 +3208,7 @@ exports[`<FontIcon /> should render all icons 52`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3218,6 +3270,7 @@ exports[`<FontIcon /> should render all icons 53`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3279,6 +3332,7 @@ exports[`<FontIcon /> should render all icons 54`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3340,6 +3394,7 @@ exports[`<FontIcon /> should render all icons 55`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3401,6 +3456,7 @@ exports[`<FontIcon /> should render all icons 56`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3462,6 +3518,7 @@ exports[`<FontIcon /> should render all icons 57`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3523,6 +3580,7 @@ exports[`<FontIcon /> should render all icons 58`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3584,6 +3642,7 @@ exports[`<FontIcon /> should render all icons 59`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3645,6 +3704,7 @@ exports[`<FontIcon /> should render all icons 60`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3706,6 +3766,7 @@ exports[`<FontIcon /> should render all icons 61`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3767,6 +3828,7 @@ exports[`<FontIcon /> should render all icons 62`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3828,6 +3890,7 @@ exports[`<FontIcon /> should render all icons 63`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3889,6 +3952,7 @@ exports[`<FontIcon /> should render all icons 64`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3950,6 +4014,7 @@ exports[`<FontIcon /> should render all icons 65`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4011,6 +4076,7 @@ exports[`<FontIcon /> should render all icons 66`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4072,6 +4138,7 @@ exports[`<FontIcon /> should render all icons 67`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4133,6 +4200,7 @@ exports[`<FontIcon /> should render all icons 68`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4194,6 +4262,7 @@ exports[`<FontIcon /> should render all icons 69`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4255,6 +4324,7 @@ exports[`<FontIcon /> should render all icons 70`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4316,6 +4386,7 @@ exports[`<FontIcon /> should render all icons 71`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4377,6 +4448,7 @@ exports[`<FontIcon /> should render all icons 72`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4438,6 +4510,7 @@ exports[`<FontIcon /> should render all icons 73`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4499,6 +4572,7 @@ exports[`<FontIcon /> should render all icons 74`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4560,6 +4634,7 @@ exports[`<FontIcon /> should render all icons 75`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4621,6 +4696,7 @@ exports[`<FontIcon /> should render all icons 76`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4682,6 +4758,7 @@ exports[`<FontIcon /> should render all icons 77`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4743,6 +4820,7 @@ exports[`<FontIcon /> should render all icons 78`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4804,6 +4882,7 @@ exports[`<FontIcon /> should render all icons 79`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4865,6 +4944,7 @@ exports[`<FontIcon /> should render all icons 80`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4926,6 +5006,7 @@ exports[`<FontIcon /> should render all icons 81`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4992,6 +5073,7 @@ exports[`<FontIcon /> should render flipped 1`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -5057,6 +5139,7 @@ exports[`<FontIcon /> should render with fixed width 1`] = `
         "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

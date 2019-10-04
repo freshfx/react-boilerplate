@@ -13,7 +13,7 @@ exports[`<ListItem /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "ListItem-sc-27v6xc-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "margin:1em 0;",
@@ -25,6 +25,7 @@ exports[`<ListItem /> should match snapshot 1`] = `
         "styledComponentId": "ListItem-sc-27v6xc-0",
         "target": "li",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

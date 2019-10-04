@@ -14,7 +14,7 @@ exports[`<List /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "List-sc-1aai6b-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "font-family:Georgia,Times,'Times New Roman',serif;padding-left:1.75em;",
@@ -26,6 +26,7 @@ exports[`<List /> should match snapshot 1`] = `
         "styledComponentId": "List-sc-1aai6b-0",
         "target": "ul",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

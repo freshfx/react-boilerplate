@@ -16,7 +16,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Wrapper-sc-12uw37d-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "margin:2em auto;width:40px;height:40px;position:relative;",
@@ -28,6 +28,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "styledComponentId": "Wrapper-sc-12uw37d-0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

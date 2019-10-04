@@ -14,7 +14,7 @@ exports[`<Input /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Input-sc-19rkjmi-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "outline:none;border-bottom:1px dotted #999;",
@@ -26,6 +26,7 @@ exports[`<Input /> should match snapshot 1`] = `
         "styledComponentId": "Input-sc-19rkjmi-0",
         "target": "input",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -9,7 +9,14 @@ import React from 'react'
 
 import configureStore from '../../configure-store'
 import injectSaga from '../injectSaga'
-import * as sagaInjectors from '../sagaInjectors'
+
+const mockInjectSaga = jest.fn()
+const mockEjectSaga = jest.fn()
+
+jest.mock('../sagaInjectors', () => () => ({
+  ejectSaga: mockEjectSaga,
+  injectSaga: mockInjectSaga
+}))
 
 // Fixtures
 const Component = () => null
@@ -25,25 +32,20 @@ function *testSaga() {
 
 describe('injectSaga decorator', () => {
   let store = {}
-  let injectors = {}
   let ComponentWithSaga = () => {}
-
-  beforeAll(() => {
-    sagaInjectors.default = jest.fn().mockImplementation(() => injectors)
-  })
 
   beforeEach(() => {
     store = configureStore({}, history)
-    injectors = {
-      ejectSaga: jest.fn(),
-      injectSaga: jest.fn()
-    }
     ComponentWithSaga = injectSaga({
       key: 'test',
       mode: 'testMode',
       saga: testSaga
     })(Component)
-    sagaInjectors.default.mockClear()
+  })
+
+  afterEach(() => {
+    mockInjectSaga.mockRestore()
+    mockEjectSaga.mockRestore()
   })
 
   it('should inject given saga, mode, and props', () => {
@@ -51,8 +53,8 @@ describe('injectSaga decorator', () => {
     shallow(<ComponentWithSaga {...props} />, {context: {store}})
 
     /* eslint-disable-next-line no-magic-numbers */
-    expect(injectors.injectSaga).toHaveBeenCalledTimes(1)
-    expect(injectors.injectSaga).toHaveBeenCalledWith(
+    expect(mockInjectSaga).toHaveBeenCalledTimes(1)
+    expect(mockInjectSaga).toHaveBeenCalledWith(
       'test',
       {
         mode: 'testMode',
@@ -70,8 +72,8 @@ describe('injectSaga decorator', () => {
     renderedComponent.unmount()
 
     /* eslint-disable-next-line no-magic-numbers */
-    expect(injectors.ejectSaga).toHaveBeenCalledTimes(1)
-    expect(injectors.ejectSaga).toHaveBeenCalledWith('test')
+    expect(mockEjectSaga).toHaveBeenCalledTimes(1)
+    expect(mockEjectSaga).toHaveBeenCalledWith('test')
   })
 
   it('should set a correct display name', () => {

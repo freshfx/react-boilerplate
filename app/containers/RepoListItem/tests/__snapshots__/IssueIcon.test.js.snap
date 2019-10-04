@@ -14,7 +14,7 @@ exports[`<IssueIcon /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "IssueIcon-s8m34y-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "fill:#ccc;margin-right:0.25em;",
@@ -26,6 +26,7 @@ exports[`<IssueIcon /> should match snapshot 1`] = `
         "styledComponentId": "IssueIcon-s8m34y-0",
         "target": [Function],
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -26,7 +26,7 @@ exports[`<Item /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Item-sc-3y9mie-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "display:flex;justify-content:space-between;width:100%;height:100%;align-items:center;",
@@ -38,6 +38,7 @@ exports[`<Item /> should match snapshot 1`] = `
         "styledComponentId": "Item-sc-3y9mie-0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

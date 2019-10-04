@@ -18,7 +18,7 @@ exports[`<CenteredSection /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "CenteredSection-sc-6zy0wx-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "margin:3em auto;&:first-child{margin-top:0;}",
@@ -33,6 +33,7 @@ exports[`<CenteredSection /> should match snapshot 1`] = `
         "styledComponentId": "CenteredSection-sc-6zy0wx-0",
         "target": "section",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

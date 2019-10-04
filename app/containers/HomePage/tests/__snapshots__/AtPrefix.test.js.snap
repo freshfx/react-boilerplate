@@ -14,7 +14,7 @@ exports[`<AtPrefix /> should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "AtPrefix-sc-1suuq8o-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "color:black;margin-left:0.4em;",
@@ -26,6 +26,7 @@ exports[`<AtPrefix /> should match snapshot 1`] = `
         "styledComponentId": "AtPrefix-sc-1suuq8o-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
