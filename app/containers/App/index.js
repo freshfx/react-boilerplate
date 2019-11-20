@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import {Helmet} from 'react-helmet'
+import {Helmet} from 'react-helmet-async'
 import styled from 'styled-components'
 import {Route, Switch, withRouter} from 'react-router-dom'
 

@@ -13,6 +13,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
 import {ConnectedRouter} from 'connected-react-router/immutable'
+import {HelmetProvider} from 'react-helmet-async'
 import FontFaceObserver from 'fontfaceobserver'
 import {createBrowserHistory} from 'history'
 import 'sanitize.css/sanitize.css'
@@ -66,7 +67,9 @@ const render = messages => {
       <GlobalStyles />
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
-          <App />
+          <HelmetProvider>
+            <App />
+          </HelmetProvider>
         </ConnectedRouter>
       </LanguageProvider>
     </Provider>,

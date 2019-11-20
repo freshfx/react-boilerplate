@@ -20,9 +20,9 @@ describe('<ToggleOption />', () => {
   })
 
   it('should display `value`(two letter language code) when `message` is absent', () => {
-    const renderedComponent = mount(<IntlProvider locale="de">
-      <ToggleOption value="de" />
+    const renderedComponent = mount(<IntlProvider locale="en">
+      <ToggleOption value="en" />
     </IntlProvider>)
-    expect(renderedComponent.text()).toBe('de')
+    expect(renderedComponent.text()).toBe('en')
   })
 })
