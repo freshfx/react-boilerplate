@@ -49,7 +49,6 @@ exports[`<StyledButton /> should match snapshot 1`] = `
         "styledComponentId": "StyledButton-t20ntd-0",
         "target": "button",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -25,7 +25,6 @@ exports[`<Form /> should match snapshot 1`] = `
         "styledComponentId": "Form-dmhz4x-0",
         "target": "form",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

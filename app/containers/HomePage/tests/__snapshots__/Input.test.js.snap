@@ -26,7 +26,6 @@ exports[`<Input /> should match snapshot 1`] = `
         "styledComponentId": "Input-sc-19rkjmi-0",
         "target": "input",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

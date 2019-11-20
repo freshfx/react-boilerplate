@@ -38,7 +38,6 @@ exports[`<Item /> should match snapshot 1`] = `
         "styledComponentId": "Item-sc-3y9mie-0",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

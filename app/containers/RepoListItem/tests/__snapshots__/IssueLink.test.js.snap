@@ -46,7 +46,6 @@ exports[`<IssueLink /> should match snapshot 1`] = `
         "styledComponentId": "IssueLink-uyzonb-0",
         "target": "a",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

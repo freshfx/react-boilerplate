@@ -28,7 +28,6 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "styledComponentId": "Wrapper-sc-12uw37d-0",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

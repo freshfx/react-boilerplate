@@ -49,7 +49,6 @@ exports[`<Anchor /> should match snapshot 1`] = `
         "styledComponentId": "Anchor-sc-15hyk5b-0",
         "target": "a",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

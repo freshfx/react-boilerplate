@@ -26,7 +26,6 @@ exports[`<Select /> should match snapshot 1`] = `
         "styledComponentId": "Select-sc-1sm01tk-0",
         "target": "select",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

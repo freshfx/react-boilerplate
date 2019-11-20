@@ -26,7 +26,6 @@ exports[`<IssueIcon /> should match snapshot 1`] = `
         "styledComponentId": "IssueIcon-s8m34y-0",
         "target": [Function],
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

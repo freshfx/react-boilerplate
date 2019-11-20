@@ -34,7 +34,6 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "styledComponentId": "Wrapper-wcfdfo-0",
         "target": "footer",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

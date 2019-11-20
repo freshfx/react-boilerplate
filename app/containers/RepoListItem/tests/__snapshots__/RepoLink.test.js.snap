@@ -43,7 +43,6 @@ exports[`<RepoLink /> should match snapshot 1`] = `
         "styledComponentId": "RepoLink-pvpwpn-0",
         "target": "a",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

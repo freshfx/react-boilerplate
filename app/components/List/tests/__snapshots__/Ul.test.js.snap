@@ -30,7 +30,6 @@ exports[`<Ul /> should match snapshot 1`] = `
         "styledComponentId": "Ul-mwnq6h-0",
         "target": "ul",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

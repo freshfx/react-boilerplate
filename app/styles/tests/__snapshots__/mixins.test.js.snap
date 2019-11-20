@@ -41,7 +41,6 @@ exports[`mixins link should render default style 1`] = `
         "styledComponentId": "mixinstest-zkb8de-0",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -98,7 +97,6 @@ exports[`mixins link should render highlight style 1`] = `
         "styledComponentId": "mixinstest-zkb8de-0",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

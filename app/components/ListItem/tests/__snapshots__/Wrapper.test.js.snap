@@ -40,7 +40,6 @@ exports[`<Wrapper /> should match snapshot 1`] = `
         "styledComponentId": "Wrapper-euo0oy-0",
         "target": "li",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -33,7 +33,6 @@ exports[`<CenteredSection /> should match snapshot 1`] = `
         "styledComponentId": "CenteredSection-sc-6zy0wx-0",
         "target": "section",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

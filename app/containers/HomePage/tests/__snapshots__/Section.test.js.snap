@@ -29,7 +29,6 @@ exports[`<Section /> should match snapshot 1`] = `
         "styledComponentId": "Section-sc-1eulrsm-0",
         "target": "section",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -25,7 +25,6 @@ exports[`<ListItemTitle /> should match snapshot 1`] = `
         "styledComponentId": "ListItemTitle-sc-1t4skn3-0",
         "target": "p",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
