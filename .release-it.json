@@ -1,0 +1,26 @@
+{
+  "git": {
+    "commitMessage": "chore: release v%s",
+    "pushArgs": "--no-verify",
+    "requireCleanWorkingDir": false,
+    "requireUpstream": true,
+    "tagName": "v%s",
+    "tagAnnotation": "release %s"
+  },
+  "github": {
+    "release": false
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  },
+  "hooks": {
+    "after:bump": "npm run changelog",
+    "before:stage": "npm run lint:clean && npm test"
+  }
+}
