@@ -100,7 +100,7 @@
     "react/self-closing-comp": 2,
     "react/sort-comp": 0,
     "react/jsx-props-no-spreading": [2, {
-      "exceptions": ["FormattedMessage"]
+      "exceptions": ["FormattedMessage", "LazyComponent"]
     }],
     "redux-saga/no-yield-in-race": 2,
     "redux-saga/yield-effects": 2,
