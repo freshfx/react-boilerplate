@@ -3,8 +3,9 @@ import {Provider} from 'react-redux'
 import {createMemoryHistory as createHistory} from 'history'
 import {mount, shallow} from 'enzyme'
 
+import {actions} from 'modules/language'
+
 import LocaleToggle, {mapDispatchToProps} from '../index'
-import {changeLocale} from '../../LanguageProvider/actions'
 import LanguageProvider from '../../LanguageProvider'
 
 import configureStore from '../../../configure-store'
@@ -42,16 +43,15 @@ describe('<LocaleToggle />', () => {
       it('should be injected', () => {
         const dispatch = jest.fn()
         const result = mapDispatchToProps(dispatch)
-        expect(result.onLocaleToggle).toBeDefined()
+        expect(result.onChangeLocale).toBeDefined()
       })
 
       it('should dispatch changeLocale when called', () => {
         const dispatch = jest.fn()
         const result = mapDispatchToProps(dispatch)
         const locale = 'de'
-        const evt = {target: {value: locale}}
-        result.onLocaleToggle(evt)
-        expect(dispatch).toHaveBeenCalledWith(changeLocale(locale))
+        result.onChangeLocale(locale)
+        expect(dispatch).toHaveBeenCalledWith(actions.changeLocale({locale}))
       })
     })
   })

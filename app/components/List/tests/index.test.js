@@ -4,7 +4,6 @@ import {shallow} from 'enzyme'
 import ListItem from 'components/ListItem'
 import List from '../index'
 
-const zero = 0
 const two = 2
 
 describe('<List />', () => {
@@ -13,17 +12,8 @@ describe('<List />', () => {
     expect(renderedComponent.find(ListItem)).toBeDefined()
   })
 
-  it('should pass all items props to rendered component', () => {
-    const items = [
-      {
-        id: 1,
-        name: 'Hello'
-      },
-      {
-        id: 2,
-        name: 'World'
-      }
-    ]
+  it('should pass all item ids to rendered components', () => {
+    const items = [1, 2]
 
     const component = ({item}) => <ListItem>{item.name}</ListItem> // eslint-disable-line react/prop-types
 
@@ -31,11 +21,11 @@ describe('<List />', () => {
     expect(renderedComponent.find(component)).toHaveLength(two)
     expect(renderedComponent
       .find(component)
-      .at(zero)
-      .prop('item')).toBe(items[zero])
+      .at(0)
+      .prop('id')).toBe(items[0])
     expect(renderedComponent
       .find(component)
-      .at(zero)
-      .prop('item')).toBe(items[zero])
+      .at(1)
+      .prop('id')).toBe(items[1])
   })
 })

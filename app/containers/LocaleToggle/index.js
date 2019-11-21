@@ -6,18 +6,26 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import {compose} from 'redux'
 import {connect} from 'react-redux'
-import {createSelector} from 'reselect'
+import {createStructuredSelector} from 'reselect'
+import noop from 'lodash/noop'
 
 import Toggle from 'components/Toggle'
+import {
+  actions,
+  selectors
+} from 'modules/language'
+
 import Wrapper from './Wrapper'
 import messages from './messages'
 import {appLocales} from '../../i18n'
-import {changeLocale} from '../LanguageProvider/actions'
-import {makeSelectLocale} from '../LanguageProvider/selectors'
 
-export class LocaleToggle extends React.PureComponent {
-  // eslint-disable-line react/prefer-stateless-function
+class LocaleToggle extends React.PureComponent {
+  onChangeLocale = ({target: {value}}) => {
+    this.props.onChangeLocale(value)
+  }
+
   render() {
     return (
       <Wrapper>
@@ -25,7 +33,7 @@ export class LocaleToggle extends React.PureComponent {
           value={this.props.locale}
           values={appLocales}
           messages={messages}
-          onToggle={this.props.onLocaleToggle}
+          onToggle={this.onChangeLocale}
         />
       </Wrapper>
     )
@@ -34,21 +42,26 @@ export class LocaleToggle extends React.PureComponent {
 
 LocaleToggle.propTypes = {
   locale: PropTypes.string.isRequired,
-  onLocaleToggle: PropTypes.func.isRequired
+  onChangeLocale: PropTypes.func
 }
 
-const mapStateToProps = createSelector(makeSelectLocale(), locale => ({
-  locale
-}))
-
-export function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-    onLocaleToggle: evt => dispatch(changeLocale(evt.target.value))
-  }
+LocaleToggle.defaultProps = {
+  onChangeLocale: noop
 }
 
-export default connect(
-  mapStateToProps,
+const mapStateToProps = createStructuredSelector({
+  locale: selectors.selectLocale
+})
+
+const mapDispatchToProps = dispatch => ({
+  onChangeLocale: locale => dispatch(actions.changeLocale({locale}))
+})
+
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+export {
+  LocaleToggle,
   mapDispatchToProps
-)(LocaleToggle)
+}
+
+export default compose(withConnect)(LocaleToggle)

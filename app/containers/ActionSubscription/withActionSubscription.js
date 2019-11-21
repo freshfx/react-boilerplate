@@ -39,7 +39,7 @@ const withActionSubscription = Component =>
 
       return (
         <Component
-          {...this.props}
+          {...this.props} // eslint-disable-line react/jsx-props-no-spreading
           actionSubscription={{
             ...actionSubscription,
             addSubscriber: this.addSubscriber,

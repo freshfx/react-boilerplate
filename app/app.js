@@ -12,10 +12,9 @@ import '@babel/polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
-import {ConnectedRouter} from 'connected-react-router/immutable'
+import {ConnectedRouter} from 'connected-react-router'
 import {HelmetProvider} from 'react-helmet-async'
 import FontFaceObserver from 'fontfaceobserver'
-import {createBrowserHistory} from 'history'
 import 'sanitize.css/sanitize.css'
 
 import 'public/robots/robots.txt'
@@ -29,6 +28,7 @@ import LanguageProvider from 'containers/LanguageProvider'
 import ActionSubscription from 'containers/ActionSubscription'
 
 import loadFonts from 'components/FontIcon/fontFace'
+import history from 'utils/history'
 
 // Load the favicon and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */
@@ -57,7 +57,6 @@ openSansObserver.load().then(() => {
 // Create redux store with history
 const actionEmitter = new ActionSubscription.ActionEmitter()
 const initialState = {}
-const history = createBrowserHistory()
 const store = configureStore(initialState, history, actionEmitter)
 const MOUNT_NODE = document.getElementById('app')
 

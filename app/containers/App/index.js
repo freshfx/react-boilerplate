@@ -10,17 +10,18 @@ import React from 'react'
 import {Helmet} from 'react-helmet-async'
 import styled from 'styled-components'
 import {Route, Switch, withRouter} from 'react-router-dom'
-
+import {injectReducer} from 'redux-injectors'
 import {createStructuredSelector} from 'reselect'
 import {connect} from 'react-redux'
-// Example for saga: import injectSaga from 'utils/injectSaga'
 import {compose} from 'redux'
 
+import Header from 'components/Header'
+import Footer from 'components/Footer'
 import HomePage from 'containers/HomePage/Loadable'
 import FeaturePage from 'containers/FeaturePage/Loadable'
 import NotFoundPage from 'containers/NotFoundPage/Loadable'
-import Header from 'components/Header'
-import Footer from 'components/Footer'
+import entitiesReducer from 'modules/entities'
+import languageReducer from 'modules/language'
 
 export const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -62,6 +63,13 @@ export function mapDispatchToProps() {
 }
 const mapStateToProps = createStructuredSelector({})
 const withConnect = connect(mapStateToProps, mapDispatchToProps)
+const withEntitiesReducer = injectReducer(entitiesReducer)
+const withLanguageReducer = injectReducer(languageReducer)
 // Example for Saga: injectSaga({key: 'appSaga', saga: appSaga})
 
-export default withRouter(compose(withConnect)(App))
+export default compose(
+  withRouter,
+  withConnect,
+  withEntitiesReducer,
+  withLanguageReducer
+)(App)

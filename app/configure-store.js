@@ -1,10 +1,9 @@
 /**
  * Create the store with dynamic reducers
  */
-
-import {applyMiddleware, compose, createStore} from 'redux'
-import {fromJS} from 'immutable'
-import {routerMiddleware} from 'connected-react-router/immutable'
+import {configureStore, getDefaultMiddleware} from '@reduxjs/toolkit'
+import {routerMiddleware} from 'connected-react-router'
+import {createInjectorsEnhancer, forceReducerReload} from 'redux-injectors'
 import createSagaMiddleware from 'redux-saga'
 
 import {actionListenerMiddleware} from 'containers/ActionSubscription'
@@ -13,11 +12,14 @@ import createReducer from './reducers'
 
 const sagaMiddleware = createSagaMiddleware()
 
-export default function configureStore(initialState = {}, history, actionEmitter) {
+export default function configureAppStore(initialState = {}, history, actionEmitter) {
+  const {run: runSaga} = sagaMiddleware
+
   /*
-   * Create the store with two middlewares
+   * Create the store with three middlewares
    * 1. sagaMiddleware: Makes redux-sagas work
    * 2. routerMiddleware: Syncs the location/URL path to the state
+   * 3. actionListenerMiddleware: Emits action types to subscribers if dispatched.
    */
   const middlewares = [
     sagaMiddleware,
@@ -25,26 +27,23 @@ export default function configureStore(initialState = {}, history, actionEmitter
     actionListenerMiddleware(actionEmitter)
   ]
 
-  const enhancers = [applyMiddleware(...middlewares)]
+  // https://github.com/react-boilerplate/redux-injectors#setting-up-the-redux-store
+  const enhancers = [
+    createInjectorsEnhancer({
+      createReducer,
+      runSaga
+    })
+  ]
 
-  // If Redux DevTools Extension is installed use it, otherwise use Redux compose
-  /* eslint-disable no-underscore-dangle, indent, no-ternary */
-  const composeEnhancers =
-    process.env.NODE_ENV !== 'production' &&
-    typeof window === 'object' &&
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-      ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
-      : compose
-  /* eslint-enable */
+  // https://redux-toolkit.js.org/api/configureStore#full-example
+  const store = configureStore({
+    devTools: process.env.NODE_ENV !== 'production',
+    enhancers,
+    middleware: [...getDefaultMiddleware(), ...middlewares],
+    preloadedState: initialState,
+    reducer: createReducer()
+  })
 
-  const store = createStore(
-    createReducer(history),
-    fromJS(initialState),
-    composeEnhancers(...enhancers)
-  )
-
-  // Extensions
-  store.runSaga = sagaMiddleware.run
   // Reducer registry
   store.injectedReducers = {}
   // Saga registry
@@ -54,7 +53,7 @@ export default function configureStore(initialState = {}, history, actionEmitter
   /* istanbul ignore next */
   if (module.hot) {
     module.hot.accept('./reducers', () => {
-      store.replaceReducer(createReducer(history, store.injectedReducers))
+      forceReducerReload(store)
     })
   }
 

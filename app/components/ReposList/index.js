@@ -2,9 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import List from 'components/List'
-import ListItem from 'components/ListItem'
 import LoadingIndicator from 'components/LoadingIndicator'
 import RepoListItem from 'containers/RepoListItem'
+
+import ErrorListItem from './ErrorListItem'
+import EmptyListItem from './EmptyListItem'
 
 function ReposList({loading, error, repos}) {
   if (loading) {
@@ -12,13 +14,14 @@ function ReposList({loading, error, repos}) {
   }
 
   if (error !== false) {
-    const ErrorComponent = () =>
-      <ListItem item="Something went wrong, please try again!" />
-    return <List component={ErrorComponent} />
+    return <List component={ErrorListItem} />
   }
 
   if (repos !== false) {
-    return <List items={repos} component={RepoListItem} />
+    if (repos.length) {
+      return <List items={repos} component={RepoListItem} />
+    }
+    return <List items={repos} component={EmptyListItem} />
   }
 
   return null

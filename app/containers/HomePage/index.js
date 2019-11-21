@@ -11,30 +11,32 @@ import {FormattedMessage} from 'react-intl'
 import {connect} from 'react-redux'
 import {compose} from 'redux'
 import {createStructuredSelector} from 'reselect'
-
-import injectReducer from 'utils/injectReducer'
-import injectSaga from 'utils/injectSaga'
+import noop from 'lodash/noop'
 import {
-  makeSelectError,
-  makeSelectLoading,
-  makeSelectRepos
-} from 'containers/App/selectors'
+  injectReducer,
+  injectSaga
+} from 'redux-injectors'
+
 import H2 from 'components/H2'
 import ReposList from 'components/ReposList'
+import repositoriesReducer, {
+  actions as repositoriesActions,
+  saga as repositoriesSaga,
+  selectors as repositoriesSelectors
+} from 'modules/repository/results'
+import reducer, {
+  actions,
+  selectors
+} from 'modules/pages/home'
+
 import AtPrefix from './AtPrefix'
 import CenteredSection from './CenteredSection'
 import Form from './Form'
 import Input from './Input'
 import Section from './Section'
 import messages from './messages'
-import {loadRepos} from '../App/actions'
-import {changeUsername} from './actions'
-import {makeSelectUsername} from './selectors'
-import reducer from './reducer'
-import saga from './saga'
 
-/* eslint-disable react/prefer-stateless-function */
-export class HomePage extends React.PureComponent {
+class HomePage extends React.PureComponent {
   /*
    * When initial state username is not null, submit the form to load repos
    */
@@ -45,13 +47,6 @@ export class HomePage extends React.PureComponent {
   }
 
   render() {
-    const {loading, error, repos} = this.props
-    const reposListProps = {
-      error,
-      loading,
-      repos
-    }
-
     return (
       <article>
         <Helmet>
@@ -89,7 +84,11 @@ export class HomePage extends React.PureComponent {
                 />
               </label>
             </Form>
-            <ReposList {...reposListProps} />
+            <ReposList
+              error={this.props.error}
+              loading={this.props.isLoading}
+              repos={this.props.repositories}
+            />
           </Section>
         </div>
       </article>
@@ -102,10 +101,10 @@ HomePage.propTypes = {
     PropTypes.object,
     PropTypes.bool
   ]),
-  loading: PropTypes.bool,
+  isLoading: PropTypes.bool,
   onChangeUsername: PropTypes.func,
   onSubmitForm: PropTypes.func,
-  repos: PropTypes.oneOfType([
+  repositories: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.bool
   ]),
@@ -114,42 +113,44 @@ HomePage.propTypes = {
 
 HomePage.defaultProps = {
   error: false,
-  loading: false,
-  onChangeUsername: null,
-  onSubmitForm: null,
-  repos: false,
+  isLoading: false,
+  onChangeUsername: noop,
+  onSubmitForm: noop,
+  repositories: false,
   username: ''
 }
 
-export function mapDispatchToProps(dispatch) {
-  return {
-    onChangeUsername: evt => dispatch(changeUsername(evt.target.value)),
-    onSubmitForm: evt => {
-      if (typeof evt !== 'undefined' && evt.preventDefault) {
-        evt.preventDefault()
-      }
-      dispatch(loadRepos())
-    }
-  }
-}
-
 const mapStateToProps = createStructuredSelector({
-  error: makeSelectError(),
-  loading: makeSelectLoading(),
-  repos: makeSelectRepos(),
-  username: makeSelectUsername()
+  error: repositoriesSelectors.selectError,
+  isLoading: repositoriesSelectors.selectIsLoading,
+  repositories: repositoriesSelectors.selectRepositories,
+  username: selectors.selectUsername
 })
 
-const withConnect = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)
+const mapDispatchToProps = dispatch => ({
+  onChangeUsername: event =>
+    dispatch(actions.changeUsername({username: event.target.value})),
+  onSubmitForm: event => {
+    if (typeof event !== 'undefined' && event.preventDefault) {
+      event.preventDefault()
+    }
+    dispatch(repositoriesActions.loadRepositories())
+  }
+})
 
-const withReducer = injectReducer({key: 'home', reducer})
-const withSaga = injectSaga({key: 'home', saga})
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+const withReducer = injectReducer(reducer)
+const withRepositoriesReducer = injectReducer(repositoriesReducer)
+const withRepositoriesSaga = injectSaga(repositoriesSaga)
+
+export {
+  HomePage,
+  mapDispatchToProps
+}
 
 export default compose(
+  withConnect,
   withReducer,
-  withSaga,
-  withConnect
+  withRepositoriesReducer,
+  withRepositoriesSaga
 )(HomePage)

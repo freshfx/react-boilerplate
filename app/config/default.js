@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys */
 import deepFreeze from 'deep-freeze'
 
 import features from 'config/_features'
@@ -5,6 +6,11 @@ import features from 'config/_features'
 const config = {
   app: {
     baseURL: 'http://localhost'
+  },
+
+  githubApi: {
+    hostname: 'api.github.com',
+    protocol: 'https'
   },
 
   features: {

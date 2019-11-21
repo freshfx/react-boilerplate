@@ -6,13 +6,14 @@ import React from 'react'
 import {shallow} from 'enzyme'
 
 import ReposList from 'components/ReposList'
+import {actions as repositoriesActions} from 'modules/repository/results'
+import {actions} from 'modules/pages/home'
+
 import {HomePage, mapDispatchToProps} from '../index'
-import {changeUsername} from '../actions'
-import {loadRepos} from '../../App/actions'
 
 describe('<HomePage />', () => {
   it('should render the repos list', () => {
-    const renderedComponent = shallow(<HomePage loading error={false} repos={[]} />)
+    const renderedComponent = shallow(<HomePage isLoading error={false} repositories={[]} />)
     expect(renderedComponent.contains(<ReposList loading error={false} repos={[]} />)).toEqual(true)
   })
 
@@ -55,7 +56,7 @@ describe('<HomePage />', () => {
         const result = mapDispatchToProps(dispatch)
         const username = 'mxstbr'
         result.onChangeUsername({target: {value: username}})
-        expect(dispatch).toHaveBeenCalledWith(changeUsername(username))
+        expect(dispatch).toHaveBeenCalledWith(actions.changeUsername({username}))
       })
     })
 
@@ -70,7 +71,7 @@ describe('<HomePage />', () => {
         const dispatch = jest.fn()
         const result = mapDispatchToProps(dispatch)
         result.onSubmitForm()
-        expect(dispatch).toHaveBeenCalledWith(loadRepos())
+        expect(dispatch).toHaveBeenCalledWith(repositoriesActions.loadRepositories())
       })
 
       it('should preventDefault if called with event', () => {

@@ -99,6 +99,9 @@
     "react/require-default-props": 2,
     "react/self-closing-comp": 2,
     "react/sort-comp": 0,
+    "react/jsx-props-no-spreading": [2, {
+      "exceptions": ["FormattedMessage"]
+    }],
     "redux-saga/no-yield-in-race": 2,
     "redux-saga/yield-effects": 2,
     "require-jsdoc": 0,
@@ -114,7 +117,8 @@
     {
       "files": "*.test.js",
       "rules": {
-        "no-magic-numbers": "off"
+        "no-magic-numbers": "off",
+        "react/jsx-props-no-spreading": "off"
       }
     }
   ],
