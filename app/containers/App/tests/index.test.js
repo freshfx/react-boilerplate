@@ -1,28 +1,38 @@
 import React from 'react'
-import {shallow} from 'enzyme'
-import {Route} from 'react-router-dom'
+import {render} from '@testing-library/react'
+import {HelmetProvider} from 'react-helmet-async'
 
-import Header from 'components/Header'
-import Footer from 'components/Footer'
 import {App, mapDispatchToProps} from '../index'
 
-const one = 1
-const zero = 0
+jest.mock('react-router-dom', () => ({
+  Route({path}) {
+    return <div data-testid={`route:${path}`} />
+  },
+  Switch(props) {
+    return <div data-testid="switch" {...props} />
+  },
+  withRouter(component) {
+    return component
+  }
+}))
 
-describe('<App />', () => {
+jest.mock('components/Header', () => () => <div>Header</div>)
+jest.mock('components/Footer', () => () => <div>Footer</div>)
+
+const renderComponent = (props = {}) =>
+  render(
+    <HelmetProvider>
+      <App {...props} />
+    </HelmetProvider>
+  )
+
+describe('App', () => {
   it('should render the header', () => {
-    const renderedComponent = shallow(<App />)
-    expect(renderedComponent.find(Header).length).toBe(one)
-  })
-
-  it('should render some routes', () => {
-    const renderedComponent = shallow(<App />)
-    expect(renderedComponent.find(Route).length).not.toBe(zero)
-  })
-
-  it('should render the footer', () => {
-    const renderedComponent = shallow(<App />)
-    expect(renderedComponent.find(Footer).length).toBe(one)
+    const {getByText, getByTestId} = renderComponent()
+    expect(getByText('Header')).toBeDefined()
+    expect(getByText('Footer')).toBeDefined()
+    expect(getByTestId('switch')).toBeDefined()
+    expect(getByTestId('switch').children).toHaveLength(3)
   })
 
   describe('mapDispatchToProps', () => {

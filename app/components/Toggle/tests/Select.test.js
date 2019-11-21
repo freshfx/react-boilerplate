@@ -1,13 +1,11 @@
-
-import 'jest-styled-components'
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import Select from '../Select'
 
-describe('<Select />', () => {
+describe('Select', () => {
   it('should match snapshot', () => {
-    const renderedComponent = mount(<Select />)
-    expect(renderedComponent).toMatchSnapshot()
+    const {container} = render(<Select />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

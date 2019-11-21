@@ -1,7 +1,6 @@
 import React from 'react'
-import 'jest-styled-components'
 import styled from 'styled-components'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import {link} from '../mixins'
 
@@ -12,13 +11,13 @@ describe('mixins', () => {
     const Component = getComponent(link)
 
     it('should render default style', () => {
-      const renderedComponent = mount(<Component />)
-      expect(renderedComponent).toMatchSnapshot()
+      const {container} = render(<Component />)
+      expect(container.firstChild).toMatchSnapshot()
     })
 
     it('should render highlight style', () => {
-      const renderedComponent = mount(<Component highlight />)
-      expect(renderedComponent).toMatchSnapshot()
+      const {container} = render(<Component highlight />)
+      expect(container.firstChild).toMatchSnapshot()
     })
   })
 })

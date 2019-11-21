@@ -37,6 +37,7 @@
       "allowArrowFunctions": true
     }],
     "function-call-argument-newline": [2, "consistent"],
+    "function-paren-newline": ["error", "consistent"],
     "implicit-arrow-linebreak": 0,
     "import/first": [2, "absolute-first"],
     "import/newline-after-import": 2,
@@ -118,7 +119,8 @@
       "files": "*.test.js",
       "rules": {
         "no-magic-numbers": "off",
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off"
       }
     }
   ],

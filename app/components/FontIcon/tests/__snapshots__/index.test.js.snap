@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FontIcon /> should render all icons 1`] = `
+exports[`FontIcon should render all icons 1`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -19,49 +19,13 @@ exports[`<FontIcon /> should render all icons 1`] = `
   content: "\\f101";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_album"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_album"
-  >
-    <span
-      className="c0"
-      name="icon_album"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 2`] = `
+exports[`FontIcon should render all icons 2`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -80,49 +44,13 @@ exports[`<FontIcon /> should render all icons 2`] = `
   content: "\\f102";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_arrow-up"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_arrow-up"
-  >
-    <span
-      className="c0"
-      name="icon_arrow-up"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 3`] = `
+exports[`FontIcon should render all icons 3`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -141,49 +69,13 @@ exports[`<FontIcon /> should render all icons 3`] = `
   content: "\\f103";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_attachment"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_attachment"
-  >
-    <span
-      className="c0"
-      name="icon_attachment"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 4`] = `
+exports[`FontIcon should render all icons 4`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -202,49 +94,13 @@ exports[`<FontIcon /> should render all icons 4`] = `
   content: "\\f104";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_calendar"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_calendar"
-  >
-    <span
-      className="c0"
-      name="icon_calendar"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 5`] = `
+exports[`FontIcon should render all icons 5`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -263,49 +119,13 @@ exports[`<FontIcon /> should render all icons 5`] = `
   content: "\\f105";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_checkbox-bold"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_checkbox-bold"
-  >
-    <span
-      className="c0"
-      name="icon_checkbox-bold"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 6`] = `
+exports[`FontIcon should render all icons 6`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -324,49 +144,13 @@ exports[`<FontIcon /> should render all icons 6`] = `
   content: "\\f106";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_checkbox-empty"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_checkbox-empty"
-  >
-    <span
-      className="c0"
-      name="icon_checkbox-empty"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 7`] = `
+exports[`FontIcon should render all icons 7`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -385,49 +169,13 @@ exports[`<FontIcon /> should render all icons 7`] = `
   content: "\\f107";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_checkbox"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_checkbox"
-  >
-    <span
-      className="c0"
-      name="icon_checkbox"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 8`] = `
+exports[`FontIcon should render all icons 8`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -446,49 +194,13 @@ exports[`<FontIcon /> should render all icons 8`] = `
   content: "\\f108";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_checked-bold"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_checked-bold"
-  >
-    <span
-      className="c0"
-      name="icon_checked-bold"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 9`] = `
+exports[`FontIcon should render all icons 9`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -507,49 +219,13 @@ exports[`<FontIcon /> should render all icons 9`] = `
   content: "\\f109";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_checked"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_checked"
-  >
-    <span
-      className="c0"
-      name="icon_checked"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 10`] = `
+exports[`FontIcon should render all icons 10`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -568,49 +244,13 @@ exports[`<FontIcon /> should render all icons 10`] = `
   content: "\\f10a";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_clock"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_clock"
-  >
-    <span
-      className="c0"
-      name="icon_clock"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 11`] = `
+exports[`FontIcon should render all icons 11`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -629,49 +269,13 @@ exports[`<FontIcon /> should render all icons 11`] = `
   content: "\\f10b";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_close-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_close-circle"
-  >
-    <span
-      className="c0"
-      name="icon_close-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 12`] = `
+exports[`FontIcon should render all icons 12`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -690,49 +294,13 @@ exports[`<FontIcon /> should render all icons 12`] = `
   content: "\\f10c";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_close"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_close"
-  >
-    <span
-      className="c0"
-      name="icon_close"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 13`] = `
+exports[`FontIcon should render all icons 13`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -751,49 +319,13 @@ exports[`<FontIcon /> should render all icons 13`] = `
   content: "\\f10d";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_contacts"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_contacts"
-  >
-    <span
-      className="c0"
-      name="icon_contacts"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 14`] = `
+exports[`FontIcon should render all icons 14`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -812,49 +344,13 @@ exports[`<FontIcon /> should render all icons 14`] = `
   content: "\\f10e";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_cut"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_cut"
-  >
-    <span
-      className="c0"
-      name="icon_cut"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 15`] = `
+exports[`FontIcon should render all icons 15`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -873,49 +369,13 @@ exports[`<FontIcon /> should render all icons 15`] = `
   content: "\\f10f";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_dashboard"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_dashboard"
-  >
-    <span
-      className="c0"
-      name="icon_dashboard"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 16`] = `
+exports[`FontIcon should render all icons 16`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -934,49 +394,13 @@ exports[`<FontIcon /> should render all icons 16`] = `
   content: "\\f110";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_down-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_down-circle"
-  >
-    <span
-      className="c0"
-      name="icon_down-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 17`] = `
+exports[`FontIcon should render all icons 17`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -995,49 +419,13 @@ exports[`<FontIcon /> should render all icons 17`] = `
   content: "\\f111";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_down-small"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_down-small"
-  >
-    <span
-      className="c0"
-      name="icon_down-small"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 18`] = `
+exports[`FontIcon should render all icons 18`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1056,49 +444,13 @@ exports[`<FontIcon /> should render all icons 18`] = `
   content: "\\f112";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_down"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_down"
-  >
-    <span
-      className="c0"
-      name="icon_down"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 19`] = `
+exports[`FontIcon should render all icons 19`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1117,49 +469,13 @@ exports[`<FontIcon /> should render all icons 19`] = `
   content: "\\f113";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_download-thin"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_download-thin"
-  >
-    <span
-      className="c0"
-      name="icon_download-thin"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 20`] = `
+exports[`FontIcon should render all icons 20`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1178,49 +494,13 @@ exports[`<FontIcon /> should render all icons 20`] = `
   content: "\\f114";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_download"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_download"
-  >
-    <span
-      className="c0"
-      name="icon_download"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 21`] = `
+exports[`FontIcon should render all icons 21`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1239,49 +519,13 @@ exports[`<FontIcon /> should render all icons 21`] = `
   content: "\\f115";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_edit"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_edit"
-  >
-    <span
-      className="c0"
-      name="icon_edit"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 22`] = `
+exports[`FontIcon should render all icons 22`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1300,49 +544,13 @@ exports[`<FontIcon /> should render all icons 22`] = `
   content: "\\f116";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_ellipsis-outline"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_ellipsis-outline"
-  >
-    <span
-      className="c0"
-      name="icon_ellipsis-outline"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 23`] = `
+exports[`FontIcon should render all icons 23`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1361,49 +569,13 @@ exports[`<FontIcon /> should render all icons 23`] = `
   content: "\\f117";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_ellipsis"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_ellipsis"
-  >
-    <span
-      className="c0"
-      name="icon_ellipsis"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 24`] = `
+exports[`FontIcon should render all icons 24`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1422,49 +594,13 @@ exports[`<FontIcon /> should render all icons 24`] = `
   content: "\\f118";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_embed"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_embed"
-  >
-    <span
-      className="c0"
-      name="icon_embed"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 25`] = `
+exports[`FontIcon should render all icons 25`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1483,49 +619,13 @@ exports[`<FontIcon /> should render all icons 25`] = `
   content: "\\f119";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_facebook"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_facebook"
-  >
-    <span
-      className="c0"
-      name="icon_facebook"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 26`] = `
+exports[`FontIcon should render all icons 26`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1544,49 +644,13 @@ exports[`<FontIcon /> should render all icons 26`] = `
   content: "\\f11a";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_failed"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_failed"
-  >
-    <span
-      className="c0"
-      name="icon_failed"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 27`] = `
+exports[`FontIcon should render all icons 27`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1605,49 +669,13 @@ exports[`<FontIcon /> should render all icons 27`] = `
   content: "\\f11b";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_favorite"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_favorite"
-  >
-    <span
-      className="c0"
-      name="icon_favorite"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 28`] = `
+exports[`FontIcon should render all icons 28`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1666,49 +694,13 @@ exports[`<FontIcon /> should render all icons 28`] = `
   content: "\\f11c";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_file-doc"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_file-doc"
-  >
-    <span
-      className="c0"
-      name="icon_file-doc"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 29`] = `
+exports[`FontIcon should render all icons 29`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1727,49 +719,13 @@ exports[`<FontIcon /> should render all icons 29`] = `
   content: "\\f11d";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_file-pdf"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_file-pdf"
-  >
-    <span
-      className="c0"
-      name="icon_file-pdf"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 30`] = `
+exports[`FontIcon should render all icons 30`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1788,49 +744,13 @@ exports[`<FontIcon /> should render all icons 30`] = `
   content: "\\f11e";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_file-zip"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_file-zip"
-  >
-    <span
-      className="c0"
-      name="icon_file-zip"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 31`] = `
+exports[`FontIcon should render all icons 31`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1849,49 +769,13 @@ exports[`<FontIcon /> should render all icons 31`] = `
   content: "\\f11f";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_file"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_file"
-  >
-    <span
-      className="c0"
-      name="icon_file"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 32`] = `
+exports[`FontIcon should render all icons 32`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1910,49 +794,13 @@ exports[`<FontIcon /> should render all icons 32`] = `
   content: "\\f120";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_global"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_global"
-  >
-    <span
-      className="c0"
-      name="icon_global"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 33`] = `
+exports[`FontIcon should render all icons 33`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -1971,49 +819,13 @@ exports[`<FontIcon /> should render all icons 33`] = `
   content: "\\f121";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_image"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_image"
-  >
-    <span
-      className="c0"
-      name="icon_image"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 34`] = `
+exports[`FontIcon should render all icons 34`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2032,49 +844,13 @@ exports[`<FontIcon /> should render all icons 34`] = `
   content: "\\f122";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_info"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_info"
-  >
-    <span
-      className="c0"
-      name="icon_info"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 35`] = `
+exports[`FontIcon should render all icons 35`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2093,49 +869,13 @@ exports[`<FontIcon /> should render all icons 35`] = `
   content: "\\f123";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_left-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_left-circle"
-  >
-    <span
-      className="c0"
-      name="icon_left-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 36`] = `
+exports[`FontIcon should render all icons 36`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2154,49 +894,13 @@ exports[`<FontIcon /> should render all icons 36`] = `
   content: "\\f124";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_left-small"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_left-small"
-  >
-    <span
-      className="c0"
-      name="icon_left-small"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 37`] = `
+exports[`FontIcon should render all icons 37`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2215,49 +919,13 @@ exports[`<FontIcon /> should render all icons 37`] = `
   content: "\\f125";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_left"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_left"
-  >
-    <span
-      className="c0"
-      name="icon_left"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 38`] = `
+exports[`FontIcon should render all icons 38`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2276,49 +944,13 @@ exports[`<FontIcon /> should render all icons 38`] = `
   content: "\\f126";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_letter"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_letter"
-  >
-    <span
-      className="c0"
-      name="icon_letter"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 39`] = `
+exports[`FontIcon should render all icons 39`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2337,49 +969,13 @@ exports[`<FontIcon /> should render all icons 39`] = `
   content: "\\f127";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_linkedin-outline"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_linkedin-outline"
-  >
-    <span
-      className="c0"
-      name="icon_linkedin-outline"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 40`] = `
+exports[`FontIcon should render all icons 40`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2398,49 +994,13 @@ exports[`<FontIcon /> should render all icons 40`] = `
   content: "\\f128";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_linkedin"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_linkedin"
-  >
-    <span
-      className="c0"
-      name="icon_linkedin"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 41`] = `
+exports[`FontIcon should render all icons 41`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2459,49 +1019,13 @@ exports[`<FontIcon /> should render all icons 41`] = `
   content: "\\f129";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_list-view"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_list-view"
-  >
-    <span
-      className="c0"
-      name="icon_list-view"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 42`] = `
+exports[`FontIcon should render all icons 42`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2520,49 +1044,13 @@ exports[`<FontIcon /> should render all icons 42`] = `
   content: "\\f12a";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_lock"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_lock"
-  >
-    <span
-      className="c0"
-      name="icon_lock"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 43`] = `
+exports[`FontIcon should render all icons 43`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2581,49 +1069,13 @@ exports[`<FontIcon /> should render all icons 43`] = `
   content: "\\f12b";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_magazine-view"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_magazine-view"
-  >
-    <span
-      className="c0"
-      name="icon_magazine-view"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 44`] = `
+exports[`FontIcon should render all icons 44`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2642,49 +1094,13 @@ exports[`<FontIcon /> should render all icons 44`] = `
   content: "\\f12c";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_minus-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_minus-circle"
-  >
-    <span
-      className="c0"
-      name="icon_minus-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 45`] = `
+exports[`FontIcon should render all icons 45`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2703,49 +1119,13 @@ exports[`<FontIcon /> should render all icons 45`] = `
   content: "\\f12d";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_mobile"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_mobile"
-  >
-    <span
-      className="c0"
-      name="icon_mobile"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 46`] = `
+exports[`FontIcon should render all icons 46`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2764,49 +1144,13 @@ exports[`<FontIcon /> should render all icons 46`] = `
   content: "\\f12e";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_music"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_music"
-  >
-    <span
-      className="c0"
-      name="icon_music"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 47`] = `
+exports[`FontIcon should render all icons 47`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2825,49 +1169,13 @@ exports[`<FontIcon /> should render all icons 47`] = `
   content: "\\f12f";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_paste"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_paste"
-  >
-    <span
-      className="c0"
-      name="icon_paste"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 48`] = `
+exports[`FontIcon should render all icons 48`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2886,49 +1194,13 @@ exports[`<FontIcon /> should render all icons 48`] = `
   content: "\\f130";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_picture"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_picture"
-  >
-    <span
-      className="c0"
-      name="icon_picture"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 49`] = `
+exports[`FontIcon should render all icons 49`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -2947,49 +1219,13 @@ exports[`<FontIcon /> should render all icons 49`] = `
   content: "\\f131";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_play"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_play"
-  >
-    <span
-      className="c0"
-      name="icon_play"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 50`] = `
+exports[`FontIcon should render all icons 50`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3008,49 +1244,13 @@ exports[`<FontIcon /> should render all icons 50`] = `
   content: "\\f132";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_plus-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_plus-circle"
-  >
-    <span
-      className="c0"
-      name="icon_plus-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 51`] = `
+exports[`FontIcon should render all icons 51`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3069,49 +1269,13 @@ exports[`<FontIcon /> should render all icons 51`] = `
   content: "\\f133";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_popout"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_popout"
-  >
-    <span
-      className="c0"
-      name="icon_popout"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 52`] = `
+exports[`FontIcon should render all icons 52`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3130,49 +1294,13 @@ exports[`<FontIcon /> should render all icons 52`] = `
   content: "\\f134";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_questionmark-full"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_questionmark-full"
-  >
-    <span
-      className="c0"
-      name="icon_questionmark-full"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 53`] = `
+exports[`FontIcon should render all icons 53`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3191,49 +1319,13 @@ exports[`<FontIcon /> should render all icons 53`] = `
   content: "\\f135";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_questionmark"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_questionmark"
-  >
-    <span
-      className="c0"
-      name="icon_questionmark"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 54`] = `
+exports[`FontIcon should render all icons 54`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3252,49 +1344,13 @@ exports[`<FontIcon /> should render all icons 54`] = `
   content: "\\f136";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_restore"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_restore"
-  >
-    <span
-      className="c0"
-      name="icon_restore"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 55`] = `
+exports[`FontIcon should render all icons 55`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3313,49 +1369,13 @@ exports[`<FontIcon /> should render all icons 55`] = `
   content: "\\f137";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_right-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_right-circle"
-  >
-    <span
-      className="c0"
-      name="icon_right-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 56`] = `
+exports[`FontIcon should render all icons 56`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3374,49 +1394,13 @@ exports[`<FontIcon /> should render all icons 56`] = `
   content: "\\f138";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_right-small"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_right-small"
-  >
-    <span
-      className="c0"
-      name="icon_right-small"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 57`] = `
+exports[`FontIcon should render all icons 57`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3435,49 +1419,13 @@ exports[`<FontIcon /> should render all icons 57`] = `
   content: "\\f139";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_right"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_right"
-  >
-    <span
-      className="c0"
-      name="icon_right"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 58`] = `
+exports[`FontIcon should render all icons 58`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3496,49 +1444,13 @@ exports[`<FontIcon /> should render all icons 58`] = `
   content: "\\f13a";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_saleitem"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_saleitem"
-  >
-    <span
-      className="c0"
-      name="icon_saleitem"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 59`] = `
+exports[`FontIcon should render all icons 59`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3557,49 +1469,13 @@ exports[`<FontIcon /> should render all icons 59`] = `
   content: "\\f13b";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_search"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_search"
-  >
-    <span
-      className="c0"
-      name="icon_search"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 60`] = `
+exports[`FontIcon should render all icons 60`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3618,49 +1494,13 @@ exports[`<FontIcon /> should render all icons 60`] = `
   content: "\\f13c";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_settings"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_settings"
-  >
-    <span
-      className="c0"
-      name="icon_settings"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 61`] = `
+exports[`FontIcon should render all icons 61`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3679,49 +1519,13 @@ exports[`<FontIcon /> should render all icons 61`] = `
   content: "\\f13d";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_share"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_share"
-  >
-    <span
-      className="c0"
-      name="icon_share"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 62`] = `
+exports[`FontIcon should render all icons 62`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3740,49 +1544,13 @@ exports[`<FontIcon /> should render all icons 62`] = `
   content: "\\f13e";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_shopping-cart"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_shopping-cart"
-  >
-    <span
-      className="c0"
-      name="icon_shopping-cart"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 63`] = `
+exports[`FontIcon should render all icons 63`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3801,49 +1569,13 @@ exports[`<FontIcon /> should render all icons 63`] = `
   content: "\\f13f";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_sound"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_sound"
-  >
-    <span
-      className="c0"
-      name="icon_sound"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 64`] = `
+exports[`FontIcon should render all icons 64`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3862,49 +1594,13 @@ exports[`<FontIcon /> should render all icons 64`] = `
   content: "\\f140";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_star-filled-add"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_star-filled-add"
-  >
-    <span
-      className="c0"
-      name="icon_star-filled-add"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 65`] = `
+exports[`FontIcon should render all icons 65`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3923,49 +1619,13 @@ exports[`<FontIcon /> should render all icons 65`] = `
   content: "\\f141";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_star-outline-add"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_star-outline-add"
-  >
-    <span
-      className="c0"
-      name="icon_star-outline-add"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 66`] = `
+exports[`FontIcon should render all icons 66`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -3984,49 +1644,13 @@ exports[`<FontIcon /> should render all icons 66`] = `
   content: "\\f142";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_star"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_star"
-  >
-    <span
-      className="c0"
-      name="icon_star"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 67`] = `
+exports[`FontIcon should render all icons 67`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4045,49 +1669,13 @@ exports[`<FontIcon /> should render all icons 67`] = `
   content: "\\f143";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_stopwatch"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_stopwatch"
-  >
-    <span
-      className="c0"
-      name="icon_stopwatch"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 68`] = `
+exports[`FontIcon should render all icons 68`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4106,49 +1694,13 @@ exports[`<FontIcon /> should render all icons 68`] = `
   content: "\\f144";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_story"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_story"
-  >
-    <span
-      className="c0"
-      name="icon_story"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 69`] = `
+exports[`FontIcon should render all icons 69`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4167,49 +1719,13 @@ exports[`<FontIcon /> should render all icons 69`] = `
   content: "\\f145";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_tile-view"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_tile-view"
-  >
-    <span
-      className="c0"
-      name="icon_tile-view"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 70`] = `
+exports[`FontIcon should render all icons 70`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4228,49 +1744,13 @@ exports[`<FontIcon /> should render all icons 70`] = `
   content: "\\f146";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_trash"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_trash"
-  >
-    <span
-      className="c0"
-      name="icon_trash"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 71`] = `
+exports[`FontIcon should render all icons 71`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4289,49 +1769,13 @@ exports[`<FontIcon /> should render all icons 71`] = `
   content: "\\f147";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_twitter_full"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_twitter_full"
-  >
-    <span
-      className="c0"
-      name="icon_twitter_full"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 72`] = `
+exports[`FontIcon should render all icons 72`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4350,49 +1794,13 @@ exports[`<FontIcon /> should render all icons 72`] = `
   content: "\\f148";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_twitter-outline"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_twitter-outline"
-  >
-    <span
-      className="c0"
-      name="icon_twitter-outline"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 73`] = `
+exports[`FontIcon should render all icons 73`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4411,49 +1819,13 @@ exports[`<FontIcon /> should render all icons 73`] = `
   content: "\\f149";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_twitter"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_twitter"
-  >
-    <span
-      className="c0"
-      name="icon_twitter"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 74`] = `
+exports[`FontIcon should render all icons 74`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4472,49 +1844,13 @@ exports[`<FontIcon /> should render all icons 74`] = `
   content: "\\f14a";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_up-circle"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_up-circle"
-  >
-    <span
-      className="c0"
-      name="icon_up-circle"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 75`] = `
+exports[`FontIcon should render all icons 75`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4533,49 +1869,13 @@ exports[`<FontIcon /> should render all icons 75`] = `
   content: "\\f14b";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_up-small"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_up-small"
-  >
-    <span
-      className="c0"
-      name="icon_up-small"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 76`] = `
+exports[`FontIcon should render all icons 76`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4594,49 +1894,13 @@ exports[`<FontIcon /> should render all icons 76`] = `
   content: "\\f14c";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_up"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_up"
-  >
-    <span
-      className="c0"
-      name="icon_up"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 77`] = `
+exports[`FontIcon should render all icons 77`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4655,49 +1919,13 @@ exports[`<FontIcon /> should render all icons 77`] = `
   content: "\\f14d";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_user"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_user"
-  >
-    <span
-      className="c0"
-      name="icon_user"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 78`] = `
+exports[`FontIcon should render all icons 78`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4716,49 +1944,13 @@ exports[`<FontIcon /> should render all icons 78`] = `
   content: "\\f14e";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_users"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_users"
-  >
-    <span
-      className="c0"
-      name="icon_users"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 79`] = `
+exports[`FontIcon should render all icons 79`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4777,49 +1969,13 @@ exports[`<FontIcon /> should render all icons 79`] = `
   content: "\\f14f";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_video"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_video"
-  >
-    <span
-      className="c0"
-      name="icon_video"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 80`] = `
+exports[`FontIcon should render all icons 80`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4838,49 +1994,13 @@ exports[`<FontIcon /> should render all icons 80`] = `
   content: "\\f150";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_zoom-lightbox"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_zoom-lightbox"
-  >
-    <span
-      className="c0"
-      name="icon_zoom-lightbox"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render all icons 81`] = `
+exports[`FontIcon should render all icons 81`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4899,49 +2019,13 @@ exports[`<FontIcon /> should render all icons 81`] = `
   content: "\\f151";
 }
 
-<FontIcon__FontIconWrapper
+<span
+  class="c0"
   name="icon_zoom"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_zoom"
-  >
-    <span
-      className="c0"
-      name="icon_zoom"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render flipped 1`] = `
+exports[`FontIcon should render flipped 1`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -4963,51 +2047,13 @@ exports[`<FontIcon /> should render flipped 1`] = `
   content: "\\f101";
 }
 
-<FontIcon__FontIconWrapper
-  flipped={true}
+<span
+  class="c0"
   name="icon_album"
->
-  <StyledComponent
-    flipped={true}
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_album"
-  >
-    <span
-      className="c0"
-      name="icon_album"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;
 
-exports[`<FontIcon /> should render with fixed width 1`] = `
+exports[`FontIcon should render with fixed width 1`] = `
 .c0 {
   font-family: 'icons' !important;
   display: inline-block;
@@ -5028,46 +2074,8 @@ exports[`<FontIcon /> should render with fixed width 1`] = `
   content: "\\f101";
 }
 
-<FontIcon__FontIconWrapper
-  fixedWidth={true}
+<span
+  class="c0"
   name="icon_album"
->
-  <StyledComponent
-    fixedWidth={true}
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "FontIcon__FontIconWrapper-rql5kj-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "font-family:'icons' !important;display:inline-block;speak:none;font-size:inherit;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-          ],
-        },
-        "displayName": "FontIcon__FontIconWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "FontIcon__FontIconWrapper-rql5kj-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    name="icon_album"
-  >
-    <span
-      className="c0"
-      name="icon_album"
-    />
-  </StyledComponent>
-</FontIcon__FontIconWrapper>
+/>
 `;

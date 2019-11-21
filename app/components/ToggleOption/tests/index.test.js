@@ -1,28 +1,32 @@
 import React from 'react'
-import {mount, shallow} from 'enzyme'
+import {render} from '@testing-library/react'
 import {IntlProvider, defineMessages} from 'react-intl'
 
 import ToggleOption from '../index'
 
-describe('<ToggleOption />', () => {
+const renderComponent = (props = {}) => render(
+  <IntlProvider locale="en">
+    <ToggleOption {...props} />
+  </IntlProvider>
+)
+
+describe('ToggleOption', () => {
   it('should render default language messages', () => {
-    const defaultEnMessage = 'someContent'
+    const defaultMessage = 'someContent'
+    const value = 'en'
     const message = defineMessages({
       enMessage: {
-        defaultMessage: defaultEnMessage,
+        defaultMessage,
         id: 'boilerplate.containers.LocaleToggle.en'
       }
     })
-    const renderedComponent = shallow(<IntlProvider locale="en">
-      <ToggleOption value="en" message={message.enMessage} />
-    </IntlProvider>)
-    expect(renderedComponent.contains(<ToggleOption value="en" message={message.enMessage} />)).toBe(true)
+    const {getByText} = renderComponent({message: message.enMessage, value})
+    expect(getByText(defaultMessage)).toHaveAttribute('value', value)
   })
 
-  it('should display `value`(two letter language code) when `message` is absent', () => {
-    const renderedComponent = mount(<IntlProvider locale="en">
-      <ToggleOption value="en" />
-    </IntlProvider>)
-    expect(renderedComponent.text()).toBe('en')
+  xit('should display `value`(two letter language code) when `message` is absent', () => {
+    const value = 'en'
+    const {getByText} = renderComponent({value})
+    expect(getByText(value)).toHaveAttribute('value', value)
   })
 })

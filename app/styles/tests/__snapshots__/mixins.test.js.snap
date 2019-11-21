@@ -13,45 +13,9 @@ exports[`mixins link should render default style 1`] = `
   text-decoration: none;
 }
 
-<mixinstest>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "mixinstest-zkb8de-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "color:",
-            [Function],
-            ";text-decoration:",
-            "none",
-            ";&:hover{color:",
-            [Function],
-            ";text-decoration:",
-            "none",
-            ";}",
-          ],
-        },
-        "displayName": "mixinstest",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "mixinstest-zkb8de-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</mixinstest>
+<div
+  class="c0"
+/>
 `;
 
 exports[`mixins link should render highlight style 1`] = `
@@ -67,46 +31,7 @@ exports[`mixins link should render highlight style 1`] = `
   text-decoration: none;
 }
 
-<mixinstest
-  highlight={true}
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "mixinstest-zkb8de-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "color:",
-            [Function],
-            ";text-decoration:",
-            "none",
-            ";&:hover{color:",
-            [Function],
-            ";text-decoration:",
-            "none",
-            ";}",
-          ],
-        },
-        "displayName": "mixinstest",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "mixinstest-zkb8de-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    highlight={true}
-  >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</mixinstest>
+<div
+  class="c0"
+/>
 `;

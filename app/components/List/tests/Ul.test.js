@@ -1,14 +1,11 @@
-import 'jest-styled-components'
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import Ul from '../Ul'
 
-const renderComponent = (props = {}) => mount(<Ul {...props} />)
-
-describe('<Ul />', () => {
+describe('Ul', () => {
   it('should match snapshot', () => {
-    const renderedComponent = renderComponent()
-    expect(renderedComponent).toMatchSnapshot()
+    const {container} = render(<Ul />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

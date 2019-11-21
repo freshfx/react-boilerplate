@@ -1,16 +1,24 @@
 import React from 'react'
-import {shallow} from 'enzyme'
-import {FormattedMessage} from 'react-intl'
+import {render} from '@testing-library/react'
+import {HelmetProvider} from 'react-helmet-async'
+import {IntlProvider} from 'react-intl'
 
-import H1 from 'components/H1'
-import messages from '../messages'
 import FeaturePage from '../index'
 
+jest.mock('components/H1', () => props => <h1 {...props}>{props.children}</h1>)
+
+const renderComponent = (props = {}) =>
+  render(
+    <IntlProvider locale="en">
+      <HelmetProvider>
+        <FeaturePage {...props} />
+      </HelmetProvider>
+    </IntlProvider>
+  )
+
 describe('<FeaturePage />', () => {
-  it('should render its heading', () => {
-    const renderedComponent = shallow(<FeaturePage />)
-    expect(renderedComponent.contains(<H1>
-      <FormattedMessage {...messages.header} />
-    </H1>)).toBe(true)
+  it('should match snapshot', () => {
+    const {container} = renderComponent()
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

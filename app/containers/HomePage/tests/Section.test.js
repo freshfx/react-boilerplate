@@ -1,15 +1,12 @@
-import 'jest-styled-components'
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import Section from '../Section'
 
-const renderComponent = (props = {}) => mount(<Section {...props} />)
-
-describe('<Section />', () => {
+describe('Section', () => {
   it('should match snapshot', () => {
-    const renderedComponent = renderComponent()
-    expect(renderedComponent).toMatchSnapshot()
+    const {container} = render(<Section />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Section /> should match snapshot 1`] = `
+exports[`Section should match snapshot 1`] = `
 .c0 {
   margin: 3em auto;
 }
@@ -9,35 +9,7 @@ exports[`<Section /> should match snapshot 1`] = `
   margin-top: 0;
 }
 
-<Section>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Section-sc-1eulrsm-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "margin:3em auto;&:first-child{margin-top:0;}",
-          ],
-        },
-        "displayName": "Section",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Section-sc-1eulrsm-0",
-        "target": "section",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <section
-      className="c0"
-    />
-  </StyledComponent>
-</Section>
+<section
+  class="c0"
+/>
 `;

@@ -1,39 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Form /> should match snapshot 1`] = `
+exports[`Form should match snapshot 1`] = `
 .c0 {
   margin-bottom: 1em;
 }
 
-<Form>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Form-dmhz4x-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "margin-bottom:1em;",
-          ],
-        },
-        "displayName": "Form",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Form-dmhz4x-0",
-        "target": "form",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <form
-      className="c0"
-    />
-  </StyledComponent>
-</Form>
+<form
+  class="c0"
+/>
 `;

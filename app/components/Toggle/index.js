@@ -1,11 +1,6 @@
-/**
- *
- * LocaleToggle
- *
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
+import noop from 'lodash/noop'
 
 import Select from './Select'
 import ToggleOption from '../ToggleOption'
@@ -35,7 +30,7 @@ Toggle.propTypes = {
 
 Toggle.defaultProps = {
   messages: {},
-  onToggle: null,
+  onToggle: noop,
   value: '',
   values: []
 }

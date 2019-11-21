@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Anchor /> should match snapshot 1`] = `
+exports[`Anchor should match snapshot 1`] = `
 .c0 {
   color: #41addd;
 }
@@ -9,41 +9,8 @@ exports[`<Anchor /> should match snapshot 1`] = `
   color: #6cc0e5;
 }
 
-<Anchor
+<a
+  class="c0"
   href="http://mxstbr.com/"
->
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Anchor-aulrtc-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "color:#41addd;&:hover{color:#6cc0e5;}",
-          ],
-        },
-        "displayName": "Anchor",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Anchor-aulrtc-0",
-        "target": "a",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    href="http://mxstbr.com/"
-  >
-    <a
-      className="c0"
-      href="http://mxstbr.com/"
-    >
-      Test
-    </a>
-  </StyledComponent>
-</Anchor>
+/>
 `;

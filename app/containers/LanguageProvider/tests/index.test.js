@@ -1,47 +1,27 @@
 import React from 'react'
-import {mount, shallow} from 'enzyme'
+import {render} from '@testing-library/react'
 import {FormattedMessage, defineMessages} from 'react-intl'
-import {Provider} from 'react-redux'
-import {createMemoryHistory as createHistory} from 'history'
 
-import ConnectedLanguageProvider, {LanguageProvider} from '../index'
-import configureStore from '../../../configure-store'
+import {LanguageProvider} from '../index'
 
-import {translationMessages} from '../../../i18n'
-
-const history = createHistory()
+const message = 'This is some default message'
 
 const messages = defineMessages({
   someMessage: {
-    defaultMessage: 'This is some default message',
-    en: 'This is some en message',
+    defaultMessage: message,
     id: 'some.id'
   }
 })
 
-describe('<LanguageProvider />', () => {
-  it('should render its children', () => {
-    const children = <h1>Test</h1>
-    const renderedComponent = shallow(<LanguageProvider messages={messages} locale="en">
-      {children}
-    </LanguageProvider>)
-    expect(renderedComponent.contains(children)).toBe(true)
-  })
-})
+const renderComponent = locale => render(
+  <LanguageProvider locale={locale}>
+    <FormattedMessage {...messages.someMessage} />
+  </LanguageProvider>
+)
 
-describe('<ConnectedLanguageProvider />', () => {
-  let store = {}
-
-  beforeAll(() => {
-    store = configureStore({}, history)
-  })
-
-  it('should render the default language messages', () => {
-    const renderedComponent = mount(<Provider store={store}>
-      <ConnectedLanguageProvider messages={translationMessages}>
-        <FormattedMessage {...messages.someMessage} />
-      </ConnectedLanguageProvider>
-    </Provider>)
-    expect(renderedComponent.contains(<FormattedMessage {...messages.someMessage} />)).toBe(true)
+describe('LanguageProvider', () => {
+  it('should use defaultMessage', () => {
+    const {getByText} = renderComponent('en')
+    expect(getByText(message)).toBeDefined()
   })
 })

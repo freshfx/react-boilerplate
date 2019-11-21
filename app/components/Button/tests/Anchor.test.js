@@ -1,15 +1,11 @@
-import 'jest-styled-components'
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import Anchor from '../Anchor'
 
-const renderComponent = (props = {}) => mount(<Anchor {...props} />)
-
-describe('<Anchor />', () => {
+describe('Anchor', () => {
   it('should match snapshot', () => {
-    const renderedComponent = renderComponent()
-    expect(renderedComponent).toMatchSnapshot()
+    const {container} = render(<Anchor href="http://mxstbr.com/" />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
-

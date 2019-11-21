@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Wrapper /> should match snapshot 1`] = `
+exports[`Wrapper should match snapshot 1`] = `
 .c0 {
   margin: 2em auto;
   width: 40px;
@@ -8,35 +8,7 @@ exports[`<Wrapper /> should match snapshot 1`] = `
   position: relative;
 }
 
-<Wrapper>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Wrapper-sc-12uw37d-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "margin:2em auto;width:40px;height:40px;position:relative;",
-          ],
-        },
-        "displayName": "Wrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Wrapper-sc-12uw37d-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</Wrapper>
+<div
+  class="c0"
+/>
 `;

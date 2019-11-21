@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Item /> should match snapshot 1`] = `
+exports[`Item should match snapshot 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,35 +18,7 @@ exports[`<Item /> should match snapshot 1`] = `
   align-items: center;
 }
 
-<Item>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Item-sc-3y9mie-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:flex;justify-content:space-between;width:100%;height:100%;align-items:center;",
-          ],
-        },
-        "displayName": "Item",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Item-sc-3y9mie-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</Item>
+<div
+  class="c0"
+/>
 `;

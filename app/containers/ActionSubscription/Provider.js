@@ -20,37 +20,24 @@ class ActionSubscriptionProvider extends React.Component {
   }
 
   subscription = actionType => {
-    if (this.subscribers[actionType]) {
-      Object.values(this.subscribers[actionType])
-        .forEach(subscriber => subscriber())
-    }
-  }
-
-  getSubscribersForType = actionType => {
-    if (this.subscribers[actionType]) {
-      return this.subscribers[actionType]
-    }
-    return {}
+    const {[actionType]: subscribers = {}} = this.subscribers
+    Object.values(subscribers).forEach(subscriber => subscriber())
   }
 
   addSubscriber = (actionType, subscriber, id = uuid()) => {
-    const existingSubscribers = this.getSubscribersForType(actionType)
+    const {[actionType]: existingSubscribers = {}} = this.subscribers
     this.subscribers[actionType] = {
       ...existingSubscribers,
       [id]: subscriber
     }
   }
 
-  removeSubscriber = (actionType, identifier = null) => {
-    if (identifier) {
-      if (this.subscribers[actionType]) {
-        delete this.subscribers[actionType][identifier]
-        if (isEmpty(this.subscribers[actionType])) {
-          delete this.subscribers[actionType]
-        }
+  removeSubscriber = (actionType, identifier) => {
+    if (this.subscribers[actionType]) {
+      delete this.subscribers[actionType][identifier]
+      if (isEmpty(this.subscribers[actionType])) {
+        delete this.subscribers[actionType]
       }
-    } else {
-      delete this.subscribers[actionType]
     }
   }
 

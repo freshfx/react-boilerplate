@@ -1,13 +1,24 @@
 import React from 'react'
-import {shallow} from 'enzyme'
+import {render} from '@testing-library/react'
+import {IntlProvider} from 'react-intl'
 
 import Header from '../index'
 
-const one = 1
+jest.mock('react-router-dom', () => ({
+  Link(props) {
+    return <a {...props} href={props.to} />
+  }
+}))
 
-describe('<Header />', () => {
-  it('should render a div', () => {
-    const renderedComponent = shallow(<Header />)
-    expect(renderedComponent.find('div').length).toEqual(one)
+const renderComponent = () => render(
+  <IntlProvider locale="en">
+    <Header />
+  </IntlProvider>
+)
+
+describe('Header', () => {
+  it('should match snapshot', () => {
+    const {container} = renderComponent()
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

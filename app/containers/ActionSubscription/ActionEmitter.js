@@ -12,6 +12,7 @@ class ActionEmitter {
   }
 
   emit = actionType => {
+    /* istanbul ignore else */
     if (this.subscriber) {
       this.subscriber(actionType)
     }

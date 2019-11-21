@@ -3,20 +3,22 @@
  */
 
 import React from 'react'
-import {shallow} from 'enzyme'
-import {FormattedMessage} from 'react-intl'
+import {render} from '@testing-library/react'
+import {IntlProvider} from 'react-intl'
 
-import H1 from 'components/H1'
 import NotFound from '../index'
 
-describe('<NotFound />', () => {
-  it('should render the Page Not Found text', () => {
-    const renderedComponent = shallow(<NotFound />)
-    expect(renderedComponent.contains(<H1>
-      <FormattedMessage
-        id="boilerplate.containers.NotFoundPage.header"
-        defaultMessage="Page not found."
-      />
-    </H1>)).toEqual(true)
+jest.mock('components/H1', () => ({children}) => <h1>{children}</h1>)
+
+const renderComponent = (props = {}) => render(
+  <IntlProvider locale="en">
+    <NotFound {...props} />
+  </IntlProvider>
+)
+
+describe('NotFound', () => {
+  it('should match the snapshot', () => {
+    const {container} = renderComponent()
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

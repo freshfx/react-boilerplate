@@ -1,43 +1,38 @@
 import React from 'react'
-import {shallow} from 'enzyme'
+import {render} from '@testing-library/react'
 import {IntlProvider, defineMessages} from 'react-intl'
 
 import Toggle from '../index'
 
-const zero = 0
-const one = 1
+const renderComponent = (props = {}) => render(
+  <IntlProvider locale="en">
+    <Toggle {...props} />
+  </IntlProvider>
+)
 
-describe('<Toggle />', () => {
+describe('Toggle', () => {
   it('should contain default text', () => {
-    const defaultEnMessage = 'someContent'
-    const defaultDeMessage = 'someOtherContent'
-    const messages = defineMessages({
+    const messageData = {
       de: {
-        defaultMessage: defaultDeMessage,
+        defaultMessage: 'someOtherContent',
         id: 'boilerplate.containers.LocaleToggle.en'
       },
       en: {
-        defaultMessage: defaultEnMessage,
+        defaultMessage: 'someContent',
         id: 'boilerplate.containers.LocaleToggle.en'
       }
-    })
-    const renderedComponent = shallow(<IntlProvider locale="en">
-      <Toggle
-        values={[
-          'en',
-          'de'
-        ]} messages={messages} />
-    </IntlProvider>)
-    expect(renderedComponent.contains(<Toggle
-      values={[
-        'en',
-        'de'
-      ]} messages={messages} />)).toBe(true)
-    expect(renderedComponent.find('option').length).toBe(zero)
+    }
+    const messages = defineMessages(messageData)
+    const values = Object.keys(messageData)
+
+    const {container, getByText} = renderComponent({messages, values})
+    expect(container.firstChild.children).toHaveLength(2)
+    expect(getByText(messageData.de.defaultMessage)).toBeDefined()
+    expect(getByText(messageData.en.defaultMessage)).toBeDefined()
   })
+
   it('should not have ToggleOptions if props.values is not defined', () => {
-    const renderedComponent = shallow(<Toggle />)
-    expect(renderedComponent.contains(<option>--</option>)).toBe(true)
-    expect(renderedComponent.find('option').length).toBe(one)
+    const {getByText} = render(<Toggle />)
+    expect(getByText('--')).toBeDefined()
   })
 })

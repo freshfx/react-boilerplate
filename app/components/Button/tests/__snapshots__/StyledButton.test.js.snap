@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<StyledButton /> should match snapshot 1`] = `
+exports[`StyledButton should match snapshot 1`] = `
 .c0 {
   display: inline-block;
   box-sizing: border-box;
@@ -28,36 +28,7 @@ exports[`<StyledButton /> should match snapshot 1`] = `
   color: #fff;
 }
 
-<StyledButton>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledButton-t20ntd-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:inline-block;box-sizing:border-box;padding:0.25em 2em;text-decoration:none;border-radius:4px;-webkit-font-smoothing:antialiased;-webkit-touch-callout:none;user-select:none;cursor:pointer;outline:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:bold;font-size:16px;border:2px solid #41addd;color:#41addd;&:active{background:#41addd;color:#fff;}",
-            ";",
-          ],
-        },
-        "displayName": "StyledButton",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "StyledButton-t20ntd-0",
-        "target": "button",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <button
-      className="c0"
-    />
-  </StyledComponent>
-</StyledButton>
+<button
+  class="c0"
+/>
 `;

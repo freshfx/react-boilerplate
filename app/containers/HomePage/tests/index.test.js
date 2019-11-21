@@ -3,44 +3,54 @@
  */
 
 import React from 'react'
-import {shallow} from 'enzyme'
+import {render} from '@testing-library/react'
+import {IntlProvider} from 'react-intl'
+import {HelmetProvider} from 'react-helmet-async'
 
-import ReposList from 'components/ReposList'
 import {actions as repositoriesActions} from 'modules/repository/results'
 import {actions} from 'modules/pages/home'
 
 import {HomePage, mapDispatchToProps} from '../index'
 
-describe('<HomePage />', () => {
+jest.mock('components/ReposList', () => () => <div>Repos List</div>)
+
+const renderComponent = (props = {}) =>
+  render(
+    <IntlProvider locale="en">
+      <HelmetProvider>
+        <HomePage {...props} />
+      </HelmetProvider>
+    </IntlProvider>
+  )
+
+describe('HomePage', () => {
   it('should render the repos list', () => {
-    const renderedComponent = shallow(<HomePage isLoading error={false} repositories={[]} />)
-    expect(renderedComponent.contains(<ReposList loading error={false} repos={[]} />)).toEqual(true)
+    const props = {
+      error: false,
+      loading: false,
+      onSubmitForm: jest.fn(),
+      repos: []
+    }
+    const {container} = renderComponent(props)
+    expect(container.firstChild).toMatchSnapshot()
   })
 
-  it('should render fetch the repos on mount if a username exists', () => {
-    const submitSpy = jest.fn()
-    shallow(<HomePage
-      username="Not Empty"
-      onChangeUsername={() => {}}
-      onSubmitForm={submitSpy}
-    />)
-    expect(submitSpy).toHaveBeenCalled()
+  it('should fetch the repos on mount if a username exists', () => {
+    const props = {
+      onSubmitForm: jest.fn(),
+      username: 'github-user'
+    }
+    renderComponent(props)
+    expect(props.onSubmitForm).toHaveBeenCalledWith()
   })
 
-  it('should not call onSubmitForm if username is an empty string', () => {
-    const submitSpy = jest.fn()
-    shallow(<HomePage onChangeUsername={() => {}} onSubmitForm={submitSpy} />)
-    expect(submitSpy).not.toHaveBeenCalled()
-  })
+  it('should not fetch the repos on mount', () => {
+    const onSubmitForm = jest.fn()
+    renderComponent({onSubmitForm})
+    expect(onSubmitForm).not.toHaveBeenCalledWith()
 
-  it('should not call onSubmitForm if username is null', () => {
-    const submitSpy = jest.fn()
-    shallow(<HomePage
-      username=""
-      onChangeUsername={() => {}}
-      onSubmitForm={submitSpy}
-    />)
-    expect(submitSpy).not.toHaveBeenCalled()
+    renderComponent({onSubmitForm, username: ' '})
+    expect(onSubmitForm).not.toHaveBeenCalledWith()
   })
 
   describe('mapDispatchToProps', () => {

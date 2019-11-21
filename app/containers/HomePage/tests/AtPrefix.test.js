@@ -1,15 +1,12 @@
-import 'jest-styled-components'
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import AtPrefix from '../AtPrefix'
 
-const renderComponent = (props = {}) => mount(<AtPrefix {...props} />)
-
-describe('<AtPrefix />', () => {
+describe('AtPrefix', () => {
   it('should match snapshot', () => {
-    const renderedComponent = renderComponent()
-    expect(renderedComponent).toMatchSnapshot()
+    const {container} = render(<AtPrefix />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
 

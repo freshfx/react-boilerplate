@@ -1,15 +1,12 @@
-import 'jest-styled-components'
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import Form from '../Form'
 
-const renderComponent = (props = {}) => mount(<Form {...props} />)
-
-describe('<Form />', () => {
+describe('Form', () => {
   it('should match snapshot', () => {
-    const renderedComponent = renderComponent()
-    expect(renderedComponent).toMatchSnapshot()
+    const {container} = render(<Form />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
 

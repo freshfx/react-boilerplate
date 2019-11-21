@@ -1,28 +1,22 @@
 import React from 'react'
-import {shallow} from 'enzyme'
-import {FormattedMessage} from 'react-intl'
+import {render} from '@testing-library/react'
+import {IntlProvider} from 'react-intl'
 
-import Anchor from 'components/Anchor'
-import messages from '../messages'
 import Footer from '../index'
 
-describe('<Footer />', () => {
-  it('should render the copyright notice', () => {
-    const renderedComponent = shallow(<Footer />)
-    expect(renderedComponent.contains(<section>
-      <FormattedMessage {...messages.licenseMessage} />
-    </section>)).toBe(true)
-  })
+jest.mock('components/Anchor', () => props => <a {...props} />)
+jest.mock('containers/LocaleToggle', () => () => <div id="locale-toggle" />)
 
-  it('should render the credits', () => {
-    const renderedComponent = shallow(<Footer />)
-    expect(renderedComponent.contains(<section>
-      <FormattedMessage
-        {...messages.authorMessage}
-        values={{
-          author: <Anchor href="https://twitter.com/mxstbr">Max Stoiber</Anchor>
-        }}
-      />
-    </section>)).toBe(true)
+const renderComponent = () =>
+  render(
+    <IntlProvider locale="en">
+      <Footer />
+    </IntlProvider>
+  )
+
+describe('<Footer />', () => {
+  it('should match snapshot', () => {
+    const {container} = renderComponent()
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

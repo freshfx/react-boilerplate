@@ -1,24 +1,21 @@
 import React from 'react'
-import {mount} from 'enzyme'
+import {render} from '@testing-library/react'
 
 import Circle from '../Circle'
 
-const one = 1
-
-describe('<Circle />', () => {
-  it('should render an <div> tag', () => {
-    const renderedComponent = mount(<Circle />)
-    expect(renderedComponent.find('div').length).toEqual(one)
+describe('Circle', () => {
+  it('should match default snapshot', () => {
+    const {container} = render(<Circle />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 
-  it('should have a className attribute', () => {
-    const renderedComponent = mount(<Circle />)
-    expect(renderedComponent.find('div').prop('className')).toBeDefined()
+  it('should match snapshot with rotate', () => {
+    const {container} = render(<Circle rotate={10} />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 
-  it('should not adopt attributes', () => {
-    const id = 'test'
-    const renderedComponent = mount(<Circle id={id} />)
-    expect(renderedComponent.find('div').prop('id')).toBeUndefined()
+  it('should match snapshot with rotate & delay', () => {
+    const {container} = render(<Circle rotate={10} delay={100} />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

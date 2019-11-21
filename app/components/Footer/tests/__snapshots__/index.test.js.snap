@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 3em 0;
+  border-top: 1px solid #666;
+}
+
+<footer
+  class="c0"
+>
+  <section>
+    This project is licensed under the MIT license.
+  </section>
+  <section>
+    <div
+      id="locale-toggle"
+    />
+  </section>
+  <section>
+    
+      Made with love by 
+    <a
+      href="https://twitter.com/mxstbr"
+    >
+      Max Stoiber
+    </a>
+    .
+    
+  </section>
+</footer>
+`;
