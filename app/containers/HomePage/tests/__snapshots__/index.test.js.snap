@@ -1,5 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`HomePage should match the snapshot 1`] = `
+.c1 {
+  font-size: 1.5em;
+}
+
+.c4 {
+  color: black;
+  margin-left: 0.4em;
+}
+
+.c2 {
+  margin: 3em auto;
+}
+
+.c2:first-child {
+  margin-top: 0;
+}
+
+.c0 {
+  margin: 3em auto;
+  text-align: center;
+}
+
+.c0:first-child {
+  margin-top: 0;
+}
+
+.c3 {
+  margin-bottom: 1em;
+}
+
+.c5 {
+  outline: none;
+  border-bottom: 1px dotted #999;
+}
+
+<div>
+  <article>
+    <div>
+      <section
+        class="c0"
+      >
+        <h2
+          class="c1"
+        >
+          Start your next react project in seconds
+        </h2>
+        <p>
+          A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices
+        </p>
+      </section>
+      <section
+        class="c2"
+      >
+        <h2
+          class="c1"
+        >
+          Try me!
+        </h2>
+        <form
+          class="c3"
+        >
+          <label
+            for="username"
+          >
+            Show Github repositories by
+            <span
+              class="c4"
+            >
+              @
+            </span>
+            <input
+              class="c5"
+              id="username"
+              placeholder="mxstbr"
+              type="text"
+              value=""
+            />
+          </label>
+        </form>
+        <div>
+          Repos List
+        </div>
+      </section>
+    </div>
+  </article>
+</div>
+`;
+
 exports[`HomePage should render the repos list 1`] = `
 .c1 {
   font-size: 1.5em;

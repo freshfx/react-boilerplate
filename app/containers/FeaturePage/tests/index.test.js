@@ -16,7 +16,7 @@ const renderComponent = (props = {}) =>
     </IntlProvider>
   )
 
-describe('<FeaturePage />', () => {
+describe('FeaturePage', () => {
   it('should match snapshot', () => {
     const {container} = renderComponent()
     expect(container.firstChild).toMatchSnapshot()

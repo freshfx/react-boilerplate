@@ -3,7 +3,13 @@ import {render} from '@testing-library/react'
 
 import List from '../index'
 
-describe('<List />', () => {
+describe('List', () => {
+  it('should match snapshot', () => {
+    const Component = () => <div />
+    const {container} = render(<List component={Component} />)
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
   it('should render the component if no items are passed', () => {
     const id = 'list-children'
     const Component = () => <div data-testid={id} />

@@ -7,7 +7,7 @@ import ReposList from '../index'
 jest.mock('components/LoadingIndicator', () => () => <div data-testid="loading-indicator" />)
 jest.mock('containers/RepoListItem', () => ({id}) => <div data-testid={`repo-list-item-${id}`} />)
 
-describe('<ReposList />', () => {
+describe('ReposList', () => {
   it('should render the loading indicator when its loading', () => {
     const {getByTestId} = render(<ReposList loading />)
     expect(getByTestId('loading-indicator')).toBeDefined()
