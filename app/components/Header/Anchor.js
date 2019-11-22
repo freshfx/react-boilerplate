@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import NormalA from 'components/Anchor'
 
 const Anchor = styled(NormalA)`

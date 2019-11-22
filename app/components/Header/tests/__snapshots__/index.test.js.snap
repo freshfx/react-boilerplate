@@ -1,26 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should match snapshot 1`] = `
-.c0 {
+.emotion-2 {
   color: #41addd;
   padding: 2em 0;
 }
 
-.c0:hover {
+.emotion-2:hover {
   color: #6cc0e5;
 }
 
-.c1 {
+.emotion-0 {
   width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-.c2 {
+.emotion-8 {
   text-align: center;
 }
 
-.c3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -45,34 +45,34 @@ exports[`Header should match snapshot 1`] = `
   color: #41addd;
 }
 
-.c3:active {
+.emotion-4:active {
   background: #41addd;
   color: #fff;
 }
 
 <div>
   <a
-    class="c0"
+    class="emotion-2 emotion-3"
     href="https://twitter.com/mxstbr"
   >
     <img
       alt="react-boilerplate - Logo"
-      class="c1"
+      class="emotion-0 emotion-1"
       src="IMAGE_MOCK"
     />
   </a>
   <div
-    class="c2"
+    class="emotion-8 emotion-9"
   >
     <a
-      class="c3"
+      class="emotion-4 emotion-5"
       href="/"
       to="/"
     >
       Home
     </a>
     <a
-      class="c3"
+      class="emotion-4 emotion-5"
       href="/features"
       to="/features"
     >

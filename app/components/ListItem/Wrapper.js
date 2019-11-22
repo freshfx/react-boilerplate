@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 const Wrapper = styled.li`
   width: 100%;
@@ -8,7 +8,7 @@ const Wrapper = styled.li`
   position: relative;
   border-top: 1px solid #eee;
 
-  &:first-child {
+  &:first-of-type {
     border-top: none;
   }
 `

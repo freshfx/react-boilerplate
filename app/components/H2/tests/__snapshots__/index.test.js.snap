@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`H2 should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   font-size: 1.5em;
 }
 
 <h2
-  class="c0"
+  class="emotion-0 emotion-1"
 />
 `;

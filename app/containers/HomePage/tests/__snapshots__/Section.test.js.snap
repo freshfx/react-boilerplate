@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Section should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   margin: 3em auto;
 }
 
-.c0:first-child {
+.emotion-0:first-of-type {
   margin-top: 0;
 }
 
 <section
-  class="c0"
+  class="emotion-0 emotion-1"
 />
 `;

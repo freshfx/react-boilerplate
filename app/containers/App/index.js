@@ -8,7 +8,7 @@
 
 import React from 'react'
 import {Helmet} from 'react-helmet-async'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import {Route, Switch, withRouter} from 'react-router-dom'
 import {injectReducer} from 'redux-injectors'
 import {createStructuredSelector} from 'reselect'

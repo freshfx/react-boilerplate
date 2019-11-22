@@ -14,6 +14,7 @@ import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
 import {ConnectedRouter} from 'connected-react-router'
 import {HelmetProvider} from 'react-helmet-async'
+import {Global} from '@emotion/core'
 import FontFaceObserver from 'fontfaceobserver'
 import 'sanitize.css/sanitize.css'
 
@@ -41,7 +42,7 @@ import configureStore from './configure-store'
 import {translationMessages} from './i18n'
 
 // Import CSS reset and Global Styles
-import GlobalStyles from './global-styles'
+import globalStyles from './global-styles'
 
 /*
  * Observe loading of Open Sans (to remove open sans, remove the <link> tag in
@@ -63,7 +64,7 @@ const MOUNT_NODE = document.getElementById('app')
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
-      <GlobalStyles />
+      <Global styles={globalStyles} />
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
           <HelmetProvider>

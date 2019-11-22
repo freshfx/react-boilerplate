@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Wrapper should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   width: 100%;
   text-align: center;
   margin: 4em 0;
 }
 
 <div
-  class="c0"
+  class="emotion-0 emotion-1"
 />
 `;

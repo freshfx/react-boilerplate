@@ -23,7 +23,7 @@
   },
   "setupFilesAfterEnv": ["<rootDir>/internals/testing/test-bundler.js"],
   "setupFiles": ["raf/polyfill", "<rootDir>/internals/testing/setup.js"],
+  "snapshotSerializers": ["jest-emotion"],
   "testRegex": "tests/.*\\.test\\.js$",
-  "snapshotSerializers": [],
   "testURL": "http://localhost"
 }

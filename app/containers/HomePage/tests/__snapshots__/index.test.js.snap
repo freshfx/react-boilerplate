@@ -1,37 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomePage should render the repos list 1`] = `
-.c1 {
-  font-size: 1.5em;
-}
-
-.c4 {
-  color: black;
-  margin-left: 0.4em;
-}
-
-.c2 {
-  margin: 3em auto;
-}
-
-.c2:first-child {
-  margin-top: 0;
-}
-
-.c0 {
+.emotion-2 {
   margin: 3em auto;
   text-align: center;
 }
 
-.c0:first-child {
+.emotion-2:first-of-type {
   margin-top: 0;
 }
 
-.c3 {
+.emotion-0 {
+  font-size: 1.5em;
+}
+
+.emotion-12 {
+  margin: 3em auto;
+}
+
+.emotion-12:first-of-type {
+  margin-top: 0;
+}
+
+.emotion-10 {
   margin-bottom: 1em;
 }
 
-.c5 {
+.emotion-6 {
+  color: black;
+  margin-left: 0.4em;
+}
+
+.emotion-8 {
   outline: none;
   border-bottom: 1px dotted #999;
 }
@@ -39,10 +39,10 @@ exports[`HomePage should render the repos list 1`] = `
 <article>
   <div>
     <section
-      class="c0"
+      class="emotion-2 emotion-3"
     >
       <h2
-        class="c1"
+        class="emotion-0 emotion-1"
       >
         Start your next react project in seconds
       </h2>
@@ -51,27 +51,27 @@ exports[`HomePage should render the repos list 1`] = `
       </p>
     </section>
     <section
-      class="c2"
+      class="emotion-12 emotion-13"
     >
       <h2
-        class="c1"
+        class="emotion-0 emotion-1"
       >
         Try me!
       </h2>
       <form
-        class="c3"
+        class="emotion-10 emotion-11"
       >
         <label
           for="username"
         >
           Show Github repositories by
           <span
-            class="c4"
+            class="emotion-6 emotion-7"
           >
             @
           </span>
           <input
-            class="c5"
+            class="emotion-8 emotion-9"
             id="username"
             placeholder="mxstbr"
             type="text"

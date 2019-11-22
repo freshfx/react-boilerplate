@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Img should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   width: 100%;
   margin: 0 auto;
   display: block;
@@ -9,7 +9,7 @@ exports[`Img should match snapshot 1`] = `
 
 <img
   alt="test"
-  class="c0"
+  class="emotion-0 emotion-1"
   src="http://example.com/test.jpg"
 />
 `;

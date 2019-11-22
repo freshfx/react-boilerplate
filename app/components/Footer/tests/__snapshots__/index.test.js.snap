@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,7 +15,7 @@ exports[`<Footer /> should match snapshot 1`] = `
 }
 
 <footer
-  class="c0"
+  class="emotion-0 emotion-1"
 >
   <section>
     This project is licensed under the MIT license.

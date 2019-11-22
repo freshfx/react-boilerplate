@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Wrapper should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   width: 100%;
   height: 3em;
   display: -webkit-box;
@@ -16,11 +16,11 @@ exports[`Wrapper should match snapshot 1`] = `
   border-top: 1px solid #eee;
 }
 
-.c0:first-child {
+.emotion-0:first-of-type {
   border-top: none;
 }
 
 <li
-  class="c0"
+  class="emotion-0 emotion-1"
 />
 `;

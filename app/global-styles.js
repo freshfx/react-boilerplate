@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import {css} from '@emotion/core'
 import {
   media,
   BODY_BG,
@@ -7,7 +7,7 @@ import {
   FONT_SIZE_MOBILE
 } from 'styles/variables'
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = css`
   html,
   body {
     height: 100%;

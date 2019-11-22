@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FontIcon should render all icons 1`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -15,18 +15,18 @@ exports[`FontIcon should render all icons 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f101";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_album"
 />
 `;
 
 exports[`FontIcon should render all icons 2`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -40,18 +40,18 @@ exports[`FontIcon should render all icons 2`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f102";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_arrow-up"
 />
 `;
 
 exports[`FontIcon should render all icons 3`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -65,18 +65,18 @@ exports[`FontIcon should render all icons 3`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f103";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_attachment"
 />
 `;
 
 exports[`FontIcon should render all icons 4`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -90,18 +90,18 @@ exports[`FontIcon should render all icons 4`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f104";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_calendar"
 />
 `;
 
 exports[`FontIcon should render all icons 5`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -115,18 +115,18 @@ exports[`FontIcon should render all icons 5`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f105";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_checkbox-bold"
 />
 `;
 
 exports[`FontIcon should render all icons 6`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -140,18 +140,18 @@ exports[`FontIcon should render all icons 6`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f106";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_checkbox-empty"
 />
 `;
 
 exports[`FontIcon should render all icons 7`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -165,18 +165,18 @@ exports[`FontIcon should render all icons 7`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f107";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_checkbox"
 />
 `;
 
 exports[`FontIcon should render all icons 8`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -190,18 +190,18 @@ exports[`FontIcon should render all icons 8`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f108";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_checked-bold"
 />
 `;
 
 exports[`FontIcon should render all icons 9`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -215,18 +215,18 @@ exports[`FontIcon should render all icons 9`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f109";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_checked"
 />
 `;
 
 exports[`FontIcon should render all icons 10`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -240,18 +240,18 @@ exports[`FontIcon should render all icons 10`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f10a";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_clock"
 />
 `;
 
 exports[`FontIcon should render all icons 11`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -265,18 +265,18 @@ exports[`FontIcon should render all icons 11`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f10b";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_close-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 12`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -290,18 +290,18 @@ exports[`FontIcon should render all icons 12`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f10c";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_close"
 />
 `;
 
 exports[`FontIcon should render all icons 13`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -315,18 +315,18 @@ exports[`FontIcon should render all icons 13`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f10d";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_contacts"
 />
 `;
 
 exports[`FontIcon should render all icons 14`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -340,18 +340,18 @@ exports[`FontIcon should render all icons 14`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f10e";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_cut"
 />
 `;
 
 exports[`FontIcon should render all icons 15`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -365,18 +365,18 @@ exports[`FontIcon should render all icons 15`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f10f";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_dashboard"
 />
 `;
 
 exports[`FontIcon should render all icons 16`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -390,18 +390,18 @@ exports[`FontIcon should render all icons 16`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f110";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_down-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 17`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -415,18 +415,18 @@ exports[`FontIcon should render all icons 17`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f111";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_down-small"
 />
 `;
 
 exports[`FontIcon should render all icons 18`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -440,18 +440,18 @@ exports[`FontIcon should render all icons 18`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f112";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_down"
 />
 `;
 
 exports[`FontIcon should render all icons 19`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -465,18 +465,18 @@ exports[`FontIcon should render all icons 19`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f113";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_download-thin"
 />
 `;
 
 exports[`FontIcon should render all icons 20`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -490,18 +490,18 @@ exports[`FontIcon should render all icons 20`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f114";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_download"
 />
 `;
 
 exports[`FontIcon should render all icons 21`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -515,18 +515,18 @@ exports[`FontIcon should render all icons 21`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f115";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_edit"
 />
 `;
 
 exports[`FontIcon should render all icons 22`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -540,18 +540,18 @@ exports[`FontIcon should render all icons 22`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f116";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_ellipsis-outline"
 />
 `;
 
 exports[`FontIcon should render all icons 23`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -565,18 +565,18 @@ exports[`FontIcon should render all icons 23`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f117";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_ellipsis"
 />
 `;
 
 exports[`FontIcon should render all icons 24`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -590,18 +590,18 @@ exports[`FontIcon should render all icons 24`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f118";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_embed"
 />
 `;
 
 exports[`FontIcon should render all icons 25`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -615,18 +615,18 @@ exports[`FontIcon should render all icons 25`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f119";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_facebook"
 />
 `;
 
 exports[`FontIcon should render all icons 26`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -640,18 +640,18 @@ exports[`FontIcon should render all icons 26`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f11a";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_failed"
 />
 `;
 
 exports[`FontIcon should render all icons 27`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -665,18 +665,18 @@ exports[`FontIcon should render all icons 27`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f11b";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_favorite"
 />
 `;
 
 exports[`FontIcon should render all icons 28`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -690,18 +690,18 @@ exports[`FontIcon should render all icons 28`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f11c";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_file-doc"
 />
 `;
 
 exports[`FontIcon should render all icons 29`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -715,18 +715,18 @@ exports[`FontIcon should render all icons 29`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f11d";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_file-pdf"
 />
 `;
 
 exports[`FontIcon should render all icons 30`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -740,18 +740,18 @@ exports[`FontIcon should render all icons 30`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f11e";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_file-zip"
 />
 `;
 
 exports[`FontIcon should render all icons 31`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -765,18 +765,18 @@ exports[`FontIcon should render all icons 31`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f11f";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_file"
 />
 `;
 
 exports[`FontIcon should render all icons 32`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -790,18 +790,18 @@ exports[`FontIcon should render all icons 32`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f120";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_global"
 />
 `;
 
 exports[`FontIcon should render all icons 33`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -815,18 +815,18 @@ exports[`FontIcon should render all icons 33`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f121";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_image"
 />
 `;
 
 exports[`FontIcon should render all icons 34`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -840,18 +840,18 @@ exports[`FontIcon should render all icons 34`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f122";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_info"
 />
 `;
 
 exports[`FontIcon should render all icons 35`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -865,18 +865,18 @@ exports[`FontIcon should render all icons 35`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f123";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_left-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 36`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -890,18 +890,18 @@ exports[`FontIcon should render all icons 36`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f124";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_left-small"
 />
 `;
 
 exports[`FontIcon should render all icons 37`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -915,18 +915,18 @@ exports[`FontIcon should render all icons 37`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f125";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_left"
 />
 `;
 
 exports[`FontIcon should render all icons 38`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -940,18 +940,18 @@ exports[`FontIcon should render all icons 38`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f126";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_letter"
 />
 `;
 
 exports[`FontIcon should render all icons 39`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -965,18 +965,18 @@ exports[`FontIcon should render all icons 39`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f127";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_linkedin-outline"
 />
 `;
 
 exports[`FontIcon should render all icons 40`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -990,18 +990,18 @@ exports[`FontIcon should render all icons 40`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f128";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_linkedin"
 />
 `;
 
 exports[`FontIcon should render all icons 41`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1015,18 +1015,18 @@ exports[`FontIcon should render all icons 41`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f129";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_list-view"
 />
 `;
 
 exports[`FontIcon should render all icons 42`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1040,18 +1040,18 @@ exports[`FontIcon should render all icons 42`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f12a";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_lock"
 />
 `;
 
 exports[`FontIcon should render all icons 43`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1065,18 +1065,18 @@ exports[`FontIcon should render all icons 43`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f12b";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_magazine-view"
 />
 `;
 
 exports[`FontIcon should render all icons 44`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1090,18 +1090,18 @@ exports[`FontIcon should render all icons 44`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f12c";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_minus-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 45`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1115,18 +1115,18 @@ exports[`FontIcon should render all icons 45`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f12d";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_mobile"
 />
 `;
 
 exports[`FontIcon should render all icons 46`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1140,18 +1140,18 @@ exports[`FontIcon should render all icons 46`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f12e";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_music"
 />
 `;
 
 exports[`FontIcon should render all icons 47`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1165,18 +1165,18 @@ exports[`FontIcon should render all icons 47`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f12f";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_paste"
 />
 `;
 
 exports[`FontIcon should render all icons 48`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1190,18 +1190,18 @@ exports[`FontIcon should render all icons 48`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f130";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_picture"
 />
 `;
 
 exports[`FontIcon should render all icons 49`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1215,18 +1215,18 @@ exports[`FontIcon should render all icons 49`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f131";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_play"
 />
 `;
 
 exports[`FontIcon should render all icons 50`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1240,18 +1240,18 @@ exports[`FontIcon should render all icons 50`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f132";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_plus-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 51`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1265,18 +1265,18 @@ exports[`FontIcon should render all icons 51`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f133";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_popout"
 />
 `;
 
 exports[`FontIcon should render all icons 52`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1290,18 +1290,18 @@ exports[`FontIcon should render all icons 52`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f134";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_questionmark-full"
 />
 `;
 
 exports[`FontIcon should render all icons 53`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1315,18 +1315,18 @@ exports[`FontIcon should render all icons 53`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f135";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_questionmark"
 />
 `;
 
 exports[`FontIcon should render all icons 54`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1340,18 +1340,18 @@ exports[`FontIcon should render all icons 54`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f136";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_restore"
 />
 `;
 
 exports[`FontIcon should render all icons 55`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1365,18 +1365,18 @@ exports[`FontIcon should render all icons 55`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f137";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_right-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 56`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1390,18 +1390,18 @@ exports[`FontIcon should render all icons 56`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f138";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_right-small"
 />
 `;
 
 exports[`FontIcon should render all icons 57`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1415,18 +1415,18 @@ exports[`FontIcon should render all icons 57`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f139";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_right"
 />
 `;
 
 exports[`FontIcon should render all icons 58`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1440,18 +1440,18 @@ exports[`FontIcon should render all icons 58`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f13a";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_saleitem"
 />
 `;
 
 exports[`FontIcon should render all icons 59`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1465,18 +1465,18 @@ exports[`FontIcon should render all icons 59`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f13b";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_search"
 />
 `;
 
 exports[`FontIcon should render all icons 60`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1490,18 +1490,18 @@ exports[`FontIcon should render all icons 60`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f13c";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_settings"
 />
 `;
 
 exports[`FontIcon should render all icons 61`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1515,18 +1515,18 @@ exports[`FontIcon should render all icons 61`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f13d";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_share"
 />
 `;
 
 exports[`FontIcon should render all icons 62`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1540,18 +1540,18 @@ exports[`FontIcon should render all icons 62`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f13e";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_shopping-cart"
 />
 `;
 
 exports[`FontIcon should render all icons 63`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1565,18 +1565,18 @@ exports[`FontIcon should render all icons 63`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f13f";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_sound"
 />
 `;
 
 exports[`FontIcon should render all icons 64`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1590,18 +1590,18 @@ exports[`FontIcon should render all icons 64`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f140";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_star-filled-add"
 />
 `;
 
 exports[`FontIcon should render all icons 65`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1615,18 +1615,18 @@ exports[`FontIcon should render all icons 65`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f141";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_star-outline-add"
 />
 `;
 
 exports[`FontIcon should render all icons 66`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1640,18 +1640,18 @@ exports[`FontIcon should render all icons 66`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f142";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_star"
 />
 `;
 
 exports[`FontIcon should render all icons 67`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1665,18 +1665,18 @@ exports[`FontIcon should render all icons 67`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f143";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_stopwatch"
 />
 `;
 
 exports[`FontIcon should render all icons 68`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1690,18 +1690,18 @@ exports[`FontIcon should render all icons 68`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f144";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_story"
 />
 `;
 
 exports[`FontIcon should render all icons 69`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1715,18 +1715,18 @@ exports[`FontIcon should render all icons 69`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f145";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_tile-view"
 />
 `;
 
 exports[`FontIcon should render all icons 70`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1740,18 +1740,18 @@ exports[`FontIcon should render all icons 70`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f146";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_trash"
 />
 `;
 
 exports[`FontIcon should render all icons 71`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1765,18 +1765,18 @@ exports[`FontIcon should render all icons 71`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f147";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_twitter_full"
 />
 `;
 
 exports[`FontIcon should render all icons 72`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1790,18 +1790,18 @@ exports[`FontIcon should render all icons 72`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f148";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_twitter-outline"
 />
 `;
 
 exports[`FontIcon should render all icons 73`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1815,18 +1815,18 @@ exports[`FontIcon should render all icons 73`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f149";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_twitter"
 />
 `;
 
 exports[`FontIcon should render all icons 74`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1840,18 +1840,18 @@ exports[`FontIcon should render all icons 74`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f14a";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_up-circle"
 />
 `;
 
 exports[`FontIcon should render all icons 75`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1865,18 +1865,18 @@ exports[`FontIcon should render all icons 75`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f14b";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_up-small"
 />
 `;
 
 exports[`FontIcon should render all icons 76`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1890,18 +1890,18 @@ exports[`FontIcon should render all icons 76`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f14c";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_up"
 />
 `;
 
 exports[`FontIcon should render all icons 77`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1915,18 +1915,18 @@ exports[`FontIcon should render all icons 77`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f14d";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_user"
 />
 `;
 
 exports[`FontIcon should render all icons 78`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1940,18 +1940,18 @@ exports[`FontIcon should render all icons 78`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f14e";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_users"
 />
 `;
 
 exports[`FontIcon should render all icons 79`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1965,18 +1965,18 @@ exports[`FontIcon should render all icons 79`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f14f";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_video"
 />
 `;
 
 exports[`FontIcon should render all icons 80`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -1990,18 +1990,18 @@ exports[`FontIcon should render all icons 80`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f150";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_zoom-lightbox"
 />
 `;
 
 exports[`FontIcon should render all icons 81`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -2015,18 +2015,18 @@ exports[`FontIcon should render all icons 81`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f151";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_zoom"
 />
 `;
 
 exports[`FontIcon should render flipped 1`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -2043,18 +2043,18 @@ exports[`FontIcon should render flipped 1`] = `
   transform: scaleX(-1);
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f101";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_album"
 />
 `;
 
 exports[`FontIcon should render with fixed width 1`] = `
-.c0 {
+.emotion-0 {
   font-family: 'icons' !important;
   display: inline-block;
   speak: none;
@@ -2070,12 +2070,12 @@ exports[`FontIcon should render with fixed width 1`] = `
   text-align: center;
 }
 
-.c0:before {
+.emotion-0:before {
   content: "\\f101";
 }
 
 <span
-  class="c0"
+  class="emotion-0 emotion-1"
   name="icon_album"
 />
 `;

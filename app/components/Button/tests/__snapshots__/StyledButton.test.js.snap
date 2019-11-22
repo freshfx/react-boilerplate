@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StyledButton should match snapshot 1`] = `
-.c0 {
+.emotion-0 {
   display: inline-block;
   box-sizing: border-box;
   padding: 0.25em 2em;
@@ -23,12 +23,12 @@ exports[`StyledButton should match snapshot 1`] = `
   color: #41addd;
 }
 
-.c0:active {
+.emotion-0:active {
   background: #41addd;
   color: #fff;
 }
 
 <button
-  class="c0"
+  class="emotion-0 emotion-1"
 />
 `;

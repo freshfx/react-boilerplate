@@ -1,27 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`styles utils createOpacityAnimation should create an animation with default params 1`] = `
-Keyframes {
-  "id": "sc-keyframes-bBzLxR",
-  "inject": [Function],
-  "name": "bBzLxR",
-  "rules": Array [
-    "@-webkit-keyframes bBzLxR{from{opacity:0;}to{opacity:1;}}",
-    "@keyframes bBzLxR{from{opacity:0;}to{opacity:1;}}",
-  ],
+Object {
+  "anim": 1,
+  "name": "animation-plwpox",
+  "styles": "@keyframes animation-plwpox{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}",
   "toString": [Function],
 }
 `;
 
 exports[`styles utils createOpacityAnimation should create an animation with the passed params 1`] = `
-Keyframes {
-  "id": "sc-keyframes-jgOcXV",
-  "inject": [Function],
-  "name": "jgOcXV",
-  "rules": Array [
-    "@-webkit-keyframes jgOcXV{from{opacity:1;}to{opacity:0;}}",
-    "@keyframes jgOcXV{from{opacity:1;}to{opacity:0;}}",
-  ],
+Object {
+  "anim": 1,
+  "name": "animation-1w559i1",
+  "styles": "@keyframes animation-1w559i1{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}",
   "toString": [Function],
 }
 `;

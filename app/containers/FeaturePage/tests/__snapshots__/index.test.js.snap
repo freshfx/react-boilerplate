@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FeaturePage /> should match snapshot 1`] = `
-.c0 {
+.emotion-16 {
   font-family: Georgia,Times,'Times New Roman',serif;
   padding-left: 1.75em;
 }
 
-.c1 {
+.emotion-2 {
   margin: 1em 0;
 }
 
-.c2 {
+.emotion-0 {
   font-weight: bold;
 }
 
@@ -19,13 +19,13 @@ exports[`<FeaturePage /> should match snapshot 1`] = `
     Features
   </h1>
   <ul
-    class="c0"
+    class="emotion-16 emotion-17"
   >
     <li
-      class="c1"
+      class="emotion-2 emotion-3"
     >
       <p
-        class="c2"
+        class="emotion-0 emotion-1"
       >
         Quick scaffolding
       </p>
@@ -36,10 +36,10 @@ exports[`<FeaturePage /> should match snapshot 1`] = `
     </li>
     s
     <li
-      class="c1"
+      class="emotion-2 emotion-3"
     >
       <p
-        class="c2"
+        class="emotion-0 emotion-1"
       >
         Industry-standard routing
       </p>
@@ -53,10 +53,10 @@ exports[`<FeaturePage /> should match snapshot 1`] = `
       </p>
     </li>
     <li
-      class="c1"
+      class="emotion-2 emotion-3"
     >
       <p
-        class="c2"
+        class="emotion-0 emotion-1"
       >
         Offline-first
       </p>
@@ -68,10 +68,10 @@ exports[`<FeaturePage /> should match snapshot 1`] = `
       </p>
     </li>
     <li
-      class="c1"
+      class="emotion-2 emotion-3"
     >
       <p
-        class="c2"
+        class="emotion-0 emotion-1"
       >
         Complete i18n Standard Internationalization & Pluralization
       </p>
