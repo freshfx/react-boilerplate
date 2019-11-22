@@ -4,7 +4,7 @@ import deepFreeze from 'deep-freeze'
 const initialState = deepFreeze({
   error: false,
   isLoading: false,
-  repositories: false
+  repositories: []
 })
 
 const name = 'repositoryResults'
@@ -15,7 +15,7 @@ const {actions, reducer} = createSlice({
     loadRepositories: state => {
       state.error = false
       state.isLoading = true
-      state.repositories = false
+      state.repositories = []
     },
     repositoriesLoaded: (state, action) => {
       const {repositories} = action.payload

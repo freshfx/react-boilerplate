@@ -21,10 +21,10 @@ describe('repository modules', () => {
         expect(nextState.isLoading).toBeTruthy()
       })
 
-      it('should set the repositories to false', () => {
+      it('should set the repositories to an empty array', () => {
         const mockedState = {...initialState, repositories: [1, 2, 3]}
         const nextState = reducer(mockedState, actions.loadRepositories())
-        expect(nextState.repositories).toBeFalsy()
+        expect(nextState.repositories).toEqual([])
       })
     })
 
