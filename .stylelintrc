@@ -8,6 +8,8 @@
     "no-duplicate-selectors": null,
     "selector-type-no-unknown": [true, {
       "ignore": ["custom-elements", "default-namespace"]
-    }]
+    }],
+    "no-extra-semicolons": null,
+    "property-no-vendor-prefix": null
   }
 }
