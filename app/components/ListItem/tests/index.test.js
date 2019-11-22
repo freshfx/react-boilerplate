@@ -3,7 +3,12 @@ import {render} from '@testing-library/react'
 
 import ListItem from '../index'
 
-describe('<ListItem />', () => {
+describe('ListItem', () => {
+  it('should match snapshot', () => {
+    const {container} = render(<ListItem />)
+    expect(container).toMatchSnapshot()
+  })
+
   it('should render the content passed to it', () => {
     const text = 'Hello World!'
     const content = <div>{text}</div>

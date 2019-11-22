@@ -14,40 +14,29 @@ const renderComponent = (props = {}) => render(
 describe('Button', () => {
   it('should render an anchor tag if no route is specified', () => {
     const {container} = renderComponent()
-    expect(container.querySelector('a')).not.toBeNull()
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render a button tag to change route if the handleRoute prop is specified', () => {
     const {container} = renderComponent({handleRoute})
-    expect(container.querySelector('button')).toBeDefined()
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should have children', () => {
-    const {container} = renderComponent()
-    expect(container.querySelector('a').children).toHaveLength(1)
+    const {container, getByText} = renderComponent()
+    const child = getByText('Test')
+    expect(container.querySelector('a').firstChild).toEqual(child)
   })
 
   it('should handle click events', () => {
     const onClickSpy = jest.fn()
-    const {container} = renderComponent({onClick: onClickSpy})
-    fireEvent.click(container.querySelector('a'))
+    const {getByText} = renderComponent({onClick: onClickSpy})
+    fireEvent.click(getByText('Test'))
     expect(onClickSpy).toHaveBeenCalled()
   })
 
   it('should have a className attribute', () => {
     const {container} = renderComponent()
-    expect(container.querySelector('a').hasAttribute('class')).toBe(true)
-  })
-
-  it('should not adopt a type attribute when rendering an anchor tag', () => {
-    const type = 'text/html'
-    const {container} = renderComponent({type})
-    expect(container.querySelector(`a[type="${type}"]`)).toBeNull()
-  })
-
-  it('should not adopt a type attribute when rendering a button', () => {
-    const type = 'submit'
-    const {container} = renderComponent({handleRoute, type})
-    expect(container.querySelector('button').getAttribute('type')).toBeNull()
+    expect(container.firstChild).toHaveAttribute('class')
   })
 })

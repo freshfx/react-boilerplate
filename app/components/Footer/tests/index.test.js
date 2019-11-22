@@ -14,7 +14,7 @@ const renderComponent = () =>
     </IntlProvider>
   )
 
-describe('<Footer />', () => {
+describe('Footer', () => {
   it('should match snapshot', () => {
     const {container} = renderComponent()
     expect(container.firstChild).toMatchSnapshot()

@@ -11,6 +11,11 @@ const renderComponent = (props = {}) => render(
 )
 
 describe('Toggle', () => {
+  it('should match snapshot', () => {
+    const {container} = renderComponent()
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
   it('should contain default text', () => {
     const messageData = {
       de: {

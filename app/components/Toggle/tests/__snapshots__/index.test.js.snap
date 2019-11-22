@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select should match snapshot 1`] = `
+exports[`Toggle should match snapshot 1`] = `
 .emotion-0 {
   line-height: 1em;
   height: 20px;
@@ -8,5 +8,9 @@ exports[`Select should match snapshot 1`] = `
 
 <select
   class="emotion-0 emotion-1"
-/>
+>
+  <option>
+    --
+  </option>
+</select>
 `;

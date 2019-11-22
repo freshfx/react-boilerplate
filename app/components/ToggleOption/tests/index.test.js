@@ -24,7 +24,7 @@ describe('ToggleOption', () => {
     expect(getByText(defaultMessage)).toHaveAttribute('value', value)
   })
 
-  xit('should display `value`(two letter language code) when `message` is absent', () => {
+  it('should display `value`(two letter language code) when `message` is absent', () => {
     const value = 'en'
     const {getByText} = renderComponent({value})
     expect(getByText(value)).toHaveAttribute('value', value)

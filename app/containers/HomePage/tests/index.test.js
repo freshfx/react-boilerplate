@@ -24,6 +24,11 @@ const renderComponent = (props = {}) =>
   )
 
 describe('HomePage', () => {
+  it('should match the snapshot', () => {
+    const {container} = renderComponent()
+    expect(container).toMatchSnapshot()
+  })
+
   it('should render the repos list', () => {
     const props = {
       error: false,
