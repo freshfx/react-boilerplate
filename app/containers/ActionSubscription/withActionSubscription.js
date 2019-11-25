@@ -17,7 +17,6 @@ const withActionSubscription = Component =>
       this.clearSubscribers()
     }
 
-
     addSubscriber = (actionType, subscriber) => {
       this.subscribers.push(actionType)
       this.actionSubscription.addSubscriber(actionType, subscriber, this.identifier)
