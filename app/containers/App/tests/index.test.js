@@ -1,9 +1,14 @@
 import React from 'react'
 import {render} from '@testing-library/react'
+import {useInjectReducer} from 'redux-injectors'
 import {HelmetProvider} from 'react-helmet-async'
 
-import {App, mapDispatchToProps} from '../index'
+import entitiesReducer from 'modules/entities'
+import languageReducer from 'modules/language'
 
+import {App} from '../index'
+
+jest.mock('redux-injectors')
 jest.mock('react-router-dom', () => ({
   Route({path}) {
     return <div data-testid={`route:${path}`} />
@@ -35,9 +40,13 @@ describe('App', () => {
     expect(getByTestId('switch').children).toHaveLength(3)
   })
 
-  describe('mapDispatchToProps', () => {
-    it('should return empty set', () => {
-      expect(mapDispatchToProps()).toStrictEqual({})
-    })
+  it('should inject the entities reducer', () => {
+    renderComponent()
+    expect(useInjectReducer).toHaveBeenCalledWith(entitiesReducer)
+  })
+
+  it('should inject the language reducer', () => {
+    renderComponent()
+    expect(useInjectReducer).toHaveBeenCalledWith(languageReducer)
   })
 })
