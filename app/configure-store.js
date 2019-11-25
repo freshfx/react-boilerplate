@@ -12,7 +12,7 @@ import createReducer from './reducers'
 
 const sagaMiddleware = createSagaMiddleware()
 
-export default function configureAppStore(initialState = {}, history, actionEmitter) {
+export default function configureAppStore(initialState, history, actionEmitter) {
   const {run: runSaga} = sagaMiddleware
 
   /*
