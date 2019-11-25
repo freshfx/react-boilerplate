@@ -1,15 +1,18 @@
-/* eslint-disable sort-keys, camelcase, no-magic-numbers, no-sync */
+/* eslint-disable sort-keys, camelcase, no-magic-numbers, no-sync, prefer-named-capture-group */
 
 /**
  * COMMON WEBPACK CONFIGURATION
  */
-
+const os = require('os')
 const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
+const HappyPack = require('happypack')
 
 const configFiles = fs.readdirSync(path.resolve(process.cwd(), 'app/config'))
 const robotFiles = fs.readdirSync(path.resolve(process.cwd(), 'app/public/robots'))
+
+const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length}) // eslint-disable-line new-cap
 
 /*
  * Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
@@ -35,10 +38,7 @@ module.exports = options => ({
         // Transform all .js files required somewhere with Babel
         test: /\.js$/u,
         exclude: /node_modules/u,
-        use: {
-          loader: 'babel-loader',
-          options: options.babelQuery
-        }
+        use: 'happypack/loader?id=js'
       },
       {
 
@@ -49,48 +49,37 @@ module.exports = options => ({
          */
         test: /\.css$/u,
         exclude: /node_modules/u,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: 'happypack/loader?id=css'
       },
       {
         // Preprocess 3rd party .css files located in node_modules
         test: /\.css$/u,
         include: /node_modules/u,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: 'happypack/loader?id=css'
       },
       {
-        test: /\.(eot|otf|ttf|woff|woff2)$/u, // eslint-disable-line prefer-named-capture-group
+        test: /\.(eot|otf|ttf|woff|woff2)$/u,
         use: 'file-loader'
       },
       {
-        test: /\/robots(\.\w+)?\.txt$/u, // eslint-disable-line prefer-named-capture-group
+        test: /\/robots(\.\w+)?\.txt$/u,
+        use: 'happypack/loader?id=robots'
+      },
+      {
+        test: /\/opensearch(\.\w+)?\.xml$/u,
         use: {
           loader: 'file-loader',
           options: {
-            name: 'robots.txt'
+            name: 'opensearch.xml'
           }
         }
       },
       {
         test: /\.svg$/u,
-        use: [
-          {
-            loader: 'svg-url-loader',
-            options: {
-              // Inline files smaller than 10 kB
-              limit: 10 * 1024,
-              noquotes: true
-            }
-          }
-        ]
+        use: 'happypack/loader?id=svg'
       },
       {
-        test: /\.(jpg|png|gif)$/u, // eslint-disable-line prefer-named-capture-group
+        test: /\.(jpg|png|gif)$/u,
         use: [
           {
             loader: 'url-loader',
@@ -119,7 +108,7 @@ module.exports = options => ({
                 optimizationLevel: 7
               },
               pngquant: {
-                quality: '65-90',
+                quality: [0.65, 0.90],
                 speed: 4
               }
             }
@@ -128,10 +117,10 @@ module.exports = options => ({
       },
       {
         test: /\.html$/u,
-        use: 'html-loader'
+        use: 'happypack/loader?id=html'
       },
       {
-        test: /\.(mp4|webm)$/u, // eslint-disable-line prefer-named-capture-group
+        test: /\.(mp4|webm)$/u,
         use: {
           loader: 'url-loader',
           options: {
@@ -142,6 +131,68 @@ module.exports = options => ({
     ]
   },
   plugins: options.plugins.concat([
+    new HappyPack({
+      id: 'js',
+      threadPool: happyThreadPool,
+      loaders: [
+        {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: path.resolve(process.cwd(), '.cache/babel-loader')
+          }
+        }
+      ]
+    }),
+
+    new HappyPack({
+      id: 'css',
+      threadPool: happyThreadPool,
+      loaders: [
+        'style-loader',
+        'css-loader'
+      ]
+    }),
+
+    new HappyPack({
+      id: 'file',
+      threadPool: happyThreadPool,
+      loaders: ['file-loader']
+    }),
+
+    new HappyPack({
+      id: 'robots',
+      threadPool: happyThreadPool,
+      loaders: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'robots.txt'
+          }
+        }
+      ]
+    }),
+
+    new HappyPack({
+      id: 'svg',
+      threadPool: happyThreadPool,
+      loaders: [
+        {
+          loader: 'svg-url-loader',
+          options: {
+            // Inline files smaller than 10 kB
+            limit: 10 * 1024,
+            noquotes: true
+          }
+        }
+      ]
+    }),
+
+    new HappyPack({
+      id: 'html',
+      threadPool: happyThreadPool,
+      loaders: ['html-loader']
+    }),
+
     new webpack.ProvidePlugin({
       // Make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch'

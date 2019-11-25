@@ -5,6 +5,7 @@ node_modules
 stats.json
 .eslintcache
 .stylelintcache
+.cache
 
 # Cruft
 .DS_Store
