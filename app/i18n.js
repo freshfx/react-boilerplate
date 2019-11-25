@@ -11,12 +11,14 @@ const enTranslationMessages = require('./translations/en.json')
 const deTranslationMessages = require('./translations/de.json')
 
 /* eslint-disable global-require */
+/* istanbul ignore if */
 if (!Intl.PluralRules) {
   require('intl-pluralrules/polyfill')
   require('@formatjs/intl-pluralrules/dist/locale-data/en')
   require('@formatjs/intl-pluralrules/dist/locale-data/de')
 }
 
+/* istanbul ignore if */
 if (!Intl.RelativeTimeFormat) {
   require('@formatjs/intl-relativetimeformat/polyfill')
   require('@formatjs/intl-relativetimeformat/dist/locale-data/en')
