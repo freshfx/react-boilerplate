@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import NormalA from 'components/Anchor'
 
-const RepoLink = styled(NormalA)`
+const RepositoryLink = styled(NormalA)`
   height: 100%;
   color: black;
   display: flex;
@@ -9,4 +9,4 @@ const RepoLink = styled(NormalA)`
   width: 100%;
 `
 
-export default RepoLink
+export default RepositoryLink

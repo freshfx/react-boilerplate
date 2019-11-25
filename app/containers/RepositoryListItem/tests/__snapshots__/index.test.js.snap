@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RepoListItem should match snapshot 1`] = `
+exports[`RepositoryListItem should match snapshot 1`] = `
 .emotion-6 {
   width: 100%;
   height: 100%;

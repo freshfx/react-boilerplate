@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withLoadable util should match the snapshot 1`] = `
+<div
+  data-testid="suspense-component"
+>
+  <div
+    data-testid="lazy-component"
+  />
+</div>
+`;

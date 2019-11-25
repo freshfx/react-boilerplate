@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import List from 'components/List'
 import LoadingIndicator from 'components/LoadingIndicator'
-import RepoListItem from 'containers/RepoListItem'
+import RepositoryListItem from 'containers/RepositoryListItem'
 
 import ErrorListItem from './ErrorListItem'
 
@@ -17,7 +17,7 @@ function ReposList({loading, error, repos}) {
   }
 
   if (repos.length) {
-    return <List items={repos} component={RepoListItem} />
+    return <List items={repos} component={RepositoryListItem} />
   }
 
   return null

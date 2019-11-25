@@ -104,31 +104,6 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   return acc
 }, {})
 
-const orientations = ['portrait', 'landscape']
-export const mediaOrientations = orientations.reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (orientation: ${label}) {
-      ${css(...args)}
-    }
-  `
-
-  return acc
-}, {})
-
-const aspectRatios = {
-  '16to9': '16/9',
-  '1to2': '1/2',
-  '4to3': '4/3'
-}
-export const mediaAspectRatios = Object.keys(aspectRatios).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (max-aspect-ratio: ${aspectRatios[label]}) {
-      ${css(...args)}
-    }
-  `
-  return acc
-}, {})
-
 // Grid containers
 
 /* eslint-disable sort-keys */
