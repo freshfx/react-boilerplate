@@ -6,7 +6,7 @@ import {link} from '../mixins'
 
 const getComponent = mixin => styled.div`${mixin}`
 
-xdescribe('mixins', () => {
+describe('mixins', () => {
   describe('link', () => {
     const Component = getComponent(link)
 

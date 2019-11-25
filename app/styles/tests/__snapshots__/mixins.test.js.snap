@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mixins link should render default style 1`] = `
+.emotion-0 {
+  color: #222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  color: #0A86CB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  class="emotion-0 emotion-1"
+/>
+`;
+
+exports[`mixins link should render highlight style 1`] = `
+.emotion-0 {
+  color: #0A86CB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  color: #E40A43;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  class="emotion-0 emotion-1"
+/>
+`;

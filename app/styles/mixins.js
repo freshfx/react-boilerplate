@@ -51,12 +51,12 @@ const getHoverColor = ({highlight = false}) => {
   return LINK_HOVER_COLOR
 }
 
-export const link = css`
-  color: ${getColor};
+export const link = props => css`
+  color: ${getColor(props)};
   text-decoration: ${LINK_DECORATION};
 
   &:hover {
-    color: ${getHoverColor};
+    color: ${getHoverColor(props)};
     text-decoration: ${LINK_HOVER_DECORATION};
   }
 `
