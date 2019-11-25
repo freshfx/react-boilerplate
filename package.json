@@ -152,6 +152,7 @@
     "offline-plugin": "^5.0.7",
     "prettier": "^1.19.1",
     "react-test-renderer": "^16.12.0",
+    "redux-saga-test-plan": "^4.0.0-rc.3",
     "release-it": "^12.4.3",
     "rimraf": "^3.0.0",
     "shelljs": "^0.8.3",

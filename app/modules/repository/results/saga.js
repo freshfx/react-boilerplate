@@ -11,7 +11,7 @@ import {selectors as homePageSelectors} from 'modules/pages/home'
 
 import {actions} from './slice'
 
-export function *watchLoadRepositories() {
+function *watchLoadRepositories() {
   try {
     const username = yield select(homePageSelectors.selectUsername)
     const repositories = yield call(requestRepositories, username)
@@ -34,7 +34,7 @@ export function *watchLoadRepositories() {
   }
 }
 
-export function *saga() {
+function *saga() {
   yield takeLatest(actions.loadRepositories.type, watchLoadRepositories)
 }
 
