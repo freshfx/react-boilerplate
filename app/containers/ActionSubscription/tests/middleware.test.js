@@ -7,7 +7,7 @@ const actionEmitter = {emit}
 
 const execute = (action, emitter = null) => middleware(emitter)()(next)(action)
 
-xdescribe('middleware', () => {
+describe('middleware', () => {
   beforeEach(() => {
     emit.mockClear()
     next.mockClear()

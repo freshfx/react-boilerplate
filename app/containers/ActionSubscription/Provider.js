@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import uuid from 'uuid/v4'
 import isEmpty from 'lodash/isEmpty'
 import ActionSubscriptionContext from './context'
 
@@ -24,7 +23,7 @@ class ActionSubscriptionProvider extends React.Component {
     Object.values(subscribers).forEach(subscriber => subscriber())
   }
 
-  addSubscriber = (actionType, subscriber, id = uuid()) => {
+  addSubscriber = (actionType, subscriber, id) => {
     const {[actionType]: existingSubscribers = {}} = this.subscribers
     this.subscribers[actionType] = {
       ...existingSubscribers,
