@@ -6,32 +6,20 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {injectIntl} from 'react-intl'
+import {useIntl} from 'react-intl'
 
-class ToggleOption extends React.PureComponent {
-  getMessage() {
-    const {
-      message,
-      value,
-      intl
-    } = this.props
+const ToggleOption = props => {
+  const {formatMessage} = useIntl()
 
-    if (message) {
-      return intl.formatMessage(message)
-    }
-    return value
-  }
+  // eslint-disable-next-line no-ternary
+  const message = props.message
+    ? formatMessage(props.message)
+    : props.value
 
-  render() {
-    const {value} = this.props
-    return <option value={value}>{this.getMessage()}</option>
-  }
+  return <option value={props.value}>{message}</option>
 }
 
 ToggleOption.propTypes = {
-  intl: PropTypes.shape({
-    formatMessage: PropTypes.func.isRequired
-  }).isRequired,
   message: PropTypes.object,
   value: PropTypes.string.isRequired
 }
@@ -40,4 +28,4 @@ ToggleOption.defaultProps = {
   message: null
 }
 
-export default injectIntl(ToggleOption)
+export default ToggleOption
