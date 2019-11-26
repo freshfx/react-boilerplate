@@ -5,12 +5,13 @@
  */
 
 import React from 'react'
-import PropTypes from 'prop-types'
 import {compose} from 'redux'
-import {connect} from 'react-redux'
-import {createStructuredSelector} from 'reselect'
-import noop from 'lodash/noop'
+import {
+  useDispatch,
+  useSelector
+} from 'react-redux'
 
+import {appLocales} from 'i18n'
 import Toggle from 'components/Toggle'
 import {
   actions,
@@ -19,49 +20,25 @@ import {
 
 import Wrapper from './Wrapper'
 import messages from './messages'
-import {appLocales} from '../../i18n'
 
-class LocaleToggle extends React.PureComponent {
-  onChangeLocale = ({target: {value}}) => {
-    this.props.onChangeLocale(value)
+const LocaleToggle = () => {
+  const dispatch = useDispatch()
+  const locale = useSelector(selectors.selectLocale)
+
+  const onChangeLocale = ({target: {value}}) => {
+    dispatch(actions.changeLocale({locale: value}))
   }
 
-  render() {
-    return (
-      <Wrapper>
-        <Toggle
-          value={this.props.locale}
-          values={appLocales}
-          messages={messages}
-          onToggle={this.onChangeLocale}
-        />
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper>
+      <Toggle
+        value={locale}
+        values={appLocales}
+        messages={messages}
+        onToggle={onChangeLocale}
+      />
+    </Wrapper>
+  )
 }
 
-LocaleToggle.propTypes = {
-  locale: PropTypes.string.isRequired,
-  onChangeLocale: PropTypes.func
-}
-
-LocaleToggle.defaultProps = {
-  onChangeLocale: noop
-}
-
-const mapStateToProps = createStructuredSelector({
-  locale: selectors.selectLocale
-})
-
-const mapDispatchToProps = dispatch => ({
-  onChangeLocale: locale => dispatch(actions.changeLocale({locale}))
-})
-
-const withConnect = connect(mapStateToProps, mapDispatchToProps)
-
-export {
-  LocaleToggle,
-  mapDispatchToProps
-}
-
-export default compose(withConnect)(LocaleToggle)
+export default compose(React.memo)(LocaleToggle)

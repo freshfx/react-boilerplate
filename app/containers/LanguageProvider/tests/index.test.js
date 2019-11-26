@@ -1,8 +1,12 @@
 import React from 'react'
 import {render} from '@testing-library/react'
 import {FormattedMessage, defineMessages} from 'react-intl'
+import {Provider} from 'react-redux'
 
-import {LanguageProvider} from '../index'
+import configureStore from 'configure-store'
+import history from 'utils/history'
+
+import LanguageProvider from '../index'
 
 const message = 'This is some default message'
 
@@ -13,10 +17,13 @@ const messages = defineMessages({
   }
 })
 
+const store = configureStore({}, history)
 const renderComponent = locale => render(
-  <LanguageProvider locale={locale}>
-    <FormattedMessage {...messages.someMessage} />
-  </LanguageProvider>
+  <Provider store={store}>
+    <LanguageProvider locale={locale}>
+      <FormattedMessage {...messages.someMessage} />
+    </LanguageProvider>
+  </Provider>
 )
 
 describe('LanguageProvider', () => {

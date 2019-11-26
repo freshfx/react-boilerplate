@@ -1,41 +1,44 @@
 import React from 'react'
-import {render} from '@testing-library/react'
+import {
+  fireEvent,
+  render
+} from '@testing-library/react'
 import {IntlProvider} from 'react-intl'
+import {Provider} from 'react-redux'
 
+import configureStore from 'configure-store'
 import {actions} from 'modules/language'
+import history from 'utils/history'
 
-import {LocaleToggle, mapDispatchToProps} from '../index'
+import LocaleToggle from '../index'
+
+const store = configureStore({}, history)
+jest.spyOn(store, 'dispatch')
 
 const renderComponent = (props = {}) => render(
-  <IntlProvider locale="en">
-    <LocaleToggle {...props} />
-  </IntlProvider>
+  <Provider store={store}>
+    <IntlProvider locale="en">
+      <LocaleToggle {...props} />
+    </IntlProvider>
+  </Provider>
 )
 
 describe('LocaleToggle', () => {
+  beforeEach(() => {
+    store.dispatch.mockClear()
+  })
+
   it('should render the default language messages', () => {
-    const {container} = renderComponent({
-      locale: 'en',
-      onLocaleToggle: jest.fn()
-    })
+    const {container} = renderComponent()
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  describe('mapDispatchToProps', () => {
-    describe('onLocaleToggle', () => {
-      it('should be injected', () => {
-        const dispatch = jest.fn()
-        const result = mapDispatchToProps(dispatch)
-        expect(result.onChangeLocale).toBeDefined()
-      })
-
-      it('should dispatch changeLocale when called', () => {
-        const dispatch = jest.fn()
-        const result = mapDispatchToProps(dispatch)
-        const locale = 'de'
-        result.onChangeLocale(locale)
-        expect(dispatch).toHaveBeenCalledWith(actions.changeLocale({locale}))
-      })
-    })
+  it('should change the locale on option click', () => {
+    const {container} = renderComponent()
+    const [select] = container.getElementsByTagName('select')
+    const locale = 'de'
+    fireEvent.change(select, {target: {value: locale}})
+    expect(store.dispatch).toHaveBeenCalledTimes(1)
+    expect(store.dispatch).toHaveBeenCalledWith(actions.changeLocale({locale}))
   })
 })
