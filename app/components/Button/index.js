@@ -6,23 +6,25 @@ import Anchor from './Anchor'
 import StyledButton from './StyledButton'
 import Wrapper from './Wrapper'
 
-function Button(props) {
-  // Render an anchor tag
-  let button = (
-    <Anchor href={props.href} onClick={props.onClick}>
-      {Children.toArray(props.children)}
-    </Anchor>
-  )
-
-  // If the Button has a handleRoute prop, we want to render a button
-  if (props.handleRoute) {
-    button =
-      <StyledButton onClick={props.handleRoute}>
+const Button = props => {
+  const getContent = () => {
+    // If the Button has a handleRoute prop, we want to render a button
+    if (props.handleRoute) {
+      return (
+        <StyledButton onClick={props.handleRoute}>
+          {Children.toArray(props.children)}
+        </StyledButton>
+      )
+    }
+    // Render an anchor tag
+    return (
+      <Anchor href={props.href} onClick={props.onClick}>
         {Children.toArray(props.children)}
-      </StyledButton>
+      </Anchor>
+    )
   }
 
-  return <Wrapper>{button}</Wrapper>
+  return <Wrapper>{getContent()}</Wrapper>
 }
 
 Button.propTypes = {
