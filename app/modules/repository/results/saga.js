@@ -11,10 +11,15 @@ import {selectors as homePageSelectors} from 'modules/pages/home'
 
 import {actions} from './slice'
 
+const DEFAULT_QUERY = {
+  sort: 'updated',
+  type: 'all'
+}
+
 function *watchLoadRepositories() {
   try {
     const username = yield select(homePageSelectors.selectUsername)
-    const repositories = yield call(requestRepositories, username)
+    const repositories = yield call(requestRepositories, username, DEFAULT_QUERY)
 
     const entities = {
       repositories: repositories.reduce((acc, curr) => ({
@@ -36,6 +41,10 @@ function *watchLoadRepositories() {
 
 function *saga() {
   yield takeLatest(actions.loadRepositories.type, watchLoadRepositories)
+}
+
+export {
+  DEFAULT_QUERY
 }
 
 export default {

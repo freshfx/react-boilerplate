@@ -11,7 +11,7 @@ import {actions as entitiesActions} from 'modules/entities'
 import {selectors as homePageSelectors} from 'modules/pages/home'
 
 import {actions} from '../slice'
-import repositoriesSaga from '../saga'
+import repositoriesSaga, {DEFAULT_QUERY} from '../saga'
 
 describe('repository modules', () => {
   describe('results saga', () => {
@@ -22,7 +22,7 @@ describe('repository modules', () => {
         const username = 'mxstbr'
         return expectSaga(repositoriesSaga.saga)
           .provide([[select(homePageSelectors.selectUsername), username]])
-          .call(requestRepositories, username)
+          .call(requestRepositories, username, DEFAULT_QUERY)
           .dispatch(action)
           .silentRun()
       })
@@ -33,7 +33,7 @@ describe('repository modules', () => {
         const entities = {repositories: {[repositories[0]]: response[0], [repositories[1]]: response[1]}}
 
         return expectSaga(repositoriesSaga.saga)
-          .provide([[call(requestRepositories, ''), response]])
+          .provide([[call(requestRepositories, '', DEFAULT_QUERY), response]])
           .put(entitiesActions.entitiesLoaded({entities}))
           .put(actions.repositoriesLoaded({repositories}))
           .dispatch(action)
@@ -44,7 +44,7 @@ describe('repository modules', () => {
         const error = new Error('Something went wrong')
 
         return expectSaga(repositoriesSaga.saga)
-          .provide([[call(requestRepositories, ''), throwError(error)]])
+          .provide([[call(requestRepositories, '', DEFAULT_QUERY), throwError(error)]])
           .put(actions.repositoriesLoadingError({error}))
           .dispatch(action)
           .silentRun()

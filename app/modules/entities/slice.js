@@ -1,5 +1,4 @@
 import {createSlice} from '@reduxjs/toolkit'
-import set from 'lodash/set'
 
 const initialState = {}
 
@@ -10,9 +9,15 @@ const {actions, reducer} = createSlice({
   reducers: {
     entitiesLoaded: (state, action) => {
       Object.entries(action.payload.entities).forEach(([type, entities]) => {
+        if (!state[type]) {
+          state[type] = {}
+        }
         Object.entries(entities).forEach(([id, entity]) => {
+          if (!state[type][id]) {
+            state[type][id] = {}
+          }
           Object.entries(entity).forEach(([key, value]) => {
-            set(state, [type, id, key], value)
+            state[type][id][key] = value
           })
         })
       })
