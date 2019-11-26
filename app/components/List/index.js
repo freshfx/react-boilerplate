@@ -1,21 +1,18 @@
-import React from 'react'
+import React, {useMemo} from 'react'
 import PropTypes from 'prop-types'
 
 import Ul from './Ul'
 import Wrapper from './Wrapper'
 
-function List(props) {
-  const ComponentToRender = props.component
-  let content = <div />
+const List = ({component: ComponentToRender, items}) => {
+  const renderItem = item => <ComponentToRender key={`item-${item}`} id={item} />
 
-  // If we have items, render them
-  if (props.items.length) {
-    content = props.items.map(id =>
-      <ComponentToRender key={`item-${id}`} id={id} />)
-  } else {
-    // Otherwise render a single component
-    content = <ComponentToRender />
-  }
+  const content = useMemo(() => {
+    if (items.length) {
+      return items.map(renderItem)
+    }
+    return <ComponentToRender />
+  }, [items])
 
   return (
     <Wrapper>
