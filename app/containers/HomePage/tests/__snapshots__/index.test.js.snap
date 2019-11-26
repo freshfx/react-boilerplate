@@ -36,95 +36,6 @@ exports[`HomePage should match the snapshot 1`] = `
   border-bottom: 1px dotted #999;
 }
 
-<div>
-  <article>
-    <div>
-      <section
-        class="emotion-2 emotion-3"
-      >
-        <h2
-          class="emotion-0 emotion-1"
-        >
-          Start your next react project in seconds
-        </h2>
-        <p>
-          A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices
-        </p>
-      </section>
-      <section
-        class="emotion-12 emotion-13"
-      >
-        <h2
-          class="emotion-0 emotion-1"
-        >
-          Try me!
-        </h2>
-        <form
-          class="emotion-10 emotion-11"
-        >
-          <label
-            for="username"
-          >
-            Show Github repositories by
-            <span
-              class="emotion-6 emotion-7"
-            >
-              @
-            </span>
-            <input
-              class="emotion-8 emotion-9"
-              id="username"
-              placeholder="mxstbr"
-              type="text"
-              value=""
-            />
-          </label>
-        </form>
-        <div>
-          Repos List
-        </div>
-      </section>
-    </div>
-  </article>
-</div>
-`;
-
-exports[`HomePage should render the repos list 1`] = `
-.emotion-2 {
-  margin: 3em auto;
-  text-align: center;
-}
-
-.emotion-2:first-of-type {
-  margin-top: 0;
-}
-
-.emotion-0 {
-  font-size: 1.5em;
-}
-
-.emotion-12 {
-  margin: 3em auto;
-}
-
-.emotion-12:first-of-type {
-  margin-top: 0;
-}
-
-.emotion-10 {
-  margin-bottom: 1em;
-}
-
-.emotion-6 {
-  color: black;
-  margin-left: 0.4em;
-}
-
-.emotion-8 {
-  outline: none;
-  border-bottom: 1px dotted #999;
-}
-
 <article>
   <div>
     <section
@@ -168,9 +79,7 @@ exports[`HomePage should render the repos list 1`] = `
           />
         </label>
       </form>
-      <div>
-        Repos List
-      </div>
+      ReposList Empty
     </section>
   </div>
 </article>

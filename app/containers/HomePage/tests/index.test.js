@@ -3,99 +3,108 @@
  */
 
 import React from 'react'
-import {render} from '@testing-library/react'
+import {
+  fireEvent,
+  render
+} from '@testing-library/react'
 import {IntlProvider} from 'react-intl'
 import {HelmetProvider} from 'react-helmet-async'
+import {Provider} from 'react-redux'
 
-import {actions as repositoriesActions} from 'modules/repository/results'
-import {actions} from 'modules/pages/home'
+import configureStore from 'configure-store'
+import {
+  actions
+} from 'modules/pages/home'
+import {
+  actions as repositoriesActions
+} from 'modules/repository/results'
+import history from 'utils/history'
 
-import {HomePage, mapDispatchToProps} from '../index'
+import HomePage from '../index'
+import messages from '../messages'
 
-jest.mock('components/ReposList', () => () => <div>Repos List</div>)
+jest.mock('components/ReposList', () => props => {
+  if (props.loading) {
+    return 'ReposList Loading'
+  }
+  if (props.error) {
+    return 'ReposList Error'
+  }
+  if (props.repos.length) {
+    return 'ReposList'
+  }
+  return 'ReposList Empty'
+})
 
-const renderComponent = (props = {}) =>
+const store = configureStore({}, history)
+const dispatch = jest.spyOn(store, 'dispatch')
+
+const renderComponent = () =>
   render(
     <IntlProvider locale="en">
       <HelmetProvider>
-        <HomePage {...props} />
+        <Provider store={store}>
+          <HomePage />
+        </Provider>
       </HelmetProvider>
     </IntlProvider>
   )
 
 describe('HomePage', () => {
-  it('should match the snapshot', () => {
-    const {container} = renderComponent()
-    expect(container).toMatchSnapshot()
+  beforeEach(() => {
+    dispatch.mockClear()
   })
 
-  it('should render the repos list', () => {
-    const props = {
-      error: false,
-      loading: false,
-      onSubmitForm: jest.fn(),
-      repos: []
-    }
-    const {container} = renderComponent(props)
+  it('should match the snapshot', () => {
+    const {container} = renderComponent()
     expect(container.firstChild).toMatchSnapshot()
   })
 
+  it('should render the repo list with the correct props', () => {
+    const {getByText} = renderComponent()
+    expect(getByText('ReposList Empty')).toBeInTheDocument()
+
+    store.dispatch(repositoriesActions.loadRepositories())
+    expect(getByText('ReposList Loading')).toBeInTheDocument()
+
+    const repositories = [1, 2, 3]
+    store.dispatch(repositoriesActions.repositoriesLoaded({repositories}))
+    expect(getByText('ReposList')).toBeInTheDocument()
+
+    store.dispatch(repositoriesActions.repositoriesLoadingError({error: {}}))
+    expect(getByText('ReposList Error')).toBeInTheDocument()
+  })
+
   it('should fetch the repos on mount if a username exists', () => {
-    const props = {
-      onSubmitForm: jest.fn(),
-      username: 'github-user'
-    }
-    renderComponent(props)
-    expect(props.onSubmitForm).toHaveBeenCalledWith()
+    store.dispatch(actions.changeUsername({username: 'mxstbr'}))
+    renderComponent()
+    expect(store.dispatch).toHaveBeenCalledWith(repositoriesActions.loadRepositories())
+    store.dispatch(actions.changeUsername({username: ''}))
   })
 
   it('should not fetch the repos on mount', () => {
-    const onSubmitForm = jest.fn()
-    renderComponent({onSubmitForm})
-    expect(onSubmitForm).not.toHaveBeenCalledWith()
-
-    renderComponent({onSubmitForm, username: ' '})
-    expect(onSubmitForm).not.toHaveBeenCalledWith()
+    renderComponent()
+    expect(store.dispatch).not.toHaveBeenCalled()
   })
 
-  describe('mapDispatchToProps', () => {
-    describe('onChangeUsername', () => {
-      it('should be injected', () => {
-        const dispatch = jest.fn()
-        const result = mapDispatchToProps(dispatch)
-        expect(result.onChangeUsername).toBeDefined()
-      })
+  it('should call the correct event when a user changes the input', () => {
+    const username = 'mxstbr'
+    const {getByLabelText} = renderComponent()
+    const domNode = getByLabelText(RegExp(messages.trymeMessage.defaultMessage, 'u'))
+    const event = {target: {value: username}}
+    fireEvent.change(domNode, event)
 
-      it('should dispatch changeUsername when called', () => {
-        const dispatch = jest.fn()
-        const result = mapDispatchToProps(dispatch)
-        const username = 'mxstbr'
-        result.onChangeUsername({target: {value: username}})
-        expect(dispatch).toHaveBeenCalledWith(actions.changeUsername({username}))
-      })
-    })
+    expect(store.dispatch).toHaveBeenCalledTimes(1)
+    expect(store.dispatch).toHaveBeenCalledWith(actions.changeUsername({username}))
 
-    describe('onSubmitForm', () => {
-      it('should be injected', () => {
-        const dispatch = jest.fn()
-        const result = mapDispatchToProps(dispatch)
-        expect(result.onSubmitForm).toBeDefined()
-      })
+    store.dispatch(actions.changeUsername({username: ''}))
+  })
 
-      it('should dispatch loadRepos when called', () => {
-        const dispatch = jest.fn()
-        const result = mapDispatchToProps(dispatch)
-        result.onSubmitForm()
-        expect(dispatch).toHaveBeenCalledWith(repositoriesActions.loadRepositories())
-      })
+  it('should call the correct event when a user submits the form', () => {
+    const {getByPlaceholderText} = renderComponent()
+    fireEvent.submit(getByPlaceholderText('mxstbr'))
 
-      it('should preventDefault if called with event', () => {
-        const preventDefault = jest.fn()
-        const result = mapDispatchToProps(() => {})
-        const evt = {preventDefault}
-        result.onSubmitForm(evt)
-        expect(preventDefault).toHaveBeenCalledWith()
-      })
-    })
+    expect(store.dispatch).toHaveBeenCalledTimes(1)
+    expect(store.dispatch).toHaveBeenCalledWith(repositoriesActions.loadRepositories())
   })
 })

@@ -22,7 +22,7 @@ import languageReducer from 'modules/language'
 
 import Wrapper from './Wrapper'
 
-const App = () => {
+export const App = () => {
   useInjectReducer(entitiesReducer)
   useInjectReducer(languageReducer)
 
@@ -43,10 +43,6 @@ const App = () => {
       <Footer />
     </Wrapper>
   )
-}
-
-export {
-  App
 }
 
 export default compose(
