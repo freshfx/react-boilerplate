@@ -7,7 +7,7 @@ import RepositoryListItem from 'containers/RepositoryListItem'
 
 import ErrorListItem from './ErrorListItem'
 
-function ReposList({loading, error, repos}) {
+const ReposList = ({loading, error, repos}) => {
   if (loading) {
     return <List component={LoadingIndicator} />
   }
