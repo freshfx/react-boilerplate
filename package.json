@@ -150,7 +150,6 @@
     "jest-emotion": "^10.0.17",
     "jest-runner-stylelint": "^2.2.1",
     "lint-staged": "^9.4.3",
-    "ngrok": "^3.2.5",
     "offline-plugin": "^5.0.7",
     "prettier": "^1.19.1",
     "react-test-renderer": "^16.12.0",

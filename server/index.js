@@ -8,17 +8,6 @@ const port = require('./port')
 const setup = require('./middlewares/frontendMiddleware')
 const {resolve} = require('path')
 
-const getNgrok = () => {
-  const isDev = process.env.NODE_ENV !== 'production'
-  const envTunnelEnabled = isDev && process.env.ENABLE_TUNNEL
-  const isTunnel = envTunnelEnabled || argv.tunnel
-  if (isTunnel) {
-    return require('ngrok')
-  }
-  return false
-}
-
-const ngrok = getNgrok()
 const app = express()
 
 /*
@@ -39,20 +28,9 @@ const host = customHost || null
 const prettyHost = customHost || 'localhost'
 
 // Start your app.
-app.listen(port, host, async err => {
+app.listen(port, host, err => {
   if (err) {
     logger.error(err.message)
-    return
-  }
-
-  // Connect to ngrok in dev mode
-  if (ngrok) {
-    try {
-      const url = await ngrok.connect(port)
-      logger.appStarted(port, prettyHost, url)
-    } catch (error) {
-      logger.error(error)
-    }
     return
   }
   logger.appStarted(port, prettyHost)
