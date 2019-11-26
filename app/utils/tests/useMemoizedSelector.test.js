@@ -1,6 +1,5 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
-import {is} from 'immutable'
 
 import useMemoizedSelector from '../useMemoizedSelector'
 
@@ -27,7 +26,7 @@ describe('useMemoizedSelector', () => {
 
   it('should call the useSelector hook with the correct args', () => {
     useMemoizedSelector(selector, {}, dependencies)
-    expect(useSelector).toHaveBeenCalledWith(expect.any(Function), is)
+    expect(useSelector).toHaveBeenCalledWith(expect.any(Function))
   })
 
   it('should call the memoized selector with the state and the ownProps', () => {
