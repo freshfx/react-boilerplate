@@ -29,9 +29,9 @@ exports[`Footer should match snapshot 1`] = `
     
       Made with love by 
     <a
-      href="https://twitter.com/mxstbr"
+      href="https://github.com/freshfx"
     >
-      Max Stoiber
+      FreshFX
     </a>
     .
     

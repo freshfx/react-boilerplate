@@ -33,7 +33,16 @@ const FeaturePage = () => (
         <p>
           <FormattedMessage {...messages.scaffoldingMessage} />
         </p>
-      </ListItem>s
+      </ListItem>
+
+      <ListItem>
+        <ListItemTitle>
+          <FormattedMessage {...messages.feedbackHeader} />
+        </ListItemTitle>
+        <p>
+          <FormattedMessage {...messages.feedbackMessage} />
+        </p>
+      </ListItem>
 
       <ListItem>
         <ListItemTitle>

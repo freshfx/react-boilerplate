@@ -49,6 +49,7 @@ exports[`RepositoryListItem should match snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .emotion-4:hover {

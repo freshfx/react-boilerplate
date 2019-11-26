@@ -7,7 +7,8 @@ exports[`LocaleToggle should render the default language messages 1`] = `
 
 .emotion-0 {
   line-height: 1em;
-  height: 20px;
+  background-color: transparent;
+  border-style: none;
 }
 
 <div

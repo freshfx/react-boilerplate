@@ -18,7 +18,7 @@ const Footer = () => (
       <FormattedMessage
         {...messages.authorMessage}
         values={{
-          author: <Anchor href="https://twitter.com/mxstbr">Max Stoiber</Anchor>
+          author: <Anchor href="https://github.com/freshfx">FreshFX</Anchor>
         }}
       />
     </section>

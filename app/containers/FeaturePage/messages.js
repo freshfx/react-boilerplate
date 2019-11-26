@@ -5,18 +5,20 @@
  */
 import {defineMessages} from 'react-intl'
 
+export const scope = 'boilerplate.containers.FeaturePage'
+
 export default defineMessages({
   cssHeader: {
     defaultMessage: 'Features',
-    id: 'boilerplate.containers.FeaturePage.css.header'
+    id: `${scope}.css.header`
   },
   cssMessage: {
     defaultMessage: 'Next generation CSS',
-    id: 'boilerplate.containers.FeaturePage.css.message'
+    id: `${scope}.css.message`
   },
   feedbackHeader: {
     defaultMessage: 'Instant feedback',
-    id: 'boilerplate.containers.FeaturePage.feedback.header'
+    id: `${scope}.feedback.header`
   },
   feedbackMessage: {
     defaultMessage: `
@@ -25,45 +27,45 @@ export default defineMessages({
     without refreshing the page. Preserve application state even when
     you update something in the underlying code!
     `,
-    id: 'boilerplate.containers.FeaturePage.feedback.message'
+    id: `${scope}.feedback.message`
   },
   header: {
     defaultMessage: 'Features',
-    id: 'boilerplate.containers.FeaturePage.header'
+    id: `${scope}.header`
   },
   intlHeader: {
     defaultMessage:
       'Complete i18n Standard Internationalization & Pluralization',
-    id: 'boilerplate.containers.FeaturePage.internationalization.header'
+    id: `${scope}.internationalization.header`
   },
   intlMessage: {
     defaultMessage:
       'Scalable apps need to support multiple languages, easily add and support multiple languages with `react-intl`.',
-    id: 'boilerplate.containers.FeaturePage.internationalization.message'
+    id: `${scope}.internationalization.message`
   },
   javascriptHeader: {
     defaultMessage: 'Next generation JavaScript',
-    id: 'boilerplate.containers.FeaturePage.javascript.header'
+    id: `${scope}.javascript.header`
   },
   javascriptMessage: {
     defaultMessage: `Use template strings, object destructuring, arrow functions, JSX
     syntax and more, today.`,
-    id: 'boilerplate.containers.FeaturePage.javascript.message'
+    id: `${scope}.javascript.message`
   },
   networkHeader: {
     defaultMessage: 'Offline-first',
-    id: 'boilerplate.containers.FeaturePage.network.header'
+    id: `${scope}.network.header`
   },
   networkMessage: {
     defaultMessage: `
       The next frontier in performant web apps: availability without a
       network connection from the instant your users load the app.
     `,
-    id: 'boilerplate.containers.FeaturePage.network.message'
+    id: `${scope}.network.message`
   },
   routingHeader: {
     defaultMessage: 'Industry-standard routing',
-    id: 'boilerplate.containers.FeaturePage.routing.header'
+    id: `${scope}.routing.header`
   },
   routingMessage: {
     defaultMessage: `
@@ -72,26 +74,26 @@ export default defineMessages({
     specificity low while eliminating style clashes. Ship only the
     styles that are on the page for the best performance.
     `,
-    id: 'boilerplate.containers.FeaturePage.routing.message'
+    id: `${scope}.routing.message`
   },
   scaffoldingHeader: {
     defaultMessage: 'Quick scaffolding',
-    id: 'boilerplate.containers.FeaturePage.scaffolding.header'
+    id: `${scope}.scaffolding.header`
   },
   scaffoldingMessage: {
     defaultMessage: `Automate the creation of components, containers, routes, selectors
   and sagas - and their tests - right from the CLI!`,
-    id: 'boilerplate.containers.FeaturePage.scaffolding.message'
+    id: `${scope}.scaffolding.message`
   },
   stateManagementHeader: {
     defaultMessage: 'Predictable state management',
-    id: 'boilerplate.containers.FeaturePage.state_management.header'
+    id: `${scope}.state_management.header`
   },
   stateManagementMessages: {
     defaultMessage: `
       Unidirectional data flow allows for change logging and time travel
     debugging.
     `,
-    id: 'boilerplate.containers.FeaturePage.state_management.message'
+    id: `${scope}.state_management.message`
   }
 })

@@ -2,7 +2,8 @@ import styled from '@emotion/styled'
 
 const Select = styled.select`
   line-height: 1em;
-  height: 20px;
+  background-color: transparent;
+  border-style: none;
 `
 
 export default Select

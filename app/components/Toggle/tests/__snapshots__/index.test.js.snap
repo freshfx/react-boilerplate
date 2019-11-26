@@ -3,7 +3,8 @@
 exports[`Toggle should match snapshot 1`] = `
 .emotion-0 {
   line-height: 1em;
-  height: 20px;
+  background-color: transparent;
+  border-style: none;
 }
 
 <select

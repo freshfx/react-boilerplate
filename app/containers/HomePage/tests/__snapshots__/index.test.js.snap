@@ -33,7 +33,9 @@ exports[`HomePage should match the snapshot 1`] = `
 
 .emotion-8 {
   outline: none;
+  border: none;
   border-bottom: 1px dotted #999;
+  background-color: transparent;
 }
 
 <article>

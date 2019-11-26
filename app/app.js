@@ -16,7 +16,9 @@ import {ConnectedRouter} from 'connected-react-router'
 import {HelmetProvider} from 'react-helmet-async'
 import {Global} from '@emotion/core'
 import FontFaceObserver from 'fontfaceobserver'
-import 'sanitize.css/sanitize.css'
+import 'sanitize.css'
+import 'sanitize.css/typography.css'
+import 'sanitize.css/forms.css'
 
 import 'public/robots/robots.txt'
 
