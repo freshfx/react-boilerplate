@@ -86,7 +86,7 @@ exports[`Button should render an anchor tag if no route is specified 1`] = `
 >
   <a
     class="emotion-0 emotion-1"
-    href="http://mxstbr.com"
+    href="#test"
   >
     <h1>
       Test

@@ -6,7 +6,7 @@ import Button from '../index'
 const handleRoute = () => {}
 
 const renderComponent = (props = {}) => render(
-  <Button href="http://mxstbr.com" {...props}>
+  <Button href="#test" {...props}>
     <h1>Test</h1>
   </Button>
 )
