@@ -1,3 +1,11 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/freshfx/react-boilerplate/compare/v1.1.0...v1.1.1) (2020-02-07)
+
+
+### Bug Fixes
+
+* also push tags on release ([b7ee35e](https://github.com/freshfx/react-boilerplate/commit/b7ee35e))
+
 <a name="1.1.0"></a>
 # 1.1.0 (2020-02-07)
 
