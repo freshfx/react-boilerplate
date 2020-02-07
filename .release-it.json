@@ -1,7 +1,7 @@
 {
   "git": {
     "commitMessage": "chore: release v%s",
-    "pushArgs": "--no-verify",
+    "pushArgs": "--no-verify --follow-tags",
     "requireCleanWorkingDir": false,
     "requireUpstream": true,
     "tagName": "v%s",
