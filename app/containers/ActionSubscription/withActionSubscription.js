@@ -1,5 +1,5 @@
 import React from 'react'
-import uuid from 'uuid/v4'
+import {v4 as uuidv4} from 'uuid'
 
 import ActionSubscriptionContext from './context'
 
@@ -10,7 +10,7 @@ const withActionSubscription = Component =>
 
       this.subscribers = []
       this.actionSubscription = null
-      this.identifier = uuid()
+      this.identifier = uuidv4()
     }
 
     componentWillUnmount() {
