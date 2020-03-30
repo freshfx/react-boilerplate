@@ -1,11 +1,11 @@
 {
   "git": {
-    "commitMessage": "chore: release v%s",
+    "commitMessage": "chore: release v${version}",
     "pushArgs": "--no-verify --follow-tags",
     "requireCleanWorkingDir": false,
     "requireUpstream": true,
-    "tagName": "v%s",
-    "tagAnnotation": "release %s"
+    "tagName": "v${version}",
+    "tagAnnotation": "release ${version}"
   },
   "github": {
     "release": false
