@@ -5,6 +5,7 @@ import {
   call,
   select
 } from 'redux-saga/effects'
+import {serializeError} from 'serialize-error'
 
 import requestRepositories from 'services/github-api/repositories/getByUser'
 import {actions as entitiesActions} from 'modules/entities'
@@ -45,7 +46,7 @@ describe('repository modules', () => {
 
         return expectSaga(repositoriesSaga.saga)
           .provide([[call(requestRepositories, '', DEFAULT_QUERY), throwError(error)]])
-          .put(actions.repositoriesLoadingError({error}))
+          .put(actions.repositoriesLoadingError({error: serializeError(error)}))
           .dispatch(action)
           .silentRun()
       })

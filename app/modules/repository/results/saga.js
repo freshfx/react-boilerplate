@@ -4,6 +4,7 @@ import {
   select,
   takeLatest
 } from 'redux-saga/effects'
+import {serializeError} from 'serialize-error'
 
 import requestRepositories from 'services/github-api/repositories/getByUser'
 import {actions as entitiesActions} from 'modules/entities'
@@ -35,7 +36,7 @@ function *watchLoadRepositories() {
     yield put(entitiesActions.entitiesLoaded({entities}))
     yield put(actions.repositoriesLoaded(result))
   } catch (error) {
-    yield put(actions.repositoriesLoadingError({error}))
+    yield put(actions.repositoriesLoadingError({error: serializeError(error)}))
   }
 }
 
