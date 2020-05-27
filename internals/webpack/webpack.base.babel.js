@@ -116,10 +116,6 @@ module.exports = options => ({
         ]
       },
       {
-        test: /\.html$/u,
-        use: 'happypack/loader?id=html'
-      },
-      {
         test: /\.(mp4|webm)$/u,
         use: {
           loader: 'url-loader',
@@ -185,12 +181,6 @@ module.exports = options => ({
           }
         }
       ]
-    }),
-
-    new HappyPack({
-      id: 'html',
-      threadPool: happyThreadPool,
-      loaders: ['html-loader']
     }),
 
     new webpack.ProvidePlugin({
