@@ -7,7 +7,6 @@ jest.mock('react-redux')
 
 const memoizedSelector = jest.fn()
 const selector = () => {}
-const dependencies = ['input']
 
 describe('useMemoizedSelector', () => {
   beforeAll(() => {
@@ -20,13 +19,13 @@ describe('useMemoizedSelector', () => {
   })
 
   it('should memoize the passed selector factory', () => {
-    useMemoizedSelector(selector, {}, dependencies)
-    expect(React.useMemo).toHaveBeenCalledWith(selector, dependencies)
+    useMemoizedSelector(selector, {})
+    expect(React.useMemo).toHaveBeenCalledWith(selector, [])
   })
 
   it('should call the useSelector hook with the correct args', () => {
-    useMemoizedSelector(selector, {}, dependencies)
-    expect(useSelector).toHaveBeenCalledWith(expect.any(Function))
+    useMemoizedSelector(selector, {}, null)
+    expect(useSelector).toHaveBeenCalledWith(expect.any(Function), null)
   })
 
   it('should call the memoized selector with the state and the ownProps', () => {
@@ -34,14 +33,14 @@ describe('useMemoizedSelector', () => {
     const ownProps = {bar: 'foo'}
 
     useSelector.mockImplementationOnce(fn => fn(state, ownProps))
-    useMemoizedSelector(selector, ownProps, dependencies)
+    useMemoizedSelector(selector, ownProps)
     expect(memoizedSelector).toHaveBeenCalledWith(state, ownProps)
   })
 
   it('should return the result of the useSelector hook', () => {
     const result = 'result'
     useSelector.mockImplementationOnce(() => 'result')
-    expect(useMemoizedSelector(selector, {}, dependencies)).toEqual(result)
+    expect(useMemoizedSelector(selector, {})).toEqual(result)
   })
 
   it('should not throw if called without dependencies and ownProps', () => {
