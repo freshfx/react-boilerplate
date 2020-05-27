@@ -1,3 +1,10 @@
+* feat(injectors): added injectors with HOCs instead of hooks (interim) (5d3fbcd)
+* build(tests): added lint task to local test task (2d4b2e6)
+* chore(dependencies): upgraded dependencies; removed html webpack loader (fbd8250)
+* feat(serialize-error): prevent non serialized values in the redux store (8fe9115)
+* feat(use-memoized-selector): replaced dependencies with equality fn (8d65102)
+* build(tests): added local test task; removed maxWorkers from local tests (75359d1)
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/freshfx/react-boilerplate/compare/v1.2.0...v1.2.1) (2020-03-30)
 
