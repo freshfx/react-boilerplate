@@ -1,7 +1,10 @@
 /**
  * Create the store with dynamic reducers
  */
-import {configureStore, getDefaultMiddleware} from '@reduxjs/toolkit'
+import {
+  configureStore as configureToolkitStore,
+  getDefaultMiddleware
+} from '@reduxjs/toolkit'
 import {routerMiddleware} from 'connected-react-router'
 import {createInjectorsEnhancer, forceReducerReload} from 'redux-injectors'
 import createSagaMiddleware from 'redux-saga'
@@ -12,7 +15,7 @@ import createReducer from './reducers'
 
 const sagaMiddleware = createSagaMiddleware()
 
-export default function configureAppStore(initialState, history, actionEmitter) {
+const configureStore = (initialState, history, actionEmitter) => {
   const {run: runSaga} = sagaMiddleware
 
   /*
@@ -36,7 +39,7 @@ export default function configureAppStore(initialState, history, actionEmitter) 
   ]
 
   // https://redux-toolkit.js.org/api/configureStore#full-example
-  const store = configureStore({
+  const store = configureToolkitStore({
     devTools: process.env.NODE_ENV !== 'production',
     enhancers,
     middleware: [...getDefaultMiddleware(), ...middlewares],
@@ -59,3 +62,5 @@ export default function configureAppStore(initialState, history, actionEmitter) 
 
   return store
 }
+
+export default configureStore

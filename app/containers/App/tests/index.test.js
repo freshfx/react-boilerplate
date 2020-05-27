@@ -1,14 +1,13 @@
 import React from 'react'
 import {render} from '@testing-library/react'
-import {useInjectReducer} from 'redux-injectors'
 import {HelmetProvider} from 'react-helmet-async'
+import {Provider} from 'react-redux'
 
-import entitiesReducer from 'modules/entities'
-import languageReducer from 'modules/language'
+import configureStore from 'configure-store'
+import history from 'utils/history'
 
 import {App} from '../index'
 
-jest.mock('redux-injectors')
 jest.mock('react-router-dom', () => ({
   Route({path}) {
     return <div data-testid={`route:${path}`} />
@@ -24,11 +23,14 @@ jest.mock('react-router-dom', () => ({
 jest.mock('components/Header', () => () => <div>Header</div>)
 jest.mock('components/Footer', () => () => <div>Footer</div>)
 
+const store = configureStore({}, history)
 const renderComponent = (props = {}) =>
   render(
-    <HelmetProvider>
-      <App {...props} />
-    </HelmetProvider>
+    <Provider store={store}>
+      <HelmetProvider>
+        <App {...props} />
+      </HelmetProvider>
+    </Provider>
   )
 
 describe('App', () => {
@@ -38,15 +40,5 @@ describe('App', () => {
     expect(getByText('Footer')).toBeDefined()
     expect(getByTestId('switch')).toBeDefined()
     expect(getByTestId('switch').children).toHaveLength(3)
-  })
-
-  it('should inject the entities reducer', () => {
-    renderComponent()
-    expect(useInjectReducer).toHaveBeenCalledWith(entitiesReducer)
-  })
-
-  it('should inject the language reducer', () => {
-    renderComponent()
-    expect(useInjectReducer).toHaveBeenCalledWith(languageReducer)
   })
 })

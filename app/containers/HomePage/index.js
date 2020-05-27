@@ -11,6 +11,7 @@ import {FormattedMessage} from 'react-intl'
 import H2 from 'components/H2'
 import ReposList from 'components/ReposList'
 
+import HomePageInjector from './Injector'
 import AtPrefix from './AtPrefix'
 import CenteredSection from './CenteredSection'
 import Form from './Form'
@@ -41,6 +42,7 @@ const HomePage = () => {
 
   return (
     <article>
+      <HomePageInjector />
       <Helmet>
         <title>Home Page</title>
         <meta

@@ -8,8 +8,11 @@
 
 import React from 'react'
 import {Helmet} from 'react-helmet-async'
-import {Route, Switch, withRouter} from 'react-router-dom'
-import {useInjectReducer} from 'redux-injectors'
+import {
+  Route,
+  Switch,
+  withRouter
+} from 'react-router-dom'
 import {compose} from 'redux'
 
 import Header from 'components/Header'
@@ -17,33 +20,28 @@ import Footer from 'components/Footer'
 import HomePage from 'containers/HomePage/Loadable'
 import FeaturePage from 'containers/FeaturePage/Loadable'
 import NotFoundPage from 'containers/NotFoundPage/Loadable'
-import entitiesReducer from 'modules/entities'
-import languageReducer from 'modules/language'
 
+import AppInjector from './Injector'
 import Wrapper from './Wrapper'
 
-export const App = () => {
-  useInjectReducer(entitiesReducer)
-  useInjectReducer(languageReducer)
-
-  return (
-    <Wrapper>
-      <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
-      >
-        <meta name="description" content="A React.js Boilerplate application" />
-      </Helmet>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
-      <Footer />
-    </Wrapper>
-  )
-}
+export const App = () => (
+  <Wrapper>
+    <AppInjector />
+    <Helmet
+      titleTemplate="%s - React.js Boilerplate"
+      defaultTitle="React.js Boilerplate"
+    >
+      <meta name="description" content="A React.js Boilerplate application" />
+    </Helmet>
+    <Header />
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/features" component={FeaturePage} />
+      <Route path="" component={NotFoundPage} />
+    </Switch>
+    <Footer />
+  </Wrapper>
+)
 
 export default compose(
   withRouter,

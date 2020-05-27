@@ -2,14 +2,9 @@ import {
   useDispatch,
   useSelector
 } from 'react-redux'
-import {
-  useInjectReducer,
-  useInjectSaga
-} from 'redux-injectors'
 
-import reducer, {
+import {
   actions,
-  saga,
   selectors
 } from 'modules/repository/results'
 
@@ -28,9 +23,6 @@ const useRepositoriesState = () => ({
 })
 
 const useRepositoryResults = () => {
-  useInjectReducer(reducer)
-  useInjectSaga(saga)
-
   const state = useRepositoriesState()
   const events = useRepositoriesEvents()
 
