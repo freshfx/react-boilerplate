@@ -115,28 +115,23 @@ if (window.Intl) {
 }
 
 /*
- * Install ServiceWorker and AppCache in the end since
+ * Install ServiceWorker in the end since
  * it's not most important operation and if main code fails,
  * we do not want it installed
  */
-/* eslint-disable-next-line no-process-env */
-if (process.env.NODE_ENV === 'production') {
-  /* eslint-disable global-require, sort-keys */
-  const runtime = require('offline-plugin/runtime')
-
-  const runtimeOptions = {
-    onUpdateReady: () => {
-      runtime.applyUpdate()
-
-      /*
-       * TODO: remove applyUpdate and fire event to open a Dialog like
-       *  "There is a new version available. Do you want to apply it? (apply and refresh)"
-       */
-    },
-    onUpdated: () => {
-      window.location.reload()
-    }
-  }
-
-  runtime.install(runtimeOptions)
+if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        const initialWorker = registration.active
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'activated' && initialWorker) {
+              window.location.reload()
+            }
+          })
+        })
+      })
+  })
 }

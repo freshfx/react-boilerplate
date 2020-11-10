@@ -14,15 +14,15 @@ const deTranslationMessages = require('./translations/de.json')
 /* istanbul ignore if */
 if (!Intl.PluralRules) {
   require('intl-pluralrules/polyfill')
-  require('@formatjs/intl-pluralrules/dist/locale-data/en')
-  require('@formatjs/intl-pluralrules/dist/locale-data/de')
+  require('@formatjs/intl-pluralrules/locale-data/en')
+  require('@formatjs/intl-pluralrules/locale-data/de')
 }
 
 /* istanbul ignore if */
 if (!Intl.RelativeTimeFormat) {
   require('@formatjs/intl-relativetimeformat/polyfill')
-  require('@formatjs/intl-relativetimeformat/dist/locale-data/en')
-  require('@formatjs/intl-relativetimeformat/dist/locale-data/de')
+  require('@formatjs/intl-relativetimeformat/locale-data/en')
+  require('@formatjs/intl-relativetimeformat/locale-data/de')
 }
 
 const DEFAULT_LOCALE = 'en'

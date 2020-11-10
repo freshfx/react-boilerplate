@@ -11,7 +11,6 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
 const CircularDependencyPlugin = require('circular-dependency-plugin')
-const {UnusedFilesWebpackPlugin} = require('unused-files-webpack-plugin')
 const logger = require('../../server/logger')
 const {dllPlugin} = require('../config')
 
@@ -112,17 +111,6 @@ module.exports = require('./webpack.base.babel')({
   // Add development plugins
   plugins: [
     ...dependencyHandlers(),
-    new UnusedFilesWebpackPlugin({
-      patterns: ['app/**/*.*'],
-      globOptions: {
-        ignore: [
-          'app/**/*.test.*',
-          'app/config/*.js',
-          'app/public/robots/*.txt',
-          'app/public/icon-512x512.png'
-        ]
-      }
-    }),
     ...plugins
   ],
 
@@ -131,6 +119,9 @@ module.exports = require('./webpack.base.babel')({
    * See https://webpack.js.org/configuration/devtool/#devtool
    */
   devtool: 'eval-source-map',
+
+  infrastructureLogging: {level: 'warn'},
+  stats: 'errors-only',
 
   performance: {
     hints: false

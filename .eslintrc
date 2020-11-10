@@ -47,6 +47,17 @@
     "import/no-unresolved": 2,
     "import/no-webpack-loader-syntax": 2,
     "import/prefer-default-export": 2,
+    "import/no-unused-modules": [
+      1,
+      {
+        "unusedExports": true,
+        "ignoreExports": [
+          "app/config/*.js",
+          "app/styles/*.js",
+          "app/**/*.test.*"
+        ]
+      }
+    ],
     "indent": [2, 2, {
       "SwitchCase": 1
     }],
@@ -119,6 +130,7 @@
       "files": "*.test.js",
       "rules": {
         "no-magic-numbers": "off",
+        "react/display-name": 0,
         "react/jsx-props-no-spreading": "off",
         "react/prop-types": "off"
       }

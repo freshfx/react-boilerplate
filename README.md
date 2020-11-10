@@ -4,7 +4,7 @@ This is a modified fork from [react-boilerplate/react-boilerplate](https://githu
 
 ## Requirements
 
-* Node v8 or above
+* Node v14 or above
 
 ## Quick start
 

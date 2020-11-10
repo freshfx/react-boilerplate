@@ -63,7 +63,12 @@ module.exports = options => ({
       },
       {
         test: /\/robots(\.\w+)?\.txt$/u,
-        use: 'happypack/loader?id=robots'
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'robots.txt'
+          }
+        }
       },
       {
         test: /\/opensearch(\.\w+)?\.xml$/u,
@@ -156,19 +161,6 @@ module.exports = options => ({
     }),
 
     new HappyPack({
-      id: 'robots',
-      threadPool: happyThreadPool,
-      loaders: [
-        {
-          loader: 'file-loader',
-          options: {
-            name: 'robots.txt'
-          }
-        }
-      ]
-    }),
-
-    new HappyPack({
       id: 'svg',
       threadPool: happyThreadPool,
       loaders: [
@@ -185,7 +177,7 @@ module.exports = options => ({
 
     new webpack.ProvidePlugin({
       // Make fetch available
-      fetch: 'exports-loader?self.fetch!whatwg-fetch'
+      fetch: 'exports-loader?type=commonjs&exports=single|self.fetch!whatwg-fetch'
     }),
 
     /*
@@ -205,28 +197,22 @@ module.exports = options => ({
         APP_ENV: JSON.stringify(process.env.APP_ENV)
       }
     }),
-    new webpack.NormalModuleReplacementPlugin(/app\/config\/index.js/u, result => {
+
+    new webpack.NormalModuleReplacementPlugin(/app\/config\/index.js/u, resource => {
       const appEnv = process.env.APP_ENV || 'index'
       const filename = configFiles.find(file => file.indexOf(appEnv) === 0) || 'index.js'
-      const request = result.request.replace(/app\/config\/.+$/u, `app/config/${filename}`)
-      const resource = result.resource.replace(/app\/config\/.+$/u, `app/config/${filename}`)
-      Object.assign(result, {
-        request,
-        resource
-      })
+      resource.createData.resource = resource.createData.resource.replace(/config\/index.js/u, `config/${filename}`)
+      resource.request = resource.request.replace(/config/u, `config/${filename}`)
     }),
-    // eslint-disable-next-line prefer-named-capture-group
-    new webpack.NormalModuleReplacementPlugin(/^(\.\/)?public\/robots\/robots\.txt/u, result => {
+
+    new webpack.NormalModuleReplacementPlugin(/^(\.\/)?public\/robots\/robots\.txt/u, resource => {
       if (!process.env.APP_ENV) {
         return
       }
       const appEnv = process.env.APP_ENV
       const filename = robotFiles.find(file => file.indexOf(`robots.${appEnv}.txt`) === 0) || 'robots.txt'
-      const request = result.request.replace(/public\/robots\/robots\.txt$/u, `public/robots/${filename}`)
-      Object.assign(result, {
-        request,
-        resource: request
-      })
+      const request = resource.request.replace(/public\/robots\/robots\.txt$/u, `public/robots/${filename}`)
+      Object.assign(resource, {request})
     })
   ]),
   resolve: {
@@ -249,6 +235,8 @@ module.exports = options => ({
     ]
   },
   devtool: options.devtool,
+  stats: options.stats,
+  infrastructureLogging: options.infrastructureLogging,
   // Make web variables accessible to webpack, e.g. window
   target: 'web',
   performance: options.performance || {}

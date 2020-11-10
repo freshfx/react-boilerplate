@@ -4,9 +4,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifest = require('webpack-pwa-manifest')
-const OfflinePlugin = require('offline-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const {HashedModuleIdsPlugin} = require('webpack')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = require('./webpack.base.babel')({
   mode: 'production',
@@ -24,15 +23,15 @@ module.exports = require('./webpack.base.babel')({
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        cache: true,
         parallel: true,
         extractComments: true
       })
     ],
+    moduleIds: 'named',
     nodeEnv: 'production',
     sideEffects: true,
     concatenateModules: true,
-    splitChunks: {chunks: 'async'},
+    splitChunks: {chunks: 'all'},
     runtimeChunk: true
   },
 
@@ -55,38 +54,10 @@ module.exports = require('./webpack.base.babel')({
       inject: true
     }),
 
-    /*
-     * Put it in the end to capture all the HtmlWebpackPlugin's
-     * assets manipulations and do leak its manipulations to HtmlWebpackPlugin
-     */
-    new OfflinePlugin({
-      relativePaths: false,
-      publicPath: '/',
-      appShell: '/',
-
-      /*
-       * No need to cache .htaccess. See http://mxs.is/googmp,
-       * this is applied before any match in `caches` section
-       */
-      excludes: ['.htaccess'],
-
-      caches: {
-        main: [':rest:'],
-
-        /*
-         * All chunks marked as `additional`, loaded after main section
-         * and do not prevent SW to install. Change to `optional` if
-         * do not want them to be preloaded at all (cached only when first loaded)
-         */
-        additional: ['*.chunk.js']
-      },
-
-      // Removes warning for about `additional` section usage
-      safeToUseOptionalCaches: true,
-
-      ServiceWorker: {
-        events: true
-      }
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      exclude: ['.htaccess'],
+      skipWaiting: true
     }),
 
     new WebpackPwaManifest({
@@ -118,12 +89,6 @@ module.exports = require('./webpack.base.babel')({
           ]
         }
       ]
-    }),
-
-    new HashedModuleIdsPlugin({
-      hashFunction: 'sha256',
-      hashDigest: 'hex',
-      hashDigestLength: 20
     })
   ],
 
