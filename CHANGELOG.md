@@ -1,3 +1,5 @@
+# [1.4.0](https://github.com/freshfx/react-boilerplate/compare/v1.3.0...v1.4.0) (2020-11-11)
+
 * feat(injectors): added injectors with HOCs instead of hooks (interim) (5d3fbcd)
 * build(tests): added lint task to local test task (2d4b2e6)
 * chore(dependencies): upgraded dependencies; removed html webpack loader (fbd8250)
