@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/freshfx/react-boilerplate/compare/v1.4.0...v1.4.1) (2020-11-19)
+
+
+### Bug Fixes
+
+* **server:** fix dev middleware file system ([216bda2](https://github.com/freshfx/react-boilerplate/commit/216bda21aa4a2bb1b8055dd06b36ba209a87decf))
+
 # [1.4.0](https://github.com/freshfx/react-boilerplate/compare/v1.3.0...v1.4.0) (2020-11-11)
 
 * feat(injectors): added injectors with HOCs instead of hooks (interim) (5d3fbcd)
