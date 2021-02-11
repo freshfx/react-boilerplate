@@ -1,8 +1,4 @@
-import {
-  BLACK,
-  mediaSize,
-  WHITE
-} from '../variables'
+import {BLACK, mediaSize, WHITE} from '../variables'
 
 describe('styles variables', () => {
   it('should return black', () => {

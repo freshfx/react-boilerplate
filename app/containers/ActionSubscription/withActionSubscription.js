@@ -19,11 +19,17 @@ const withActionSubscription = Component =>
 
     addSubscriber = (actionType, subscriber) => {
       this.subscribers.push(actionType)
-      this.actionSubscription.addSubscriber(actionType, subscriber, this.identifier)
+      this.actionSubscription.addSubscriber(
+        actionType,
+        subscriber,
+        this.identifier
+      )
     }
 
     removeSubscriber = actionType => {
-      this.subscribers = this.subscribers.filter(subscriber => subscriber !== actionType)
+      this.subscribers = this.subscribers.filter(
+        subscriber => subscriber !== actionType
+      )
       this.actionSubscription.removeSubscriber(actionType, this.identifier)
     }
 

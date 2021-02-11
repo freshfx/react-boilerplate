@@ -1,6 +1,7 @@
 import noop from 'lodash/noop'
 
 import request from 'utils/request'
+
 import githubApiRequest, {baseUrl} from '../request'
 
 jest.mock('utils/request')

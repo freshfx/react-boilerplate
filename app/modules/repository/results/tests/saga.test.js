@@ -1,10 +1,6 @@
 import {expectSaga} from 'redux-saga-test-plan'
 import {throwError} from 'redux-saga-test-plan/providers'
-
-import {
-  call,
-  select
-} from 'redux-saga/effects'
+import {call, select} from 'redux-saga/effects'
 import {serializeError} from 'serialize-error'
 
 import requestRepositories from 'services/github-api/repositories/getByUser'
@@ -30,8 +26,16 @@ describe('repository modules', () => {
 
       it('should dispatch a entitiesLoaded and a repositoriesLoaded actions with the correct payload', () => {
         const repositories = ['repository-id-1', 'repository-id-2']
-        const response = repositories.map(id => ({id, name: `Name for repository ${id}`}))
-        const entities = {repositories: {[repositories[0]]: response[0], [repositories[1]]: response[1]}}
+        const response = repositories.map(id => ({
+          id,
+          name: `Name for repository ${id}`
+        }))
+        const entities = {
+          repositories: {
+            [repositories[0]]: response[0],
+            [repositories[1]]: response[1]
+          }
+        }
 
         return expectSaga(repositoriesSaga.saga)
           .provide([[call(requestRepositories, '', DEFAULT_QUERY), response]])
@@ -45,7 +49,9 @@ describe('repository modules', () => {
         const error = new Error('Something went wrong')
 
         return expectSaga(repositoriesSaga.saga)
-          .provide([[call(requestRepositories, '', DEFAULT_QUERY), throwError(error)]])
+          .provide([
+            [call(requestRepositories, '', DEFAULT_QUERY), throwError(error)]
+          ])
           .put(actions.repositoriesLoadingError({error: serializeError(error)}))
           .dispatch(action)
           .silentRun()

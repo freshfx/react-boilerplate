@@ -1,7 +1,4 @@
-import {
-  rgba,
-  parseToRgb
-} from 'polished'
+import {rgba, parseToRgb} from 'polished'
 import {keyframes} from '@emotion/react'
 
 export const divide = (dividend, divisor) => {
@@ -9,10 +6,11 @@ export const divide = (dividend, divisor) => {
   return `${parseFloat(dividend) / divisor}${unit}`
 }
 
-export const addAlpha = (color, alpha) => rgba({
-  ...parseToRgb(color),
-  alpha
-})
+export const addAlpha = (color, alpha) =>
+  rgba({
+    ...parseToRgb(color),
+    alpha
+  })
 
 const DEFAULT_OPACITY_FROM = 0
 const DEFAULT_OPACITY_TO = 1

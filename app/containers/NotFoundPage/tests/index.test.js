@@ -10,11 +10,12 @@ import NotFound from '../index'
 
 jest.mock('components/H1', () => ({children}) => <h1>{children}</h1>)
 
-const renderComponent = (props = {}) => render(
-  <IntlProvider locale="en">
-    <NotFound {...props} />
-  </IntlProvider>
-)
+const renderComponent = (props = {}) =>
+  render(
+    <IntlProvider locale="en">
+      <NotFound {...props} />
+    </IntlProvider>
+  )
 
 describe('NotFound', () => {
   it('should match the snapshot', () => {

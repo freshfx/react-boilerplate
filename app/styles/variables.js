@@ -1,17 +1,9 @@
 /* eslint-disable no-magic-numbers, max-lines */
 
 import {css} from '@emotion/react'
-import {
-  rgba,
-  lighten,
-  darken,
-  stripUnit,
-  rem,
-  em
-} from 'polished'
-import {
-  addAlpha
-} from './utils'
+import {rgba, lighten, darken, stripUnit, rem, em} from 'polished'
+
+import {addAlpha} from './utils'
 
 // Colors
 
@@ -50,14 +42,12 @@ export const GRAY_LIGHTEST = '#F6F6F6'
 export const CMS_YELLOW = '#FFE46D'
 export const CMS_ORANGE = '#FFDE28'
 
-
 // Body
 
 // Settings for the `<body>` element.
 
 export const BODY_BG = WHITE
 export const BODY_COLOR = GRAY_DARKEST
-
 
 // Components
 
@@ -124,12 +114,12 @@ export const SPACE_BASE_MARGIN = '1rem'
 
 export const SPACE_SITE_PADDING = '1.5rem'
 
-
 // Fonts
 
 // Font, line-height, and color for body text, headings, and more.
 
-export const FONT_FAMILY_SANS_SERIF = '"OPEN SANS", HELVETICA, ARIAL, SANS_SERIF'
+export const FONT_FAMILY_SANS_SERIF =
+  '"OPEN SANS", HELVETICA, ARIAL, SANS_SERIF'
 export const FONT_FAMILY_BASE = FONT_FAMILY_SANS_SERIF
 
 export const FONT_SIZE_MOBILE = '13px'
@@ -170,7 +160,10 @@ export const INPUT_BOX_SHADOW = `inset 0 1px 1px ${addAlpha(BLACK, 0.075)}`
 export const INPUT_BG_FOCUS = INPUT_BG
 export const INPUT_BORDER_COLOR = lighten(0.85, BLACK)
 export const INPUT_BORDER_COLOR_FOCUS = lighten(0.25, GRAY)
-export const INPUT_BOX_SHADOW_FOCUS = `${INPUT_BOX_SHADOW}, ${addAlpha(INPUT_BORDER_COLOR_FOCUS, 0.6)}`
+export const INPUT_BOX_SHADOW_FOCUS = `${INPUT_BOX_SHADOW}, ${addAlpha(
+  INPUT_BORDER_COLOR_FOCUS,
+  0.6
+)}`
 export const INPUT_BORDER_FOCUS = addAlpha(BLACK, 0.15)
 export const INPUT_COLOR_PLACEHOLDER = GRAY_LIGHT
 export const INPUT_BTN_BORDER_WIDTH = BORDER_WIDTH
@@ -268,24 +261,28 @@ export const OPT_IN_STATE_COLORS = {
   valid: BLUE
 }
 
-const toRem = (value, base) => value.split(' ')
-  .map(it => {
-    if (it === '0') {
-      return it
-    }
-    return rem(it, base)
-  })
-  .join(' ')
+const toRem = (value, base) =>
+  value
+    .split(' ')
+    .map(it => {
+      if (it === '0') {
+        return it
+      }
+      return rem(it, base)
+    })
+    .join(' ')
 
-const mapRulesString = rulesString => rulesString.split(';')
-  .filter(ruleString => ruleString.trim().length > 0)
-  .reduce((acc, ruleString) => {
-    const [property, value] = ruleString.split(':').map(it => it.trim())
-    return {
-      ...acc,
-      [property]: value
-    }
-  }, {})
+const mapRulesString = rulesString =>
+  rulesString
+    .split(';')
+    .filter(ruleString => ruleString.trim().length > 0)
+    .reduce((acc, ruleString) => {
+      const [property, value] = ruleString.split(':').map(it => it.trim())
+      return {
+        ...acc,
+        [property]: value
+      }
+    }, {})
 
 export const mediaSize = (...args) => {
   const [[rulesString = ''] = []] = args
@@ -295,6 +292,8 @@ export const mediaSize = (...args) => {
   const reduce = (acc, property, base) =>
     `${acc} ${property}: ${toRem(rules[property], base)};`
 
-  return Object.keys(rules)
-    .reduce((acc, property) => reduce(acc, property, FONT_SIZE_BASE), '')
+  return Object.keys(rules).reduce(
+    (acc, property) => reduce(acc, property, FONT_SIZE_BASE),
+    ''
+  )
 }

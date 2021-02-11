@@ -10,11 +10,12 @@ jest.mock('react-router-dom', () => ({
   }
 }))
 
-const renderComponent = () => render(
-  <IntlProvider locale="en">
-    <Header />
-  </IntlProvider>
-)
+const renderComponent = () =>
+  render(
+    <IntlProvider locale="en">
+      <Header />
+    </IntlProvider>
+  )
 
 describe('Header', () => {
   it('should match snapshot', () => {

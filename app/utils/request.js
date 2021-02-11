@@ -18,10 +18,7 @@ const defaultOptions = {
  *
  * @return {object}          The parsed JSON from the request
  */
-const parseJSON = response =>
-  response
-    .json()
-    .catch(() => null)
+const parseJSON = response => response.json().catch(() => null)
 
 /**
  * Reads the text returned by a network request
@@ -30,10 +27,7 @@ const parseJSON = response =>
  *
  * @return {string}          The USVString object (text) from the request
  */
-export const getText = response =>
-  response
-    .text()
-    .catch(() => null)
+const getText = response => response.text().catch(() => null)
 
 /**
  * Checks if a network request came back fine, and throws an error if not
@@ -43,7 +37,10 @@ export const getText = response =>
  * @return {object|undefined} Returns either the response, or throws an error
  */
 const checkStatus = async response => {
-  if (response.status >= STATUS_CODES.ok && response.status < STATUS_CODES.multipleChoices) {
+  if (
+    response.status >= STATUS_CODES.ok &&
+    response.status < STATUS_CODES.multipleChoices
+  ) {
     return response
   }
 
@@ -61,10 +58,12 @@ const checkStatus = async response => {
  *
  * @return {string}           The USVString object (text) from the request
  */
-export const requestText = (url, options) =>
+const requestText = (url, options) =>
   fetch(url, {...defaultOptions, ...options})
     .then(checkStatus)
     .then(getText)
+
+export {getText, requestText}
 
 /**
  * Requests a URL, returning a promise

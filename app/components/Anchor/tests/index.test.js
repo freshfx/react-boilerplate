@@ -9,5 +9,3 @@ describe('Anchor', () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 })
-
-

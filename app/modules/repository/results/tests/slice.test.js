@@ -1,8 +1,4 @@
-import {
-  actions,
-  initialState,
-  reducer
-} from '../slice'
+import {actions, initialState, reducer} from '../slice'
 
 describe('repository modules', () => {
   describe('results slice', () => {
@@ -30,25 +26,37 @@ describe('repository modules', () => {
 
     describe('repositoriesLoaded', () => {
       it('should set the isLoading state to false', () => {
-        const nextState = reducer(isLoadingState, actions.repositoriesLoaded({}))
+        const nextState = reducer(
+          isLoadingState,
+          actions.repositoriesLoaded({})
+        )
         expect(nextState.isLoading).toBeFalsy()
       })
 
       it('should set the repositories state', () => {
         const repositories = [1, 2, 3]
-        const nextState = reducer(initialState, actions.repositoriesLoaded({repositories}))
+        const nextState = reducer(
+          initialState,
+          actions.repositoriesLoaded({repositories})
+        )
         expect(nextState.repositories).toEqual(repositories)
       })
     })
 
     describe('repositoriesLoadingError', () => {
       it('should set the error state', () => {
-        const nextState = reducer(initialState, actions.repositoriesLoadingError({error}))
+        const nextState = reducer(
+          initialState,
+          actions.repositoriesLoadingError({error})
+        )
         expect(nextState.error).toEqual(error)
       })
 
       it('should set the isLoading state to false', () => {
-        const nextState = reducer(isLoadingState, actions.repositoriesLoadingError({}))
+        const nextState = reducer(
+          isLoadingState,
+          actions.repositoriesLoadingError({})
+        )
         expect(nextState.isLoading).toBeFalsy()
       })
     })

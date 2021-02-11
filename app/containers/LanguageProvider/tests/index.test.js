@@ -18,13 +18,14 @@ const messages = defineMessages({
 })
 
 const store = configureStore({}, history)
-const renderComponent = locale => render(
-  <Provider store={store}>
-    <LanguageProvider locale={locale}>
-      <FormattedMessage {...messages.someMessage} />
-    </LanguageProvider>
-  </Provider>
-)
+const renderComponent = locale =>
+  render(
+    <Provider store={store}>
+      <LanguageProvider locale={locale}>
+        <FormattedMessage {...messages.someMessage} />
+      </LanguageProvider>
+    </Provider>
+  )
 
 describe('LanguageProvider', () => {
   it('should use defaultMessage', () => {

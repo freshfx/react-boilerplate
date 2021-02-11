@@ -1,9 +1,4 @@
-import {
-  call,
-  put,
-  select,
-  takeLatest
-} from 'redux-saga/effects'
+import {call, put, select, takeLatest} from 'redux-saga/effects'
 import {serializeError} from 'serialize-error'
 
 import requestRepositories from 'services/github-api/repositories/getByUser'
@@ -17,16 +12,23 @@ const DEFAULT_QUERY = {
   type: 'all'
 }
 
-function *watchLoadRepositories() {
+function* watchLoadRepositories() {
   try {
     const username = yield select(homePageSelectors.selectUsername)
-    const repositories = yield call(requestRepositories, username, DEFAULT_QUERY)
+    const repositories = yield call(
+      requestRepositories,
+      username,
+      DEFAULT_QUERY
+    )
 
     const entities = {
-      repositories: repositories.reduce((acc, curr) => ({
-        ...acc,
-        [curr.id]: curr
-      }), {})
+      repositories: repositories.reduce(
+        (acc, curr) => ({
+          ...acc,
+          [curr.id]: curr
+        }),
+        {}
+      )
     }
 
     const result = {
@@ -40,13 +42,11 @@ function *watchLoadRepositories() {
   }
 }
 
-function *saga() {
+function* saga() {
   yield takeLatest(actions.loadRepositories.type, watchLoadRepositories)
 }
 
-export {
-  DEFAULT_QUERY
-}
+export {DEFAULT_QUERY}
 
 export default {
   key: 'repositoryResultsSaga',

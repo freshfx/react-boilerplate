@@ -17,11 +17,12 @@ jest.mock('../useRepository')
 jest.mock('components/ListItem', () => ({item}) => item)
 
 const id = 'repository-id-1'
-const renderComponent = (props = {}) => render(
-  <IntlProvider locale="en">
-    <RepositoryListItem id={id} {...props} />
-  </IntlProvider>
-)
+const renderComponent = (props = {}) =>
+  render(
+    <IntlProvider locale="en">
+      <RepositoryListItem id={id} {...props} />
+    </IntlProvider>
+  )
 
 describe('RepositoryListItem', () => {
   beforeAll(() => {

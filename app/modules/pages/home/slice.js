@@ -17,12 +17,7 @@ const {actions, reducer} = createSlice({
   }
 })
 
-export {
-  actions,
-  initialState,
-  name,
-  reducer
-}
+export {actions, initialState, name, reducer}
 
 export default {
   key: name,

@@ -3,21 +3,14 @@
  */
 
 import React from 'react'
-import {
-  fireEvent,
-  render
-} from '@testing-library/react'
+import {fireEvent, render} from '@testing-library/react'
 import {IntlProvider} from 'react-intl'
 import {HelmetProvider} from 'react-helmet-async'
 import {Provider} from 'react-redux'
 
 import configureStore from 'configure-store'
-import {
-  actions
-} from 'modules/pages/home'
-import {
-  actions as repositoriesActions
-} from 'modules/repository/results'
+import {actions} from 'modules/pages/home'
+import {actions as repositoriesActions} from 'modules/repository/results'
 import history from 'utils/history'
 
 import HomePage from '../index'
@@ -78,7 +71,9 @@ describe('HomePage', () => {
   it('should fetch the repos on mount if a username exists', () => {
     store.dispatch(actions.changeUsername({username: 'mxstbr'}))
     renderComponent()
-    expect(store.dispatch).toHaveBeenCalledWith(repositoriesActions.loadRepositories())
+    expect(store.dispatch).toHaveBeenCalledWith(
+      repositoriesActions.loadRepositories()
+    )
     store.dispatch(actions.changeUsername({username: ''}))
   })
 
@@ -90,12 +85,16 @@ describe('HomePage', () => {
   it('should call the correct event when a user changes the input', () => {
     const username = 'mxstbr'
     const {getByLabelText} = renderComponent()
-    const domNode = getByLabelText(RegExp(messages.trymeMessage.defaultMessage, 'u'))
+    const domNode = getByLabelText(
+      RegExp(messages.trymeMessage.defaultMessage, 'u')
+    )
     const event = {target: {value: username}}
     fireEvent.change(domNode, event)
 
     expect(store.dispatch).toHaveBeenCalledTimes(1)
-    expect(store.dispatch).toHaveBeenCalledWith(actions.changeUsername({username}))
+    expect(store.dispatch).toHaveBeenCalledWith(
+      actions.changeUsername({username})
+    )
 
     store.dispatch(actions.changeUsername({username: ''}))
   })
@@ -105,6 +104,8 @@ describe('HomePage', () => {
     fireEvent.submit(getByPlaceholderText('mxstbr'))
 
     expect(store.dispatch).toHaveBeenCalledTimes(1)
-    expect(store.dispatch).toHaveBeenCalledWith(repositoriesActions.loadRepositories())
+    expect(store.dispatch).toHaveBeenCalledWith(
+      repositoriesActions.loadRepositories()
+    )
   })
 })

@@ -8,11 +8,7 @@
 
 import React from 'react'
 import {Helmet} from 'react-helmet-async'
-import {
-  Route,
-  Switch,
-  withRouter
-} from 'react-router-dom'
+import {Route, Switch, withRouter} from 'react-router-dom'
 import {compose} from 'redux'
 
 import Header from 'components/Header'
@@ -43,7 +39,4 @@ export const App = () => (
   </Wrapper>
 )
 
-export default compose(
-  withRouter,
-  React.memo
-)(App)
+export default compose(withRouter, React.memo)(App)

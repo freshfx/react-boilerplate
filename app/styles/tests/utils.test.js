@@ -1,8 +1,4 @@
-import {
-  divide,
-  addAlpha,
-  createOpacityAnimation
-} from '../utils'
+import {divide, addAlpha, createOpacityAnimation} from '../utils'
 
 const two = 2
 

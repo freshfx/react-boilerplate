@@ -1,8 +1,4 @@
-import {
-  actions,
-  initialState,
-  reducer
-} from '../slice'
+import {actions, initialState, reducer} from '../slice'
 
 describe('modules', () => {
   describe('language slice', () => {

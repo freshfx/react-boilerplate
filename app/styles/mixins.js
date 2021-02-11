@@ -1,6 +1,7 @@
 /* eslint-disable no-magic-numbers, capitalized-comments */
 /* stylelint-disable property-no-vendor-prefix */
 import {css} from '@emotion/react'
+
 import {
   media,
   containerWidths,
@@ -77,7 +78,8 @@ export const input = css`
   border: none;
   padding: 0;
   border-radius: 0;
-  transition: color 0.4s ease, border-color 0.4s ease, background-color 0.4s ease;
+  transition: color 0.4s ease, border-color 0.4s ease,
+    background-color 0.4s ease;
   -webkit-appearance: none;
   -webkit-font-smoothing: antialiased;
 

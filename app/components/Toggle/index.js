@@ -2,12 +2,14 @@ import React, {useMemo} from 'react'
 import PropTypes from 'prop-types'
 import noop from 'lodash/noop'
 
-import Select from './Select'
 import ToggleOption from '../ToggleOption'
 
+import Select from './Select'
+
 const Toggle = props => {
-  const renderOption = value =>
+  const renderOption = value => (
     <ToggleOption key={value} value={value} message={props.messages[value]} />
+  )
 
   const content = useMemo(() => {
     // If we have items, render them
