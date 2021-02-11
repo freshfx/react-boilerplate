@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ListItem should match snapshot 1`] = `
-.emotion-2 {
+.emotion-0 {
   width: 100%;
   height: 3em;
   display: -webkit-box;
@@ -16,18 +16,17 @@ exports[`ListItem should match snapshot 1`] = `
   border-top: 1px solid #eee;
 }
 
-.emotion-2:first-of-type {
+.emotion-0:first-of-type {
   border-top: none;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 100%;
@@ -39,10 +38,10 @@ exports[`ListItem should match snapshot 1`] = `
 
 <div>
   <li
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     />
   </li>
 </div>

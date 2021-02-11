@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FeaturePage should match snapshot 1`] = `
-.emotion-20 {
+.emotion-0 {
   font-family: Georgia,Times,'Times New Roman',serif;
   padding-left: 1.75em;
 }
@@ -10,7 +10,7 @@ exports[`FeaturePage should match snapshot 1`] = `
   margin: 1em 0;
 }
 
-.emotion-0 {
+.emotion-4 {
   font-weight: bold;
 }
 
@@ -19,13 +19,13 @@ exports[`FeaturePage should match snapshot 1`] = `
     Features
   </h1>
   <ul
-    class="emotion-20 emotion-21"
+    class="emotion-0 emotion-1"
   >
     <li
       class="emotion-2 emotion-3"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Quick scaffolding
       </p>
@@ -38,7 +38,7 @@ exports[`FeaturePage should match snapshot 1`] = `
       class="emotion-2 emotion-3"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Instant feedback
       </p>
@@ -55,7 +55,7 @@ exports[`FeaturePage should match snapshot 1`] = `
       class="emotion-2 emotion-3"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Industry-standard routing
       </p>
@@ -72,7 +72,7 @@ exports[`FeaturePage should match snapshot 1`] = `
       class="emotion-2 emotion-3"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Offline-first
       </p>
@@ -87,7 +87,7 @@ exports[`FeaturePage should match snapshot 1`] = `
       class="emotion-2 emotion-3"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Complete i18n Standard Internationalization & Pluralization
       </p>

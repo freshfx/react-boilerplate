@@ -9,7 +9,8 @@
     "import",
     "redux-saga",
     "react",
-    "jsx-a11y"
+    "jsx-a11y",
+    "@emotion"
   ],
   "env": {
     "browser": true,
@@ -123,7 +124,8 @@
       "anonymous": "never",
       "named": "never",
       "asyncArrow": "always"
-    }]
+    }],
+    "@emotion/pkg-renaming": "error"
   },
   "overrides": [
     {

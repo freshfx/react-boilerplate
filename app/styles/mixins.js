@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers, capitalized-comments */
 /* stylelint-disable property-no-vendor-prefix */
-import {css} from '@emotion/core'
+import {css} from '@emotion/react'
 import {
   media,
   containerWidths,

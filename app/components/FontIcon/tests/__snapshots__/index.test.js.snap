@@ -2,7 +2,7 @@
 
 exports[`FontIcon should render all icons 1`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -27,7 +27,7 @@ exports[`FontIcon should render all icons 1`] = `
 
 exports[`FontIcon should render all icons 2`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -52,7 +52,7 @@ exports[`FontIcon should render all icons 2`] = `
 
 exports[`FontIcon should render all icons 3`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -77,7 +77,7 @@ exports[`FontIcon should render all icons 3`] = `
 
 exports[`FontIcon should render all icons 4`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -102,7 +102,7 @@ exports[`FontIcon should render all icons 4`] = `
 
 exports[`FontIcon should render all icons 5`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -127,7 +127,7 @@ exports[`FontIcon should render all icons 5`] = `
 
 exports[`FontIcon should render all icons 6`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -152,7 +152,7 @@ exports[`FontIcon should render all icons 6`] = `
 
 exports[`FontIcon should render all icons 7`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -177,7 +177,7 @@ exports[`FontIcon should render all icons 7`] = `
 
 exports[`FontIcon should render all icons 8`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -202,7 +202,7 @@ exports[`FontIcon should render all icons 8`] = `
 
 exports[`FontIcon should render all icons 9`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -227,7 +227,7 @@ exports[`FontIcon should render all icons 9`] = `
 
 exports[`FontIcon should render all icons 10`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -252,7 +252,7 @@ exports[`FontIcon should render all icons 10`] = `
 
 exports[`FontIcon should render all icons 11`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -277,7 +277,7 @@ exports[`FontIcon should render all icons 11`] = `
 
 exports[`FontIcon should render all icons 12`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -302,7 +302,7 @@ exports[`FontIcon should render all icons 12`] = `
 
 exports[`FontIcon should render all icons 13`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -327,7 +327,7 @@ exports[`FontIcon should render all icons 13`] = `
 
 exports[`FontIcon should render all icons 14`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -352,7 +352,7 @@ exports[`FontIcon should render all icons 14`] = `
 
 exports[`FontIcon should render all icons 15`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -377,7 +377,7 @@ exports[`FontIcon should render all icons 15`] = `
 
 exports[`FontIcon should render all icons 16`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -402,7 +402,7 @@ exports[`FontIcon should render all icons 16`] = `
 
 exports[`FontIcon should render all icons 17`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -427,7 +427,7 @@ exports[`FontIcon should render all icons 17`] = `
 
 exports[`FontIcon should render all icons 18`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -452,7 +452,7 @@ exports[`FontIcon should render all icons 18`] = `
 
 exports[`FontIcon should render all icons 19`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -477,7 +477,7 @@ exports[`FontIcon should render all icons 19`] = `
 
 exports[`FontIcon should render all icons 20`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -502,7 +502,7 @@ exports[`FontIcon should render all icons 20`] = `
 
 exports[`FontIcon should render all icons 21`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -527,7 +527,7 @@ exports[`FontIcon should render all icons 21`] = `
 
 exports[`FontIcon should render all icons 22`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -552,7 +552,7 @@ exports[`FontIcon should render all icons 22`] = `
 
 exports[`FontIcon should render all icons 23`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -577,7 +577,7 @@ exports[`FontIcon should render all icons 23`] = `
 
 exports[`FontIcon should render all icons 24`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -602,7 +602,7 @@ exports[`FontIcon should render all icons 24`] = `
 
 exports[`FontIcon should render all icons 25`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -627,7 +627,7 @@ exports[`FontIcon should render all icons 25`] = `
 
 exports[`FontIcon should render all icons 26`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -652,7 +652,7 @@ exports[`FontIcon should render all icons 26`] = `
 
 exports[`FontIcon should render all icons 27`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -677,7 +677,7 @@ exports[`FontIcon should render all icons 27`] = `
 
 exports[`FontIcon should render all icons 28`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -702,7 +702,7 @@ exports[`FontIcon should render all icons 28`] = `
 
 exports[`FontIcon should render all icons 29`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -727,7 +727,7 @@ exports[`FontIcon should render all icons 29`] = `
 
 exports[`FontIcon should render all icons 30`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -752,7 +752,7 @@ exports[`FontIcon should render all icons 30`] = `
 
 exports[`FontIcon should render all icons 31`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -777,7 +777,7 @@ exports[`FontIcon should render all icons 31`] = `
 
 exports[`FontIcon should render all icons 32`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -802,7 +802,7 @@ exports[`FontIcon should render all icons 32`] = `
 
 exports[`FontIcon should render all icons 33`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -827,7 +827,7 @@ exports[`FontIcon should render all icons 33`] = `
 
 exports[`FontIcon should render all icons 34`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -852,7 +852,7 @@ exports[`FontIcon should render all icons 34`] = `
 
 exports[`FontIcon should render all icons 35`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -877,7 +877,7 @@ exports[`FontIcon should render all icons 35`] = `
 
 exports[`FontIcon should render all icons 36`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -902,7 +902,7 @@ exports[`FontIcon should render all icons 36`] = `
 
 exports[`FontIcon should render all icons 37`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -927,7 +927,7 @@ exports[`FontIcon should render all icons 37`] = `
 
 exports[`FontIcon should render all icons 38`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -952,7 +952,7 @@ exports[`FontIcon should render all icons 38`] = `
 
 exports[`FontIcon should render all icons 39`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -977,7 +977,7 @@ exports[`FontIcon should render all icons 39`] = `
 
 exports[`FontIcon should render all icons 40`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1002,7 +1002,7 @@ exports[`FontIcon should render all icons 40`] = `
 
 exports[`FontIcon should render all icons 41`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1027,7 +1027,7 @@ exports[`FontIcon should render all icons 41`] = `
 
 exports[`FontIcon should render all icons 42`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1052,7 +1052,7 @@ exports[`FontIcon should render all icons 42`] = `
 
 exports[`FontIcon should render all icons 43`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1077,7 +1077,7 @@ exports[`FontIcon should render all icons 43`] = `
 
 exports[`FontIcon should render all icons 44`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1102,7 +1102,7 @@ exports[`FontIcon should render all icons 44`] = `
 
 exports[`FontIcon should render all icons 45`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1127,7 +1127,7 @@ exports[`FontIcon should render all icons 45`] = `
 
 exports[`FontIcon should render all icons 46`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1152,7 +1152,7 @@ exports[`FontIcon should render all icons 46`] = `
 
 exports[`FontIcon should render all icons 47`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1177,7 +1177,7 @@ exports[`FontIcon should render all icons 47`] = `
 
 exports[`FontIcon should render all icons 48`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1202,7 +1202,7 @@ exports[`FontIcon should render all icons 48`] = `
 
 exports[`FontIcon should render all icons 49`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1227,7 +1227,7 @@ exports[`FontIcon should render all icons 49`] = `
 
 exports[`FontIcon should render all icons 50`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1252,7 +1252,7 @@ exports[`FontIcon should render all icons 50`] = `
 
 exports[`FontIcon should render all icons 51`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1277,7 +1277,7 @@ exports[`FontIcon should render all icons 51`] = `
 
 exports[`FontIcon should render all icons 52`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1302,7 +1302,7 @@ exports[`FontIcon should render all icons 52`] = `
 
 exports[`FontIcon should render all icons 53`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1327,7 +1327,7 @@ exports[`FontIcon should render all icons 53`] = `
 
 exports[`FontIcon should render all icons 54`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1352,7 +1352,7 @@ exports[`FontIcon should render all icons 54`] = `
 
 exports[`FontIcon should render all icons 55`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1377,7 +1377,7 @@ exports[`FontIcon should render all icons 55`] = `
 
 exports[`FontIcon should render all icons 56`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1402,7 +1402,7 @@ exports[`FontIcon should render all icons 56`] = `
 
 exports[`FontIcon should render all icons 57`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1427,7 +1427,7 @@ exports[`FontIcon should render all icons 57`] = `
 
 exports[`FontIcon should render all icons 58`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1452,7 +1452,7 @@ exports[`FontIcon should render all icons 58`] = `
 
 exports[`FontIcon should render all icons 59`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1477,7 +1477,7 @@ exports[`FontIcon should render all icons 59`] = `
 
 exports[`FontIcon should render all icons 60`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1502,7 +1502,7 @@ exports[`FontIcon should render all icons 60`] = `
 
 exports[`FontIcon should render all icons 61`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1527,7 +1527,7 @@ exports[`FontIcon should render all icons 61`] = `
 
 exports[`FontIcon should render all icons 62`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1552,7 +1552,7 @@ exports[`FontIcon should render all icons 62`] = `
 
 exports[`FontIcon should render all icons 63`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1577,7 +1577,7 @@ exports[`FontIcon should render all icons 63`] = `
 
 exports[`FontIcon should render all icons 64`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1602,7 +1602,7 @@ exports[`FontIcon should render all icons 64`] = `
 
 exports[`FontIcon should render all icons 65`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1627,7 +1627,7 @@ exports[`FontIcon should render all icons 65`] = `
 
 exports[`FontIcon should render all icons 66`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1652,7 +1652,7 @@ exports[`FontIcon should render all icons 66`] = `
 
 exports[`FontIcon should render all icons 67`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1677,7 +1677,7 @@ exports[`FontIcon should render all icons 67`] = `
 
 exports[`FontIcon should render all icons 68`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1702,7 +1702,7 @@ exports[`FontIcon should render all icons 68`] = `
 
 exports[`FontIcon should render all icons 69`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1727,7 +1727,7 @@ exports[`FontIcon should render all icons 69`] = `
 
 exports[`FontIcon should render all icons 70`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1752,7 +1752,7 @@ exports[`FontIcon should render all icons 70`] = `
 
 exports[`FontIcon should render all icons 71`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1777,7 +1777,7 @@ exports[`FontIcon should render all icons 71`] = `
 
 exports[`FontIcon should render all icons 72`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1802,7 +1802,7 @@ exports[`FontIcon should render all icons 72`] = `
 
 exports[`FontIcon should render all icons 73`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1827,7 +1827,7 @@ exports[`FontIcon should render all icons 73`] = `
 
 exports[`FontIcon should render all icons 74`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1852,7 +1852,7 @@ exports[`FontIcon should render all icons 74`] = `
 
 exports[`FontIcon should render all icons 75`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1877,7 +1877,7 @@ exports[`FontIcon should render all icons 75`] = `
 
 exports[`FontIcon should render all icons 76`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1902,7 +1902,7 @@ exports[`FontIcon should render all icons 76`] = `
 
 exports[`FontIcon should render all icons 77`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1927,7 +1927,7 @@ exports[`FontIcon should render all icons 77`] = `
 
 exports[`FontIcon should render all icons 78`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1952,7 +1952,7 @@ exports[`FontIcon should render all icons 78`] = `
 
 exports[`FontIcon should render all icons 79`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -1977,7 +1977,7 @@ exports[`FontIcon should render all icons 79`] = `
 
 exports[`FontIcon should render all icons 80`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -2002,7 +2002,7 @@ exports[`FontIcon should render all icons 80`] = `
 
 exports[`FontIcon should render all icons 81`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -2027,7 +2027,7 @@ exports[`FontIcon should render all icons 81`] = `
 
 exports[`FontIcon should render flipped 1`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;
@@ -2039,6 +2039,7 @@ exports[`FontIcon should render flipped 1`] = `
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -2055,7 +2056,7 @@ exports[`FontIcon should render flipped 1`] = `
 
 exports[`FontIcon should render with fixed width 1`] = `
 .emotion-0 {
-  font-family: 'icons' !important;
+  font-family: 'icons'!important;
   display: inline-block;
   speak: none;
   font-size: inherit;

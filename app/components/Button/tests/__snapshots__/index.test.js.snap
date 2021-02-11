@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button should render a button tag to change route if the handleRoute prop is specified 1`] = `
-.emotion-2 {
+.emotion-0 {
   width: 100%;
   text-align: center;
   margin: 4em 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: inline-block;
   box-sizing: border-box;
   padding: 0.25em 2em;
@@ -29,16 +29,16 @@ exports[`Button should render a button tag to change route if the handleRoute pr
   color: #41addd;
 }
 
-.emotion-0:active {
+.emotion-2:active {
   background: #41addd;
   color: #fff;
 }
 
 <div
-  class="emotion-2 emotion-3"
+  class="emotion-0 emotion-1"
 >
   <button
-    class="emotion-0 emotion-1"
+    class="emotion-2 emotion-3"
   >
     <h1>
       Test
@@ -48,13 +48,13 @@ exports[`Button should render a button tag to change route if the handleRoute pr
 `;
 
 exports[`Button should render an anchor tag if no route is specified 1`] = `
-.emotion-2 {
+.emotion-0 {
   width: 100%;
   text-align: center;
   margin: 4em 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: inline-block;
   box-sizing: border-box;
   padding: 0.25em 2em;
@@ -76,16 +76,16 @@ exports[`Button should render an anchor tag if no route is specified 1`] = `
   color: #41addd;
 }
 
-.emotion-0:active {
+.emotion-2:active {
   background: #41addd;
   color: #fff;
 }
 
 <div
-  class="emotion-2 emotion-3"
+  class="emotion-0 emotion-1"
 >
   <a
-    class="emotion-0 emotion-1"
+    class="emotion-2 emotion-3"
     href="#test"
   >
     <h1>

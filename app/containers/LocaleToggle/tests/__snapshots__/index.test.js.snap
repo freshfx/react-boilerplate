@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LocaleToggle should render the default language messages 1`] = `
-.emotion-2 {
+.emotion-0 {
   padding: 2px;
 }
 
-.emotion-0 {
+.emotion-2 {
   line-height: 1em;
   background-color: transparent;
   border-style: none;
 }
 
 <div
-  class="emotion-2 emotion-3"
+  class="emotion-0 emotion-1"
 >
   <select
-    class="emotion-0 emotion-1"
+    class="emotion-2 emotion-3"
   >
     <option
       value="en"

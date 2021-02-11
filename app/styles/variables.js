@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers, max-lines */
 
-import {css} from '@emotion/core'
+import {css} from '@emotion/react'
 import {
   rgba,
   lighten,

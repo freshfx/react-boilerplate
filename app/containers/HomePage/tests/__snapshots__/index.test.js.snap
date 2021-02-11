@@ -1,37 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomePage should match the snapshot 1`] = `
-.emotion-2 {
+.emotion-0 {
   margin: 3em auto;
   text-align: center;
 }
 
-.emotion-2:first-of-type {
+.emotion-0:first-of-type {
   margin-top: 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-size: 1.5em;
 }
 
-.emotion-12 {
+.emotion-4 {
   margin: 3em auto;
 }
 
-.emotion-12:first-of-type {
+.emotion-4:first-of-type {
   margin-top: 0;
 }
 
-.emotion-10 {
+.emotion-8 {
   margin-bottom: 1em;
 }
 
-.emotion-6 {
+.emotion-10 {
   color: black;
   margin-left: 0.4em;
 }
 
-.emotion-8 {
+.emotion-12 {
   outline: none;
   border: none;
   border-bottom: 1px dotted #999;
@@ -41,10 +41,10 @@ exports[`HomePage should match the snapshot 1`] = `
 <article>
   <div>
     <section
-      class="emotion-2 emotion-3"
+      class="emotion-0 emotion-1"
     >
       <h2
-        class="emotion-0 emotion-1"
+        class="emotion-2 emotion-3"
       >
         Start your next react project in seconds
       </h2>
@@ -53,27 +53,27 @@ exports[`HomePage should match the snapshot 1`] = `
       </p>
     </section>
     <section
-      class="emotion-12 emotion-13"
+      class="emotion-4 emotion-5"
     >
       <h2
-        class="emotion-0 emotion-1"
+        class="emotion-2 emotion-3"
       >
         Try me!
       </h2>
       <form
-        class="emotion-10 emotion-11"
+        class="emotion-8 emotion-9"
       >
         <label
           for="username"
         >
           Show Github repositories by
           <span
-            class="emotion-6 emotion-7"
+            class="emotion-10 emotion-11"
           >
             @
           </span>
           <input
-            class="emotion-8 emotion-9"
+            class="emotion-12 emotion-13"
             id="username"
             placeholder="mxstbr"
             type="text"

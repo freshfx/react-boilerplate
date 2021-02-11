@@ -2,7 +2,7 @@ import {
   rgba,
   parseToRgb
 } from 'polished'
-import {keyframes} from '@emotion/core'
+import {keyframes} from '@emotion/react'
 
 export const divide = (dividend, divisor) => {
   const [unit] = dividend.match(/[a-zA-Z%]*$/u)
