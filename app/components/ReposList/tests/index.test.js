@@ -4,8 +4,12 @@ import {IntlProvider} from 'react-intl'
 
 import ReposList from '../index'
 
-jest.mock('components/LoadingIndicator', () => () => <div data-testid="loading-indicator" />)
-jest.mock('containers/RepositoryListItem', () => ({id}) => <div data-testid={`repo-list-item-${id}`} />)
+jest.mock('components/LoadingIndicator', () => () => (
+  <div data-testid="loading-indicator" />
+))
+jest.mock('containers/RepositoryListItem', () => ({id}) => (
+  <div data-testid={`repo-list-item-${id}`} />
+))
 
 describe('ReposList', () => {
   it('should render the loading indicator when its loading', () => {

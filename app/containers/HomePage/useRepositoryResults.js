@@ -1,12 +1,6 @@
-import {
-  useDispatch,
-  useSelector
-} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 
-import {
-  actions,
-  selectors
-} from 'modules/repository/results'
+import {actions, selectors} from 'modules/repository/results'
 
 const useRepositoriesEvents = () => {
   const dispatch = useDispatch()
@@ -26,10 +20,7 @@ const useRepositoryResults = () => {
   const state = useRepositoriesState()
   const events = useRepositoriesEvents()
 
-  return [
-    state,
-    events
-  ]
+  return [state, events]
 }
 
 export default useRepositoryResults

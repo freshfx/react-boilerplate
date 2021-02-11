@@ -5,7 +5,9 @@ import Ul from './Ul'
 import Wrapper from './Wrapper'
 
 const List = ({component: ComponentToRender, items}) => {
-  const renderItem = item => <ComponentToRender key={`item-${item}`} id={item} />
+  const renderItem = item => (
+    <ComponentToRender key={`item-${item}`} id={item} />
+  )
 
   const content = useMemo(() => {
     if (items.length) {

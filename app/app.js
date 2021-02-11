@@ -28,9 +28,7 @@ import App from 'containers/App'
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider'
-
 import ActionSubscription from 'containers/ActionSubscription'
-
 import loadFonts from 'components/FontIcon/fontFace'
 import history from 'utils/history'
 
@@ -87,10 +85,7 @@ if (module.hot) {
    * modules.hot.accept does not accept dynamic dependencies,
    * have to be constants at compile-time
    */
-  module.hot.accept([
-    './i18n',
-    'containers/App'
-  ], () => {
+  module.hot.accept(['./i18n', 'containers/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE)
     render(translationMessages)
   })
@@ -107,7 +102,8 @@ if (window.Intl) {
       Promise.all([
         import('intl/locale-data/jsonp/en.js'),
         import('intl/locale-data/jsonp/de.js')
-      ]))
+      ])
+    )
     .then(() => render(translationMessages))
     .catch(err => {
       throw err
@@ -121,7 +117,8 @@ if (window.Intl) {
  */
 if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker
+      .register('/service-worker.js')
       .then(registration => {
         const initialWorker = registration.active
         registration.addEventListener('updatefound', () => {

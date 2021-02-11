@@ -28,27 +28,39 @@ describe('RepositoryListItem', () => {
 
     it('should call the useMemoizedSelector hook with the fullName selector factory', () => {
       renderComponent(id)
-      expect(useMemoizedSelector).toHaveBeenCalledWith(selectors.makeSelectFullName, {id})
+      expect(
+        useMemoizedSelector
+      ).toHaveBeenCalledWith(selectors.makeSelectFullName, {id})
     })
 
     it('should call the useMemoizedSelector hook with the name selector factory', () => {
       renderComponent(id)
-      expect(useMemoizedSelector).toHaveBeenCalledWith(selectors.makeSelectName, {id})
+      expect(useMemoizedSelector).toHaveBeenCalledWith(
+        selectors.makeSelectName,
+        {id}
+      )
     })
 
     it('should call the useMemoizedSelector hook with the openIssuesCount selector factory', () => {
       renderComponent(id)
-      expect(useMemoizedSelector).toHaveBeenCalledWith(selectors.makeSelectOpenIssuesCount, {id})
+      expect(
+        useMemoizedSelector
+      ).toHaveBeenCalledWith(selectors.makeSelectOpenIssuesCount, {id})
     })
 
     it('should call the useMemoizedSelector hook with the ownerUsername selector factory', () => {
       renderComponent(id)
-      expect(useMemoizedSelector).toHaveBeenCalledWith(selectors.makeSelectOwnerUsername, {id})
+      expect(
+        useMemoizedSelector
+      ).toHaveBeenCalledWith(selectors.makeSelectOwnerUsername, {id})
     })
 
     it('should call the useMemoizedSelector hook with the url selector factory', () => {
       renderComponent(id)
-      expect(useMemoizedSelector).toHaveBeenCalledWith(selectors.makeSelectUrl, {id})
+      expect(useMemoizedSelector).toHaveBeenCalledWith(
+        selectors.makeSelectUrl,
+        {id}
+      )
     })
 
     it('should call the useSelector hook with the username selector', () => {

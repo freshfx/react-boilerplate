@@ -6,11 +6,6 @@ import {initialState, name} from './slice'
 
 const selectSlice = state => get(state, name, initialState)
 
-const selectUsername = createSelector(
-  selectSlice,
-  slice => slice.username
-)
+const selectUsername = createSelector(selectSlice, slice => slice.username)
 
-export {
-  selectUsername
-}
+export {selectUsername}

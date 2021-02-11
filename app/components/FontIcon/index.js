@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+
 import {BASE, ICONS} from './icons'
 
 const STRING_BASE = 16
@@ -8,7 +9,11 @@ const toStyleObject = (data, index) => ({
   key: data,
   value: {
     '&:before': {
-      content: `"\\f${(parseInt(BASE, STRING_BASE) + index + INDEX_INCREASE).toString(STRING_BASE)}"`
+      content: `"\\f${(
+        parseInt(BASE, STRING_BASE) +
+        index +
+        INDEX_INCREASE
+      ).toString(STRING_BASE)}"`
     }
   }
 })

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import isEmpty from 'lodash/isEmpty'
+
 import ActionSubscriptionContext from './context'
 
 class ActionSubscriptionProvider extends React.Component {
@@ -54,7 +55,6 @@ class ActionSubscriptionProvider extends React.Component {
     )
   }
 }
-
 
 ActionSubscriptionProvider.propTypes = {
   actionEmitter: PropTypes.object.isRequired,

@@ -6,17 +6,11 @@
 
 import React from 'react'
 import {compose} from 'redux'
-import {
-  useDispatch,
-  useSelector
-} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 
 import {appLocales} from 'i18n'
 import Toggle from 'components/Toggle'
-import {
-  actions,
-  selectors
-} from 'modules/language'
+import {actions, selectors} from 'modules/language'
 
 import Wrapper from './Wrapper'
 import messages from './messages'

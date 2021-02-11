@@ -1,8 +1,5 @@
 import {compose} from 'redux'
-import {
-  injectReducer,
-  injectSaga
-} from 'redux-injectors'
+import {injectReducer, injectSaga} from 'redux-injectors'
 
 import reducer, {saga} from 'modules/repository/results'
 

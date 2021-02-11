@@ -1,20 +1,13 @@
 import {useInjectReducer} from 'redux-injectors'
-import {
-  useDispatch,
-  useSelector
-} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 
-import reducer, {
-  actions,
-  selectors
-} from 'modules/pages/home'
+import reducer, {actions, selectors} from 'modules/pages/home'
 
 const useHomeEvents = () => {
   const dispatch = useDispatch()
 
   return {
-    onChangeUsername: username =>
-      dispatch(actions.changeUsername({username}))
+    onChangeUsername: username => dispatch(actions.changeUsername({username}))
   }
 }
 
@@ -28,10 +21,7 @@ const useHomePage = () => {
   const state = useHomeState()
   const events = useHomeEvents()
 
-  return [
-    state,
-    events
-  ]
+  return [state, events]
 }
 
 export default useHomePage

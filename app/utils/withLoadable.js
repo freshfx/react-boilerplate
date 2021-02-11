@@ -1,6 +1,4 @@
-import React, {
-  Suspense
-} from 'react'
+import React, {Suspense} from 'react'
 
 const withLoadable = (importFunc, {fallback = null} = {}) => {
   const LazyComponent = React.lazy(importFunc)

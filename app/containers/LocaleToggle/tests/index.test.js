@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  fireEvent,
-  render
-} from '@testing-library/react'
+import {fireEvent, render} from '@testing-library/react'
 import {IntlProvider} from 'react-intl'
 import {Provider} from 'react-redux'
 
@@ -15,13 +12,14 @@ import LocaleToggle from '../index'
 const store = configureStore({}, history)
 jest.spyOn(store, 'dispatch')
 
-const renderComponent = (props = {}) => render(
-  <Provider store={store}>
-    <IntlProvider locale="en">
-      <LocaleToggle {...props} />
-    </IntlProvider>
-  </Provider>
-)
+const renderComponent = (props = {}) =>
+  render(
+    <Provider store={store}>
+      <IntlProvider locale="en">
+        <LocaleToggle {...props} />
+      </IntlProvider>
+    </Provider>
+  )
 
 describe('LocaleToggle', () => {
   beforeEach(() => {

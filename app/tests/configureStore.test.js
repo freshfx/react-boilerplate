@@ -3,6 +3,7 @@
  */
 
 import {createMemoryHistory as createHistory} from 'history'
+
 import configureStore from '../configure-store'
 
 const history = createHistory()

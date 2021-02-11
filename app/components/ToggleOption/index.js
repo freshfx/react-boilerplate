@@ -12,9 +12,7 @@ const ToggleOption = props => {
   const {formatMessage} = useIntl()
 
   // eslint-disable-next-line no-ternary
-  const message = props.message
-    ? formatMessage(props.message)
-    : props.value
+  const message = props.message ? formatMessage(props.message) : props.value
 
   return <option value={props.value}>{message}</option>
 }

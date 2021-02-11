@@ -45,7 +45,6 @@ const RepositoryListItem = ({id}) => {
   return <ListItem key={`repo-list-item-${state.fullName}`} item={content} />
 }
 
-
 RepositoryListItem.propTypes = {
   id: PropTypes.string.isRequired
 }

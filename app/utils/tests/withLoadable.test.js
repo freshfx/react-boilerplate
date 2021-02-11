@@ -1,14 +1,13 @@
 import React from 'react'
 import noop from 'lodash/noop'
-import {
-  getByTestId,
-  render
-} from '@testing-library/react'
+import {getByTestId, render} from '@testing-library/react'
 
 import withLoadable from '../withLoadable'
 
 const LazyComponent = () => <div data-testid="lazy-component" />
-const SuspenseComponent = ({children}) => <div data-testid="suspense-component">{children}</div>
+const SuspenseComponent = ({children}) => (
+  <div data-testid="suspense-component">{children}</div>
+)
 
 React.Suspense = SuspenseComponent
 React.lazy = jest.fn(() => LazyComponent)

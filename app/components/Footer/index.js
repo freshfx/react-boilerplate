@@ -3,6 +3,7 @@ import {FormattedMessage} from 'react-intl'
 
 import Anchor from 'components/Anchor'
 import LocaleToggle from 'containers/LocaleToggle'
+
 import Wrapper from './Wrapper'
 import messages from './messages'
 

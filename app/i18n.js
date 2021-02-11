@@ -28,13 +28,13 @@ if (!Intl.RelativeTimeFormat) {
 const DEFAULT_LOCALE = 'en'
 
 // Prettier-ignore
-const appLocales = [
-  'en',
-  'de'
-]
+const appLocales = ['en', 'de']
 
 const translations = {
-  formatTranslationMessages: function formatTranslationMessages(locale, messages) {
+  formatTranslationMessages: function formatTranslationMessages(
+    locale,
+    messages
+  ) {
     const defaultFormattedMessages = this.getDefaultFormattedMessages(locale)
     const flattenFormattedMessages = (formattedMessages, key) => {
       let value = messages[key]
@@ -48,7 +48,10 @@ const translations = {
 
   getDefaultFormattedMessages: function getDefaultFormattedMessages(locale) {
     if (locale !== DEFAULT_LOCALE) {
-      return this.formatTranslationMessages(DEFAULT_LOCALE, enTranslationMessages)
+      return this.formatTranslationMessages(
+        DEFAULT_LOCALE,
+        enTranslationMessages
+      )
     }
     return {}
   }
@@ -60,6 +63,8 @@ const translationMessages = {
 }
 
 exports.appLocales = appLocales
-exports.formatTranslationMessages = translations.formatTranslationMessages.bind(translations)
+exports.formatTranslationMessages = translations.formatTranslationMessages.bind(
+  translations
+)
 exports.translationMessages = translationMessages
 exports.DEFAULT_LOCALE = DEFAULT_LOCALE

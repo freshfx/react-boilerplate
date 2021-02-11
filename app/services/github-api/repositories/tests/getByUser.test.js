@@ -21,7 +21,9 @@ describe('GithubAPI', () => {
       const username = 'mxstbr'
       const query = {sort: 'name'}
       getByUser(username, query)
-      expect(request).toHaveBeenCalledWith(`/users/${username}/repos?${qs.stringify(query)}`)
+      expect(request).toHaveBeenCalledWith(
+        `/users/${username}/repos?${qs.stringify(query)}`
+      )
     })
   })
 })

@@ -4,7 +4,10 @@ import {render} from '@testing-library/react'
 
 import {link} from '../mixins'
 
-const getComponent = mixin => styled.div`${mixin}`
+const getComponent = mixin =>
+  styled.div`
+    ${mixin}
+  `
 
 describe('mixins', () => {
   describe('link', () => {

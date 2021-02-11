@@ -4,11 +4,12 @@ import {IntlProvider, defineMessages} from 'react-intl'
 
 import ToggleOption from '../index'
 
-const renderComponent = (props = {}) => render(
-  <IntlProvider locale="en">
-    <ToggleOption {...props} />
-  </IntlProvider>
-)
+const renderComponent = (props = {}) =>
+  render(
+    <IntlProvider locale="en">
+      <ToggleOption {...props} />
+    </IntlProvider>
+  )
 
 describe('ToggleOption', () => {
   it('should render default language messages', () => {

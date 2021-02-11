@@ -4,11 +4,12 @@ import {IntlProvider, defineMessages} from 'react-intl'
 
 import Toggle from '../index'
 
-const renderComponent = (props = {}) => render(
-  <IntlProvider locale="en">
-    <Toggle {...props} />
-  </IntlProvider>
-)
+const renderComponent = (props = {}) =>
+  render(
+    <IntlProvider locale="en">
+      <Toggle {...props} />
+    </IntlProvider>
+  )
 
 describe('Toggle', () => {
   it('should match snapshot', () => {

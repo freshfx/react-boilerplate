@@ -37,7 +37,9 @@ class Test extends React.Component {
       <actionSubscription.Provider actionEmitter={actionEmitter}>
         <button onClick={this.addComponent}>Add</button>
         <button onClick={this.removeComponent}>Remove</button>
-        {this.state.components.map((Component, index) => <Component key={index}/>)}
+        {this.state.components.map((Component, index) => (
+          <Component key={index} />
+        ))}
       </actionSubscription.Provider>
     )
   }

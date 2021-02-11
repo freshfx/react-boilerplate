@@ -24,4 +24,3 @@ describe('FontIcon', () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 })
-

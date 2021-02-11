@@ -22,7 +22,9 @@ describe('List', () => {
 
     const component = ({id}) => <li data-testid={`item-${id}`}>{id}</li>
 
-    const {container, getByTestId} = render(<List items={items} component={component} />)
+    const {container, getByTestId} = render(
+      <List items={items} component={component} />
+    )
     expect(container.querySelector('ul').children).toHaveLength(2)
     expect(getByTestId('item-1')).toBeDefined()
     expect(getByTestId('item-2')).toBeDefined()

@@ -12,7 +12,9 @@ describe('modules', () => {
 
       it('should return the correct entities state slice', () => {
         const mockedState = {entities: {[name]: {1: {id: 1}}}}
-        expect(selectRepositoryEntities(mockedState)).toEqual(mockedState.entities[name])
+        expect(selectRepositoryEntities(mockedState)).toEqual(
+          mockedState.entities[name]
+        )
       })
     })
   })

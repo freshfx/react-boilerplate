@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "extends": [
     "eslint:all",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier"
   ],
   "plugins": [
     "babel",
@@ -27,25 +28,89 @@
     }
   },
   "rules": {
-    "array-element-newline": [2, "consistent"],
-    "arrow-body-style": [2, "as-needed"],
-    "arrow-parens": [2, "as-needed"],
+    "array-element-newline": [
+      2,
+      "consistent"
+    ],
+    "array-bracket-newline": [
+      2,
+      "consistent"
+    ],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "arrow-parens": [
+      2,
+      "as-needed"
+    ],
     "babel/no-invalid-this": 1,
+    "capitalized-comments": [
+      "error",
+      "always",
+      {
+        "ignorePattern": "pragma|ignored|prettier-ignore",
+        "ignoreInlineComments": true
+      }
+    ],
     "class-methods-use-this": 0,
     "default-param-last": 0,
-    "dot-location": [2, "property"],
-    "func-style": ["error", "declaration", {
-      "allowArrowFunctions": true
-    }],
-    "function-call-argument-newline": [2, "consistent"],
-    "function-paren-newline": ["error", "consistent"],
+    "dot-location": [
+      2,
+      "property"
+    ],
+    "func-style": [
+      "error",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "function-call-argument-newline": [
+      2,
+      "consistent"
+    ],
+    "function-paren-newline": [
+      0
+    ],
+    "generator-star-spacing": [
+      "error",
+      "after"
+    ],
     "implicit-arrow-linebreak": 0,
-    "import/first": [2, "absolute-first"],
+    "import/first": [
+      2,
+      "absolute-first"
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "import/exports-last": [
+      "error"
+    ],
     "import/newline-after-import": 2,
     "import/no-dynamic-require": 2,
     "import/no-extraneous-dependencies": 2,
     "import/no-named-as-default": 0,
-    "import/no-unresolved": 2,
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "react-hook-form"
+        ]
+      }
+    ],
     "import/no-webpack-loader-syntax": 2,
     "import/prefer-default-export": 2,
     "import/no-unused-modules": [
@@ -55,77 +120,149 @@
         "ignoreExports": [
           "app/config/*.js",
           "app/styles/*.js",
-          "app/**/*.test.*"
+          "app/utils/request.js"
         ]
       }
     ],
-    "indent": [2, 2, {
-      "SwitchCase": 1
-    }],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
     "jsx-a11y/aria-props": 2,
     "jsx-a11y/heading-has-content": 2,
-    "jsx-a11y/label-has-for": [ 2, {
-      "components": ["Label"],
-      "required": {
-        "some": ["nesting", "id"]
-      },
-      "allowChildren": true
-    }],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": [
+          "Label"
+        ],
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        },
+        "allowChildren": true
+      }
+    ],
     "jsx-a11y/mouse-events-have-key-events": 2,
     "jsx-a11y/role-has-required-aria-props": 2,
     "jsx-a11y/role-supports-aria-props": 2,
-    "lines-around-comment": [2, {
-      "beforeBlockComment": true,
-      "allowBlockStart": true
-    }],
-    "max-len": [2, {
-      "code": 120
-    }],
+    "lines-around-comment": [
+      2,
+      {
+        "beforeBlockComment": true,
+        "allowBlockStart": true
+      }
+    ],
+    "max-len": [
+      2,
+      {
+        "code": 120
+      }
+    ],
     "max-lines-per-function": 0,
-    "multiline-ternary": 2,
-    "new-cap": [2, {
-      "capIsNewExceptions": ["Loadable"]
-    }],
+    "multiline-ternary": 0,
+    "new-cap": [
+      2,
+      {
+        "capIsNewExceptions": [
+          "Loadable"
+        ]
+      }
+    ],
     "no-confusing-arrow": 0,
-    "no-empty-function": [2, {
-      "allow": ["arrowFunctions"]
-    }],
-    "no-extra-parens": [2, "all", {
-      "ignoreJSX": "multi-line"
-    }],
+    "no-empty-function": [
+      2,
+      {
+        "allow": [
+          "arrowFunctions"
+        ]
+      }
+    ],
+    "no-extra-parens": [
+      "error",
+      "functions"
+    ],
     "no-invalid-this": 0,
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignore": [
+          -1,
+          0,
+          1
+        ]
+      }
+    ],
     "no-process-env": 0,
-    "no-ternary": 2,
-    "object-property-newline": ["error", {
-      "allowAllPropertiesOnSameLine": true
-    }],
-    "one-var": [2, "never"],
-    "padded-blocks": [2, "never"],
+    "no-ternary": 0,
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "one-var": [
+      2,
+      "never"
+    ],
+    "padded-blocks": [
+      2,
+      "never"
+    ],
     "prefer-template": 2,
-    "quote-props": [2, "as-needed"],
-    "quotes": [2, "single"],
+    "quote-props": [
+      2,
+      "as-needed"
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
     "react/forbid-prop-types": 0,
     "react/jsx-closing-tag-location": 0,
-    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-first-prop-new-line": [
+      2,
+      "multiline"
+    ],
     "react/jsx-filename-extension": 0,
     "react/jsx-no-target-blank": 0,
     "react/require-default-props": 2,
     "react/self-closing-comp": 2,
     "react/sort-comp": 0,
-    "react/jsx-props-no-spreading": [2, {
-      "exceptions": ["FormattedMessage", "LazyComponent"]
-    }],
+    "react/jsx-props-no-spreading": [
+      2,
+      {
+        "exceptions": [
+          "FormattedMessage",
+          "LazyComponent"
+        ]
+      }
+    ],
     "redux-saga/no-yield-in-race": 2,
     "redux-saga/yield-effects": 2,
     "require-jsdoc": 0,
-    "semi": [2, "never"],
+    "require-unicode-regexp": 0,
+    "semi": [
+      2,
+      "never"
+    ],
     "sort-imports": 0,
-    "space-before-function-paren": [2, {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
-    }],
-    "@emotion/pkg-renaming": "error"
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
   },
   "overrides": [
     {
@@ -134,7 +271,20 @@
         "no-magic-numbers": "off",
         "react/display-name": 0,
         "react/jsx-props-no-spreading": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "max-statements": "off",
+        "max-lines": "off",
+        "prefer-destructuring": "off"
+      }
+    }, {
+      "files": "**/styles/*.js",
+      "rules": {
+        "import/exports-last": "off"
+      }
+    }, {
+      "files": "**/app/app.js",
+      "rules": {
+        "import/order": "off"
       }
     }
   ],

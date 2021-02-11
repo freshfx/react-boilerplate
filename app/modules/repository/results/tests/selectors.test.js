@@ -1,8 +1,4 @@
-import {
-  selectError,
-  selectIsLoading,
-  selectRepositories
-} from '../selectors'
+import {selectError, selectIsLoading, selectRepositories} from '../selectors'
 import {name} from '../slice'
 
 const mockState = (data = {}) => ({[name]: data})
