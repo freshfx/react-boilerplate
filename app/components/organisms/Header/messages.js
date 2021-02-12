@@ -5,13 +5,15 @@
  */
 import {defineMessages} from 'react-intl'
 
+const scope = 'boilerplate.organisms.Header'
+
 export default defineMessages({
   features: {
     defaultMessage: 'Features',
-    id: 'boilerplate.components.Header.features'
+    id: `${scope}.features`
   },
   home: {
     defaultMessage: 'Home',
-    id: 'boilerplate.components.Header.home'
+    id: `${scope}.home`
   }
 })

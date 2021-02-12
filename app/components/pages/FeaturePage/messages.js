@@ -5,7 +5,7 @@
  */
 import {defineMessages} from 'react-intl'
 
-const scope = 'boilerplate.containers.FeaturePage'
+const scope = 'boilerplate.pages.FeaturePage'
 
 export default defineMessages({
   cssHeader: {

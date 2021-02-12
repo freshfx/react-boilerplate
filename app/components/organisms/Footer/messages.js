@@ -5,15 +5,17 @@
  */
 import {defineMessages} from 'react-intl'
 
+const scope = 'boilerplate.organisms.Footer'
+
 export default defineMessages({
   authorMessage: {
     defaultMessage: `
       Made with love by {author}.
     `,
-    id: 'boilerplate.components.Footer.author.message'
+    id: `${scope}.author.message`
   },
   licenseMessage: {
     defaultMessage: 'This project is licensed under the MIT license.',
-    id: 'boilerplate.components.Footer.license.message'
+    id: `${scope}.license.message`
   }
 })
