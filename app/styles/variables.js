@@ -31,7 +31,7 @@ export const RED_DARK = '#b30835'
 export const RED_SEMI_DARK = '#db0a40'
 
 // Reassign color vars to semantic color scheme
-export const BRAND_PRIMARY = YELLOW
+export const BRAND_PRIMARY = BLACK
 export const BRAND_DANGER = RED
 export const GRAY_DARKEST = '#222'
 export const GRAY_DARK = '#4E4E4E'
