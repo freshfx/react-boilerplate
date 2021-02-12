@@ -1,23 +1,45 @@
-import React from 'react'
+import React, {useMemo} from 'react'
+import PropTypes from 'prop-types'
 
-import Circle from './Circle'
-import Wrapper from './Wrapper'
+import Path from './Path'
+import Spinner from './Spinner'
 
-const LoadingIndicator = () => (
-  <Wrapper>
-    <Circle />
-    <Circle rotate={30} delay={-1.1} />
-    <Circle rotate={60} delay={-1} />
-    <Circle rotate={90} delay={-0.9} />
-    <Circle rotate={120} delay={-0.8} />
-    <Circle rotate={150} delay={-0.7} />
-    <Circle rotate={180} delay={-0.6} />
-    <Circle rotate={210} delay={-0.5} />
-    <Circle rotate={240} delay={-0.4} />
-    <Circle rotate={270} delay={-0.3} />
-    <Circle rotate={300} delay={-0.2} />
-    <Circle rotate={330} delay={-0.1} />
-  </Wrapper>
-)
+const LoadingIndicator = ({className, lineWidth, size}) => {
+  const center = useMemo(() => size / 2, [size])
+  const radius = useMemo(() => (size - lineWidth) / 2, [size, lineWidth])
 
-export default LoadingIndicator
+  return (
+    <Spinner
+      className={className}
+      height={size}
+      viewBox={`0 0 ${size} ${size}`}
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <Path
+        cx={center}
+        cy={center}
+        fill="none"
+        lineWidth={lineWidth}
+        r={radius}
+        size={size}
+        strokeLineCap="round"
+        strokeWidth={lineWidth}
+      />
+    </Spinner>
+  )
+}
+
+LoadingIndicator.propTypes = {
+  className: PropTypes.string,
+  lineWidth: PropTypes.number,
+  size: PropTypes.number
+}
+
+LoadingIndicator.defaultProps = {
+  className: null,
+  lineWidth: 3,
+  size: 32
+}
+
+export default React.memo(LoadingIndicator)
