@@ -3,9 +3,9 @@ import {serializeError} from 'serialize-error'
 
 import requestRepositories from 'services/github-api/repositories/getByUser'
 import {actions as entitiesActions} from 'modules/entities'
-import {selectors as homePageSelectors} from 'modules/pages/home'
+import {selectors as homePageSelectors} from 'modules/ui/username-form'
 
-import {actions} from './slice'
+import {actions, name} from './slice'
 
 const DEFAULT_QUERY = {
   sort: 'updated',
@@ -49,6 +49,6 @@ function* saga() {
 export {DEFAULT_QUERY}
 
 export default {
-  key: 'repositoryResultsSaga',
+  key: `${name}Saga`,
   saga
 }

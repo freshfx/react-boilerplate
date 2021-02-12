@@ -1,28 +1,32 @@
 import {expectSaga} from 'redux-saga-test-plan'
 import {throwError} from 'redux-saga-test-plan/providers'
-import {call, select} from 'redux-saga/effects'
 import {serializeError} from 'serialize-error'
+import {call, select} from 'redux-saga-test-plan/matchers'
 
 import requestRepositories from 'services/github-api/repositories/getByUser'
 import {actions as entitiesActions} from 'modules/entities'
-import {selectors as homePageSelectors} from 'modules/pages/home'
+import {selectors as homePageSelectors} from 'modules/ui/username-form'
 
 import {actions} from '../slice'
 import repositoriesSaga, {DEFAULT_QUERY} from '../saga'
+
+const username = 'mxstbr'
+const usernameProvider = [
+  select.selector(homePageSelectors.selectUsername),
+  username
+]
 
 describe('repository modules', () => {
   describe('results saga', () => {
     describe('loadRepositories', () => {
       const action = actions.loadRepositories()
 
-      it('should request the repositories for a selected username', () => {
-        const username = 'mxstbr'
-        return expectSaga(repositoriesSaga.saga)
-          .provide([[select(homePageSelectors.selectUsername), username]])
+      it('should request the repositories for a selected username', () =>
+        expectSaga(repositoriesSaga.saga)
+          .provide([usernameProvider])
           .call(requestRepositories, username, DEFAULT_QUERY)
           .dispatch(action)
-          .silentRun()
-      })
+          .silentRun())
 
       it('should dispatch a entitiesLoaded and a repositoriesLoaded actions with the correct payload', () => {
         const repositories = ['repository-id-1', 'repository-id-2']
@@ -38,7 +42,7 @@ describe('repository modules', () => {
         }
 
         return expectSaga(repositoriesSaga.saga)
-          .provide([[call(requestRepositories, '', DEFAULT_QUERY), response]])
+          .provide([[call.fn(requestRepositories), response], usernameProvider])
           .put(entitiesActions.entitiesLoaded({entities}))
           .put(actions.repositoriesLoaded({repositories}))
           .dispatch(action)
@@ -50,7 +54,8 @@ describe('repository modules', () => {
 
         return expectSaga(repositoriesSaga.saga)
           .provide([
-            [call(requestRepositories, '', DEFAULT_QUERY), throwError(error)]
+            [call.fn(requestRepositories), throwError(error)],
+            usernameProvider
           ])
           .put(actions.repositoriesLoadingError({error: serializeError(error)}))
           .dispatch(action)

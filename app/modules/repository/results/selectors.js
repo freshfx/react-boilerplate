@@ -1,17 +1,13 @@
-import {createSelector} from '@reduxjs/toolkit'
-import get from 'lodash/get'
+import {
+  createSliceFieldSelector,
+  createSliceSelector
+} from 'modules/utils/common-selectors'
 
 import {initialState, name} from './slice'
 
-const selectSlice = state => get(state, name, initialState)
-
-const selectIsLoading = createSelector(selectSlice, slice => slice.isLoading)
-
-const selectError = createSelector(selectSlice, slice => slice.error)
-
-const selectRepositories = createSelector(
-  selectSlice,
-  slice => slice.repositories
-)
+const selectSlice = createSliceSelector(name, initialState)
+const selectIsLoading = createSliceFieldSelector(selectSlice, 'isLoading')
+const selectError = createSliceFieldSelector(selectSlice, 'error')
+const selectRepositories = createSliceFieldSelector(selectSlice, 'repositories')
 
 export {selectError, selectIsLoading, selectRepositories}

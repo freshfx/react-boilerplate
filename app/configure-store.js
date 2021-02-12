@@ -9,7 +9,7 @@ import {routerMiddleware} from 'connected-react-router'
 import {createInjectorsEnhancer, forceReducerReload} from 'redux-injectors'
 import createSagaMiddleware from 'redux-saga'
 
-import {actionListenerMiddleware} from 'containers/ActionSubscription'
+import {actionListenerMiddleware} from 'contexts/ActionSubscription'
 
 import createReducer from './reducers'
 

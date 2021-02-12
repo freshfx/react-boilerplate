@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage should match the snapshot 1`] = `
+.emotion-0 {
+  margin: 3em auto;
+  text-align: center;
+}
+
+.emotion-0:first-of-type {
+  margin-top: 0;
+}
+
+.emotion-2 {
+  font-size: 1.5em;
+}
+
+.emotion-4 {
+  margin: 3em auto;
+}
+
+.emotion-4:first-of-type {
+  margin-top: 0;
+}
+
+<div>
+  <article>
+    <div>
+      <section
+        class="emotion-0 emotion-1"
+      >
+        <h2
+          class="emotion-2 emotion-3"
+        >
+          Start your next react project in seconds
+        </h2>
+        <p>
+          A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices
+        </p>
+      </section>
+      <section
+        class="emotion-4 emotion-5"
+      >
+        <h2
+          class="emotion-2 emotion-3"
+        >
+          Try me!
+        </h2>
+        <form
+          data-testid="username-form"
+        />
+      </section>
+    </div>
+  </article>
+</div>
+`;

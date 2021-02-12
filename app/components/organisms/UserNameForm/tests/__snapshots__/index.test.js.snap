@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserNameForm should match the snapshot 1`] = `
+.emotion-0 {
+  margin-bottom: 1em;
+}
+
+.emotion-2 {
+  color: black;
+  margin-left: 0.4em;
+}
+
+.emotion-4 {
+  outline: none;
+  border: none;
+  border-bottom: 1px dotted #999;
+  background-color: transparent;
+}
+
+<form
+  class="emotion-0 emotion-1"
+>
+  <label
+    for="username"
+  >
+    Show Github repositories by
+    <span
+      class="emotion-2 emotion-3"
+    >
+      @
+    </span>
+    <input
+      class="emotion-4 emotion-5"
+      id="username"
+      placeholder="mxstbr"
+      type="text"
+      value=""
+    />
+  </label>
+</form>
+`;
