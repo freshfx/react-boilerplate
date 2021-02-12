@@ -1,20 +1,21 @@
+import STATUS from 'modules/status'
+
 import {actions, initialState, reducer} from '../slice'
 
 describe('repository modules', () => {
   describe('results slice', () => {
     const error = new Error('Something went wrong')
-    const errorState = {...initialState, error}
-    const isLoadingState = {...initialState, isLoading: true}
 
     describe('loadRepositories', () => {
       it('should set the error state to false', () => {
-        const nextState = reducer(errorState, actions.loadRepositories())
+        const mockedState = {...initialState, error}
+        const nextState = reducer(mockedState, actions.loadRepositories())
         expect(nextState.error).toBeFalsy()
       })
 
-      it('should set the isLoading to true', () => {
+      it('should set the status state to loading', () => {
         const nextState = reducer(initialState, actions.loadRepositories())
-        expect(nextState.isLoading).toBeTruthy()
+        expect(nextState.status).toEqual(STATUS.LOADING)
       })
 
       it('should set the repositories to an empty array', () => {
@@ -25,12 +26,9 @@ describe('repository modules', () => {
     })
 
     describe('repositoriesLoaded', () => {
-      it('should set the isLoading state to false', () => {
-        const nextState = reducer(
-          isLoadingState,
-          actions.repositoriesLoaded({})
-        )
-        expect(nextState.isLoading).toBeFalsy()
+      it('should set the status state to success', () => {
+        const nextState = reducer(initialState, actions.repositoriesLoaded())
+        expect(nextState.status).toEqual(STATUS.SUCCESS)
       })
 
       it('should set the repositories state', () => {
@@ -52,12 +50,12 @@ describe('repository modules', () => {
         expect(nextState.error).toEqual(error)
       })
 
-      it('should set the isLoading state to false', () => {
+      it('should set the status state to error', () => {
         const nextState = reducer(
-          isLoadingState,
-          actions.repositoriesLoadingError({})
+          initialState,
+          actions.repositoriesLoadingError()
         )
-        expect(nextState.isLoading).toBeFalsy()
+        expect(nextState.status).toEqual(STATUS.ERROR)
       })
     })
   })

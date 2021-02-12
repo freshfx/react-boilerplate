@@ -4,8 +4,8 @@ import {selectors} from 'modules/repository/results'
 
 const useRepositoryResultsState = () => ({
   error: useSelector(selectors.selectError),
-  isLoading: useSelector(selectors.selectIsLoading),
-  repositories: useSelector(selectors.selectRepositories, shallowEqual)
+  repositories: useSelector(selectors.selectRepositories, shallowEqual),
+  status: useSelector(selectors.selectStatus)
 })
 
 export default useRepositoryResultsState

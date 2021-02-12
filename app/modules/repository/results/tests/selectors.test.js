@@ -1,15 +1,17 @@
-import {selectError, selectIsLoading, selectRepositories} from '../selectors'
+import STATUS from 'modules/status'
+
+import {selectError, selectRepositories, selectStatus} from '../selectors'
 import {name} from '../slice'
 
 const mockState = (data = {}) => ({[name]: data})
 
 describe('repository modules', () => {
   describe('results selectors', () => {
-    describe('selectIsLoading', () => {
-      it('should select the isLoading state', () => {
-        const isLoading = true
-        const mockedState = mockState({isLoading})
-        expect(selectIsLoading(mockedState)).toEqual(isLoading)
+    describe('selectStatus', () => {
+      it('should select the status state', () => {
+        const status = STATUS.LOADING
+        const mockedState = mockState({status})
+        expect(selectStatus(mockedState)).toEqual(status)
       })
     })
 
