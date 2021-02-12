@@ -3,9 +3,10 @@ import {createSlice} from '@reduxjs/toolkit'
 const initialState = {}
 
 const name = 'entities'
-const {actions, reducer} = createSlice({
+const {reducer, ...slice} = createSlice({
   initialState,
   name,
+  /* eslint-disable sort-keys */
   reducers: {
     entitiesLoaded: (state, action) => {
       Object.entries(action.payload.entities).forEach(([type, entities]) => {
@@ -21,9 +22,24 @@ const {actions, reducer} = createSlice({
           })
         })
       })
+    },
+    entitiesDeleted: (state, action) => {
+      Object.entries(action.payload.entities).forEach(([type, ids]) => {
+        if (state[type]) {
+          ids.forEach(id => {
+            delete state[type][id]
+          })
+        }
+      })
     }
   }
 })
+
+const actions = {
+  entitiesLoaded: slice.actions.entitiesLoaded,
+  entitiesDeleted: slice.actions.entitiesDeleted
+}
+/* eslint-enable */
 
 export {actions, initialState, name, reducer}
 

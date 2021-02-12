@@ -24,12 +24,12 @@ import 'sanitize.css/forms.css'
 import 'public/robots/robots.txt'
 
 // Import root app
-import App from 'containers/App'
+import App from 'components/App'
 
 // Import Language Provider
-import LanguageProvider from 'containers/LanguageProvider'
-import ActionSubscription from 'containers/ActionSubscription'
-import loadFonts from 'components/FontIcon/fontFace'
+import loadFonts from 'components/atoms/FontIcon/fontFace'
+import LanguageProvider from 'contexts/LanguageProvider'
+import ActionSubscription from 'contexts/ActionSubscription'
 import history from 'utils/history'
 
 // Load the favicon and the .htaccess file
@@ -85,7 +85,7 @@ if (module.hot) {
    * modules.hot.accept does not accept dynamic dependencies,
    * have to be constants at compile-time
    */
-  module.hot.accept(['./i18n', 'containers/App'], () => {
+  module.hot.accept(['./i18n', 'components/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE)
     render(translationMessages)
   })

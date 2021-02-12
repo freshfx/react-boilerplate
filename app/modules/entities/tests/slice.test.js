@@ -30,5 +30,25 @@ describe('modules', () => {
         )
       })
     })
+
+    describe('entitiesDeleted', () => {
+      it('should remove all payload entities', () => {
+        const mockedState = {repositories: {[id]: {id}}}
+        const nextState = reducer(
+          mockedState,
+          actions.entitiesDeleted({entities: {repositories: [id]}})
+        )
+        expect(Object.keys(nextState.repositories)).toHaveLength(0)
+      })
+
+      it('should not throw if the entities type is not in the state', () => {
+        const mockedState = {}
+        const nextState = reducer(
+          mockedState,
+          actions.entitiesDeleted({entities: {repositories: [id]}})
+        )
+        expect(nextState).toEqual(mockedState)
+      })
+    })
   })
 })

@@ -11,6 +11,7 @@
     "redux-saga",
     "react",
     "jsx-a11y",
+    "atomic-design-hierarchy",
     "@emotion"
   ],
   "env": {
@@ -120,7 +121,8 @@
         "ignoreExports": [
           "app/config/*.js",
           "app/styles/*.js",
-          "app/utils/request.js"
+          "app/utils/request.js",
+          "app/__mocks__/**/*.js"
         ]
       }
     ],
@@ -262,7 +264,8 @@
         "named": "never",
         "asyncArrow": "always"
       }
-    ]
+    ],
+    "atomic-design-hierarchy/hierarchical-import": "error"
   },
   "overrides": [
     {

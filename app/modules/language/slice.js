@@ -8,7 +8,7 @@ const initialState = deepFreeze({
 })
 
 const name = 'language'
-const {actions, reducer} = createSlice({
+const {reducer, ...slice} = createSlice({
   initialState,
   name,
   reducers: {
@@ -18,6 +18,10 @@ const {actions, reducer} = createSlice({
     }
   }
 })
+
+const actions = {
+  changeLocale: slice.actions.changeLocale
+}
 
 export {actions, initialState, name, reducer}
 
