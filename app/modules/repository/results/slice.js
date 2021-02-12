@@ -1,12 +1,13 @@
 import {createSlice} from '@reduxjs/toolkit'
 import deepFreeze from 'deep-freeze'
 
+import STATUS from 'modules/status'
 import {resetState} from 'modules/utils/common-actions'
 
 const initialState = deepFreeze({
   error: false,
-  isLoading: false,
-  repositories: []
+  repositories: [],
+  status: STATUS.INITIAL
 })
 
 const name = 'repositoryResults'
@@ -16,18 +17,16 @@ const {reducer, ...slice} = createSlice({
   reducers: {
     loadRepositories: state => {
       state.error = false
-      state.isLoading = true
+      state.status = STATUS.LOADING
       state.repositories = []
     },
     repositoriesLoaded: (state, action) => {
-      const {repositories} = action.payload
-      state.isLoading = false
-      state.repositories = repositories
+      state.status = STATUS.SUCCESS
+      state.repositories = action.payload?.repositories
     },
     repositoriesLoadingError: (state, action) => {
-      const {error} = action.payload
-      state.error = error
-      state.isLoading = false
+      state.error = action.payload?.error
+      state.status = STATUS.ERROR
     },
     resetState: resetState(initialState)
   }
