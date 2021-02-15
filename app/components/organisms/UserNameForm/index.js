@@ -4,12 +4,12 @@ import {useSelector} from 'react-redux'
 import {FormattedMessage, useIntl} from 'react-intl'
 import noop from 'lodash/noop'
 
+import Input from 'components/atoms/Input'
 import useDispatcher from 'hooks/useDispatcher'
 import {actions, selectors} from 'modules/ui/username-form'
 
 import AtPrefix from './AtPrefix'
 import Form from './Form'
-import Input from './Input'
 import messages from './messages'
 
 const UserNameForm = props => {
