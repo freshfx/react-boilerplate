@@ -15,7 +15,7 @@ import UserNameForm from 'components/organisms/UserNameForm'
 import GenericTemplate from 'components/templates/GenericTemplate'
 import RepositoryResultsInjector from 'hooks/repository/results/Injector'
 import UsernameFormInjector from 'hooks/ui/username-form/Injector'
-import useDispatcher from 'hooks/useDispatcher'
+import useLatestDispatcher from 'hooks/useLatestDispatcher'
 import useMount from 'hooks/useMount'
 import {actions} from 'modules/repository/results'
 import {selectors as usernameFormSelectors} from 'modules/ui/username-form'
@@ -26,11 +26,13 @@ import messages from './messages'
 
 const HomePage = () => {
   const username = useSelector(usernameFormSelectors.selectUsername)
-  const loadRepositories = useDispatcher({action: actions.loadRepositories})
+  const fetchRepositories = useLatestDispatcher({
+    action: actions.fetchRepositories
+  })
 
   useMount(() => {
     if (username?.length) {
-      loadRepositories()
+      fetchRepositories()
     }
   })
 
@@ -58,7 +60,7 @@ const HomePage = () => {
           <H2>
             <FormattedMessage {...messages.trymeHeader} />
           </H2>
-          <UserNameForm onSubmit={loadRepositories} />
+          <UserNameForm onSubmit={fetchRepositories} />
           <ReposList />
         </Section>
       </div>

@@ -13,6 +13,15 @@ const config = {
     protocol: 'https'
   },
 
+  photographyApi: {
+    hostname: 'api.photography-staging.redbullcontentpool.com',
+    options: {
+      credentials: 'include'
+    },
+    pathname: '/v1',
+    protocol: 'https'
+  },
+
   features: {
     ...features
   }

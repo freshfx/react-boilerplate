@@ -15,7 +15,13 @@ import createReducer from './reducers'
 
 const sagaMiddleware = createSagaMiddleware()
 
-const configureStore = (initialState, history, actionEmitter) => {
+const configureStore = (
+  initialState,
+  history,
+  actionEmitter,
+  extraMiddlewares = []
+  // eslint-disable-next-line max-params
+) => {
   const {run: runSaga} = sagaMiddleware
 
   /*
@@ -27,7 +33,8 @@ const configureStore = (initialState, history, actionEmitter) => {
   const middlewares = [
     sagaMiddleware,
     routerMiddleware(history),
-    actionListenerMiddleware(actionEmitter)
+    actionListenerMiddleware(actionEmitter),
+    ...extraMiddlewares
   ]
 
   // https://github.com/react-boilerplate/redux-injectors#setting-up-the-redux-store

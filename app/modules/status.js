@@ -1,9 +1,9 @@
 /* eslint-disable sort-keys */
 const STATUS = {
-  INITIAL: 'initial',
-  LOADING: 'loading',
+  IDLE: 'idle',
+  PENDING: 'pending',
   SUCCESS: 'success',
-  ERROR: 'error'
+  FAILURE: 'failure'
 }
 /* eslint-enables */
 

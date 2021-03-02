@@ -5,6 +5,8 @@ import getByUser from '../getByUser'
 
 jest.mock('../../request')
 
+const options = {signal: 0}
+
 describe('GithubAPI', () => {
   beforeEach(() => {
     request.mockClear()
@@ -13,16 +15,17 @@ describe('GithubAPI', () => {
   describe('fetch repositories by user', () => {
     it('should call the github api request with a username', () => {
       const username = 'mxstbr'
-      getByUser(username)
-      expect(request).toHaveBeenCalledWith(`/users/${username}/repos?`)
+      getByUser(username, {}, options)
+      expect(request).toHaveBeenCalledWith(`/users/${username}/repos?`, options)
     })
 
     it('should call the github api request with a passed query', () => {
       const username = 'mxstbr'
       const query = {sort: 'name'}
-      getByUser(username, query)
+      getByUser(username, query, options)
       expect(request).toHaveBeenCalledWith(
-        `/users/${username}/repos?${qs.stringify(query)}`
+        `/users/${username}/repos?${qs.stringify(query)}`,
+        options
       )
     })
   })
