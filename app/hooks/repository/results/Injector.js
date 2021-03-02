@@ -1,7 +1,7 @@
 import {compose} from 'redux'
-import {injectReducer, injectSaga} from 'redux-injectors'
+import {injectReducer} from 'redux-injectors'
 
-import reducer, {saga} from 'modules/repository/results'
+import reducer from 'modules/repository/results'
 
 /**
  * The Injectors have to use the HOCs (injectReducer and injectSaga)
@@ -9,9 +9,6 @@ import reducer, {saga} from 'modules/repository/results'
  * https://github.com/react-boilerplate/redux-injectors/issues/19
  */
 const Blank = () => null
-const RepositoryResultsInjector = compose(
-  injectReducer(reducer),
-  injectSaga(saga)
-)(Blank)
+const RepositoryResultsInjector = compose(injectReducer(reducer))(Blank)
 
 export default RepositoryResultsInjector

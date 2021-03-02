@@ -1,30 +1,37 @@
 import React from 'react'
+import {useSelector} from 'react-redux'
 
 import List from 'components/molecules/List'
 import LoadingIndicator from 'components/atoms/LoadingIndicator'
 import RepositoryListItem from 'components/organisms/RepositoryListItem'
-import useRepositoryResultsState from 'hooks/repository/results/useState'
 import STATUS from 'modules/status'
+import {selectors} from 'modules/repository/results'
 
 import ErrorListItem from './ErrorListItem'
 
 const ReposList = () => {
-  const state = useRepositoryResultsState()
+  const state = {
+    repositories: useSelector(selectors.selectRepositories),
+    status: useSelector(selectors.selectStatus)
+  }
 
   switch (state.status) {
-    case STATUS.LOADING:
+    case STATUS.PENDING: {
       return <List component={LoadingIndicator} />
-    case STATUS.ERROR:
+    }
+    case STATUS.FAILURE: {
       return <List component={ErrorListItem} />
-    case STATUS.SUCCESS:
+    }
+    case STATUS.SUCCESS: {
       return (
         Boolean(state.repositories.length) && (
           <List items={state.repositories} component={RepositoryListItem} />
         )
       )
+    }
     default:
       return null
   }
 }
 
-export default React.memo(ReposList)
+export default ReposList

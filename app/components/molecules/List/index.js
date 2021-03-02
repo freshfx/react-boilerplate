@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import Ul from './Ul'
@@ -9,16 +9,11 @@ const List = ({component: ComponentToRender, items}) => {
     <ComponentToRender key={`item-${item}`} id={item} />
   )
 
-  const content = useMemo(() => {
-    if (items.length) {
-      return items.map(renderItem)
-    }
-    return <ComponentToRender />
-  }, [items])
-
   return (
     <Wrapper>
-      <Ul>{content}</Ul>
+      <Ul>
+        {(items.length && items.map(renderItem)) || <ComponentToRender />}
+      </Ul>
     </Wrapper>
   )
 }
