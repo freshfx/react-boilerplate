@@ -9,8 +9,8 @@ const createAsyncResultsSlice = ({
   asyncThunk,
   initialState,
   scope,
-  reducers = {},
-  extraReducers = {}
+  reducers,
+  extraReducers
 }) =>
   createSlice({
     name: scope,
