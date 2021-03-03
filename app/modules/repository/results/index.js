@@ -5,7 +5,7 @@ import {actions as entitiesActions} from 'modules/entities'
 import {selectors as homePageSelectors} from 'modules/ui/username-form'
 import {createAsyncResultsSlice} from 'modules/utils/common-slices'
 import {createResultSelectors} from 'modules/utils/common-selectors'
-import requestRepositories from 'services/github-api/repositories/getByUser'
+import requestRepositories from 'services/github-api/repositories/get-by-user'
 
 const scope = 'repository-results'
 const initialState = {

@@ -3,7 +3,7 @@ import React from 'react'
 import configureStore from 'configure-store'
 import RepositoryResultsInjector from 'hooks/repository/results/Injector'
 import {actions} from 'modules/repository/results'
-import getByUser from 'services/github-api/repositories/getByUser'
+import getByUser from 'services/github-api/repositories/get-by-user'
 import render from 'utils/test-utils/custom-render'
 import renderInjectors from 'utils/test-utils/render-injectors'
 import history from 'utils/history'
@@ -14,7 +14,7 @@ jest.mock('components/atoms/LoadingIndicator')
 jest.mock('components/organisms/RepositoryListItem', () => ({id}) => (
   <div data-testid={`repo-list-item-${id}`} />
 ))
-jest.mock('services/github-api/repositories/getByUser', () =>
+jest.mock('services/github-api/repositories/get-by-user', () =>
   jest.fn(() => Promise.resolve())
 )
 
