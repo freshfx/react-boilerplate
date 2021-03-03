@@ -1,7 +1,7 @@
 import qs from 'qs'
 
 import request from '../../request'
-import getByUser from '../getByUser'
+import getByUser from '../get-by-user'
 
 jest.mock('../../request')
 
