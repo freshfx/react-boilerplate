@@ -1,23 +1,23 @@
-/* eslint-disable sort-keys */
 import {createSlice} from '@reduxjs/toolkit'
 
 import STATUS from '../status'
 
 import {resetState} from './common-actions'
 
+/* eslint-disable sort-keys */
 const createAsyncResultsSlice = ({
   asyncThunk,
   initialState,
   scope,
-  reducers,
-  extraReducers
+  reducers = {},
+  extraReducers = {}
 }) =>
   createSlice({
     name: scope,
     initialState,
     reducers: {
       resetState: resetState(initialState),
-      ...(reducers && reducers)
+      ...reducers
     },
     extraReducers: {
       [asyncThunk.pending]: (state, action) => {
@@ -48,7 +48,7 @@ const createAsyncResultsSlice = ({
           state.status = STATUS.FAILURE
         }
       },
-      ...(extraReducers && extraReducers)
+      ...extraReducers
     }
   })
 /* eslint-enable */
