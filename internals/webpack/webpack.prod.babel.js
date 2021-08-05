@@ -66,16 +66,12 @@ module.exports = require('./webpack.base.babel')({
     }),
 
     new WebpackPwaManifest({
-      name: 'Red Bull Music',
-      short_name: 'Red Bull Music',
-      description: 'A Focused and Intuitive B2B Music Licensing Platform for ' +
-        'Film, Television and Advertising. Full songs, compositions and ' +
-        'hooks from the production music catalog “Sounds of Red Bull”, ' +
-        'pre-cleared and ready for instant use in a matter of clicks, are ' +
-        'easily searchable alongside artist driven repertoire from Red Bull ' +
-        'Records and Red Bull Music Publishing.',
+      name: 'FreshFx React Boilerplate',
+      short_name: 'FreshFx React Boilerplate',
+      description: 'The Boilerplate for all FreshFx React applications',
       background_color: '#fafafa',
       theme_color: '#b1624d',
+      ios: true,
       icons: [
         {
           src: path.resolve('app/public/icon-512x512.png'),
@@ -91,7 +87,8 @@ module.exports = require('./webpack.base.babel')({
             192,
             384,
             512
-          ]
+          ],
+          ios: true
         }
       ]
     })
