@@ -11,8 +11,8 @@ import {useSelector} from 'react-redux'
 
 import ListItem from 'components/molecules/ListItem'
 import useMemoizedSelector from 'hooks/useMemoizedSelector'
-import {selectors as homePageSelectors} from 'modules/ui/username-form'
 import {selectors} from 'modules/repository/entity'
+import {selectors as homePageSelectors} from 'modules/ui/username-form'
 
 import IssueIcon from './IssueIcon'
 import IssueLink from './IssueLink'
