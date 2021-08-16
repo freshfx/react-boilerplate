@@ -11,7 +11,7 @@ import ErrorListItem from './ErrorListItem'
 
 const ReposList = () => {
   const state = {
-    repositories: useSelector(selectors.selectRepositories),
+    repositories: useSelector(selectors.selectData),
     status: useSelector(selectors.selectStatus)
   }
 

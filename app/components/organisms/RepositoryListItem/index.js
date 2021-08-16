@@ -10,16 +10,27 @@ import {FormattedNumber} from 'react-intl'
 import {useSelector} from 'react-redux'
 
 import ListItem from 'components/molecules/ListItem'
-import useRepositoryState from 'hooks/repository/entity/useState'
+import useMemoizedSelector from 'hooks/useMemoizedSelector'
 import {selectors as homePageSelectors} from 'modules/ui/username-form'
+import {selectors} from 'modules/repository/entity'
 
 import IssueIcon from './IssueIcon'
 import IssueLink from './IssueLink'
 import RepositoryLink from './RepositoryLink'
 import Wrapper from './Wrapper'
 
+const useRepository = ({id}) => ({
+  fullName: useMemoizedSelector(selectors.makeSelectFullName, {id}),
+  name: useMemoizedSelector(selectors.makeSelectName, {id}),
+  openIssuesCount: useMemoizedSelector(selectors.makeSelectOpenIssuesCount, {
+    id
+  }),
+  ownerUsername: useMemoizedSelector(selectors.makeSelectOwnerUsername, {id}),
+  url: useMemoizedSelector(selectors.makeSelectUrl, {id})
+})
+
 const RepositoryListItem = ({id}) => {
-  const repository = useRepositoryState({id})
+  const repository = useRepository({id})
   const username = useSelector(homePageSelectors.selectUsername)
 
   /*

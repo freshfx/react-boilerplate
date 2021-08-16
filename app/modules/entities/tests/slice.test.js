@@ -4,13 +4,10 @@ describe('modules', () => {
   describe('entities slice', () => {
     const id = 'repository-id-1'
 
-    describe('entitiesLoaded', () => {
+    describe('loaded', () => {
       it('should update the entities according to the payload', () => {
         const entities = {repositories: {[id]: {id, name: 'react-boilerplate'}}}
-        const nextState = reducer(
-          initialState,
-          actions.entitiesLoaded({entities})
-        )
+        const nextState = reducer(initialState, actions.loaded({entities}))
         expect(nextState).toEqual(entities)
       })
 
@@ -21,22 +18,19 @@ describe('modules', () => {
         const entities = {
           repositories: {[id]: {id, name: 'react-boilerplate-2'}}
         }
-        const nextState = reducer(
-          mockedState,
-          actions.entitiesLoaded({entities})
-        )
+        const nextState = reducer(mockedState, actions.loaded({entities}))
         expect(nextState.repositories[id].name).toEqual(
           entities.repositories[id].name
         )
       })
     })
 
-    describe('entitiesDeleted', () => {
+    describe('deleted', () => {
       it('should remove all payload entities', () => {
         const mockedState = {repositories: {[id]: {id}}}
         const nextState = reducer(
           mockedState,
-          actions.entitiesDeleted({entities: {repositories: [id]}})
+          actions.deleted({entities: {repositories: [id]}})
         )
         expect(Object.keys(nextState.repositories)).toHaveLength(0)
       })
@@ -45,7 +39,7 @@ describe('modules', () => {
         const mockedState = {}
         const nextState = reducer(
           mockedState,
-          actions.entitiesDeleted({entities: {repositories: [id]}})
+          actions.deleted({entities: {repositories: [id]}})
         )
         expect(nextState).toEqual(mockedState)
       })

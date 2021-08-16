@@ -13,10 +13,10 @@ import H2 from 'components/atoms/H2'
 import ReposList from 'components/organisms/ReposList'
 import UserNameForm from 'components/organisms/UserNameForm'
 import GenericTemplate from 'components/templates/GenericTemplate'
-import RepositoryResultsInjector from 'hooks/repository/results/Injector'
-import UsernameFormInjector from 'hooks/ui/username-form/Injector'
-import useLatestDispatcher from 'hooks/useLatestDispatcher'
+import RepositoryResultsInjector from 'modules/repository/results/Injector'
+import UsernameFormInjector from 'modules/ui/username-form/Injector'
 import useMount from 'hooks/useMount'
+import useDispatcher from 'hooks/useDispatcher'
 import {actions} from 'modules/repository/results'
 import {selectors as usernameFormSelectors} from 'modules/ui/username-form'
 
@@ -26,9 +26,7 @@ import messages from './messages'
 
 const HomePage = () => {
   const username = useSelector(usernameFormSelectors.selectUsername)
-  const fetchRepositories = useLatestDispatcher({
-    action: actions.fetchRepositories
-  })
+  const fetchRepositories = useDispatcher({action: actions.fetchRepositories})
 
   useMount(() => {
     if (username?.length) {

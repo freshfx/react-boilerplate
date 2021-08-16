@@ -1,15 +1,27 @@
 import configureStore from 'configure-store'
-import history from 'utils/history'
+import ActionSubscription from 'contexts/ActionSubscription'
 
-const setupStore = () => {
-  const store = configureStore({}, history)
+const initStore = config => {
+  if (config?.withActionSubscription) {
+    const actionEmitter = new ActionSubscription.ActionEmitter()
+    return {
+      actionEmitter,
+      store: configureStore({actionEmitter})
+    }
+  }
+  return {store: configureStore()}
+}
+
+const setupStore = config => {
+  const {actionEmitter, store} = initStore(config)
   jest.spyOn(store, 'dispatch')
 
   const clearDispatch = () => store.dispatch.mockClear()
 
   return {
+    actionEmitter,
     clearDispatch,
-    options: {wrapperProps: {store}},
+    options: {wrapperProps: {actionEmitter, store}},
     store
   }
 }

@@ -1,13 +1,11 @@
 import React from 'react'
 import {fireEvent} from '@testing-library/react'
 
-import configureTestStore from 'utils/test-utils/configure-test-store'
-import HomePageInjector from 'hooks/ui/username-form/Injector'
+import HomePageInjector from 'modules/ui/username-form/Injector'
 import {actions} from 'modules/ui/username-form'
 import {actions as repositoriesActions} from 'modules/repository/results'
 import render from 'utils/test-utils/custom-render'
-import renderInjectors from 'utils/test-utils/render-injectors'
-import history from 'utils/history'
+import setupStore from 'utils/test-utils/setup-store'
 
 import HomePage from '../index'
 
@@ -15,20 +13,13 @@ jest.mock('components/organisms/UserNameForm', () => ({onSubmit}) => (
   <form data-testid="username-form" onSubmit={() => onSubmit()} />
 ))
 
-const store = configureTestStore({}, history)
-jest.spyOn(store, 'dispatch')
-
-const options = {wrapperProps: {store}}
+const {clearDispatch, options, store} = setupStore()
 const renderComponent = () => render(<HomePage />, options)
+const renderInjector = () => render(<HomePageInjector />, options)
 
 describe('HomePage', () => {
-  beforeAll(() => {
-    renderInjectors(<HomePageInjector />, options)
-  })
-
-  beforeEach(() => {
-    store.clearActions()
-  })
+  beforeAll(renderInjector)
+  beforeEach(clearDispatch)
 
   it('should match the snapshot', () => {
     const {container} = renderComponent()
@@ -39,19 +30,18 @@ describe('HomePage', () => {
     describe('mount', () => {
       it('should dispatch a loadRepositories action if there is a username available', () => {
         store.dispatch(actions.changeUsername({username: 'mxstbr'}))
-        store.clearActions()
+        clearDispatch()
         renderComponent()
-        const dispatchedTypes = store.getActionTypes()
-        expect(dispatchedTypes).toHaveLength(1)
-        expect(dispatchedTypes[0]).toEqual(
-          `${repositoriesActions.fetchRepositories.typePrefix}/pending`
+        expect(store.dispatch).toHaveBeenCalledTimes(1)
+        expect(store.dispatch).toHaveBeenLastCalledWith(
+          repositoriesActions.fetchRepositories()
         )
         store.dispatch(actions.changeUsername({username: ''}))
       })
 
       it('should not dispatch a loadRepositories action if there is no username', () => {
         renderComponent()
-        expect(store.getActionTypes()).toHaveLength(0)
+        expect(store.dispatch).not.toHaveBeenCalled()
       })
     })
 
@@ -59,10 +49,9 @@ describe('HomePage', () => {
       it('should dispatch a loadRepositories action', () => {
         const {getByTestId} = renderComponent()
         fireEvent.submit(getByTestId('username-form'))
-        const dispatchedTypes = store.getActionTypes()
-        expect(dispatchedTypes).toHaveLength(1)
-        expect(dispatchedTypes[0]).toEqual(
-          `${repositoriesActions.fetchRepositories.typePrefix}/pending`
+        expect(store.dispatch).toHaveBeenCalledTimes(1)
+        expect(store.dispatch).toHaveBeenLastCalledWith(
+          repositoriesActions.fetchRepositories()
         )
       })
     })

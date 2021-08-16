@@ -16,7 +16,7 @@ import Footer from 'components/organisms/Footer'
 import HomePage from 'components/pages/HomePage/Loadable'
 import FeaturePage from 'components/pages/FeaturePage/Loadable'
 import NotFoundPage from 'components/pages/NotFoundPage/Loadable'
-import AppInjector from 'hooks/app/Injector'
+import AppInjector from 'components/Injector'
 
 import AppHolder from './AppHolder'
 

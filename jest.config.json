@@ -6,7 +6,8 @@
     "!app/app.js",
     "!app/global-styles.js",
     "!app/*/*/*/Loadable.{js,jsx}",
-    "!app/config/*.{js,jsx}"
+    "!app/config/*.{js,jsx}",
+    "!app/utils/test-utils/*.{js,jsx}"
   ],
   "coverageThreshold": {
     "global": {
@@ -25,5 +26,6 @@
   "setupFiles": ["raf/polyfill", "<rootDir>/internals/testing/setup.js"],
   "snapshotSerializers": ["@emotion/jest/serializer"],
   "testRegex": "tests/.*\\.test\\.js$",
-  "testURL": "http://localhost"
+  "testURL": "http://localhost",
+  "testEnvironment": "jsdom"
 }

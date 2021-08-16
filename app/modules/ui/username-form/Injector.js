@@ -1,7 +1,7 @@
 import {compose} from 'redux'
 import {injectReducer} from 'redux-injectors'
 
-import reducer from 'modules/ui/username-form'
+import reducer from 'modules/ui/username-form/index'
 
 /**
  * The Injectors have to use the HOCs (injectReducer and injectSaga)

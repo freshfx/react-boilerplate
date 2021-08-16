@@ -1,12 +1,9 @@
 import React from 'react'
 
-import configureStore from 'configure-store'
-import RepositoryResultsInjector from 'hooks/repository/results/Injector'
+import RepositoryResultsInjector from 'modules/repository/results/Injector'
 import {actions} from 'modules/repository/results'
-import getByUser from 'services/github-api/repositories/get-by-user'
 import render from 'utils/test-utils/custom-render'
-import renderInjectors from 'utils/test-utils/render-injectors'
-import history from 'utils/history'
+import setupStore from 'utils/test-utils/setup-store'
 
 import ReposList from '../index'
 
@@ -14,18 +11,13 @@ jest.mock('components/atoms/LoadingIndicator')
 jest.mock('components/organisms/RepositoryListItem', () => ({id}) => (
   <div data-testid={`repo-list-item-${id}`} />
 ))
-jest.mock('services/github-api/repositories/get-by-user', () =>
-  jest.fn(() => Promise.resolve())
-)
 
-const store = configureStore({}, history)
-const options = {wrapperProps: {store}}
+const {options, store} = setupStore()
 const renderComponent = () => render(<ReposList />, options)
+const renderInjector = () => render(<RepositoryResultsInjector />, options)
 
 describe('ReposList', () => {
-  beforeAll(() => {
-    renderInjectors(<RepositoryResultsInjector />, options)
-  })
+  beforeAll(renderInjector)
 
   afterEach(() => {
     store.dispatch(actions.resetState())
@@ -37,25 +29,21 @@ describe('ReposList', () => {
     expect(getByText('Loading')).toBeDefined()
   })
 
-  it('should render an error if loading failed', async () => {
+  it('should render an error if loading failed', () => {
     const {getByText} = renderComponent()
-    getByUser.mockReturnValueOnce(Promise.reject(new Error()))
-    await store.dispatch(actions.fetchRepositories())
+    store.dispatch(actions.fetchRepositories.rejected())
     expect(getByText(/Something went wrong/u)).toBeDefined()
   })
 
-  it('should render the repositories if loading was successful', async () => {
+  it('should render the repositories if loading was successful', () => {
     const {getByTestId} = renderComponent()
     const data = [1, 2]
-    getByUser.mockReturnValueOnce(
-      Promise.resolve(data.map(id => ({id, type: 'repositories'})))
-    )
-    await store.dispatch(actions.fetchRepositories())
+    store.dispatch(actions.fetchRepositories.resolved({data}))
     expect(getByTestId('repo-list-item-1')).toBeDefined()
     expect(getByTestId('repo-list-item-2')).toBeDefined()
   })
 
-  it('should not render anything if nothing interesting is provided', () => {
+  it('should not render anything if the state is idle', () => {
     const {container} = renderComponent()
     expect(container.firstChild).toBeNull()
   })

@@ -28,20 +28,18 @@ const createEntitySelectors = ({type}) => {
   }
 }
 
-const createResultSelectors = ({initialState, scope}) => {
+const createNetworkSelectors = ({initialState, scope}) => {
   const selectSlice = createSliceSelector(scope, initialState)
   return {
     selectData: createSliceFieldSelector(selectSlice, 'data'),
     selectError: createSliceFieldSelector(selectSlice, 'error'),
-    selectHasNextPage: createSliceFieldSelector(selectSlice, 'hasNextPage'),
-    selectStatus: createSliceFieldSelector(selectSlice, 'status'),
-    selectTotal: createSliceFieldSelector(selectSlice, 'total')
+    selectStatus: createSliceFieldSelector(selectSlice, 'status')
   }
 }
 
 export {
   createEntitySelectors,
-  createResultSelectors,
+  createNetworkSelectors,
   createSliceFieldSelector,
   createSliceSelector,
   selectId

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Provider} from 'react-redux'
 import {render as testingLibraryRender} from '@testing-library/react'
 
-import AppInjector from 'hooks/app/Injector'
+import AppInjector from 'components/Injector'
 
 const TestProviders = ({children, store}) => (
   <Provider store={store}>

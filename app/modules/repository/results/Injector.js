@@ -1,7 +1,7 @@
 import {compose} from 'redux'
 import {injectReducer} from 'redux-injectors'
 
-import reducer from 'modules/repository/results'
+import reducer from 'modules/repository/results/index'
 
 /**
  * The Injectors have to use the HOCs (injectReducer and injectSaga)

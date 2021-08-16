@@ -34,5 +34,16 @@ describe('GithubAPI', () => {
       githubApiRequest(path, options).catch(noop)
       expect(request).toHaveBeenCalledWith(`${baseUrl}${path}`, options)
     })
+
+    it('should normalize a repositories response', async () => {
+      const entity = {id: 'repository-id-1', name: 'Repository'}
+      const response = [entity]
+      request.mockResolvedValue(response)
+      const result = await githubApiRequest('')
+      expect(result).toEqual({
+        entities: {repositories: {[entity.id]: entity}},
+        result: {repositories: [entity.id]}
+      })
+    })
   })
 })

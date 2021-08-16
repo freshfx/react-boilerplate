@@ -8,7 +8,7 @@ const {reducer, ...slice} = createSlice({
   name,
   /* eslint-disable sort-keys */
   reducers: {
-    entitiesLoaded: (state, action) => {
+    loaded: (state, action) => {
       Object.entries(action.payload.entities).forEach(([type, entities]) => {
         if (!state[type]) {
           state[type] = {}
@@ -23,7 +23,7 @@ const {reducer, ...slice} = createSlice({
         })
       })
     },
-    entitiesDeleted: (state, action) => {
+    deleted: (state, action) => {
       Object.entries(action.payload.entities).forEach(([type, ids]) => {
         if (state[type]) {
           ids.forEach(id => {
@@ -36,8 +36,8 @@ const {reducer, ...slice} = createSlice({
 })
 
 const actions = {
-  entitiesLoaded: slice.actions.entitiesLoaded,
-  entitiesDeleted: slice.actions.entitiesDeleted
+  loaded: slice.actions.loaded,
+  deleted: slice.actions.deleted
 }
 /* eslint-enable */
 

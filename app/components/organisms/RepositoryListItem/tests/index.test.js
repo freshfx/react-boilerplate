@@ -1,18 +1,14 @@
 import React from 'react'
 
-import configureStore from 'configure-store'
-import RepositoryResultsInjector from 'hooks/repository/results/Injector'
-import UsernameFormInjector from 'hooks/ui/username-form/Injector'
+import RepositoryResultsInjector from 'modules/repository/results/Injector'
+import AppInjector from 'components/Injector'
+import UsernameFormInjector from 'modules/ui/username-form/Injector'
 import {actions as usernameFormActions} from 'modules/ui/username-form'
-import history from 'utils/history'
 import setEntities from 'utils/test-utils/set-entities'
 import render from 'utils/test-utils/custom-render'
-import renderInjectors from 'utils/test-utils/render-injectors'
+import setupStore from 'utils/test-utils/setup-store'
 
 import RepositoryListItem from '../index'
-
-const store = configureStore({}, history)
-jest.spyOn(store, 'dispatch')
 
 const id = 'repository-id-1'
 /* eslint-disable camelcase */
@@ -26,18 +22,21 @@ const repository = {
 }
 /* eslint-enable */
 
-const options = {wrapperProps: {store}}
+const {options, store} = setupStore()
 const renderComponent = () => render(<RepositoryListItem id={id} />, options)
-const Injectors = () => (
-  <>
-    <RepositoryResultsInjector />
-    <UsernameFormInjector />
-  </>
-)
+const renderInjectors = () =>
+  render(
+    <>
+      <AppInjector />
+      <RepositoryResultsInjector />
+      <UsernameFormInjector />
+    </>,
+    options
+  )
 
 describe('RepositoryListItem', () => {
   beforeAll(() => {
-    renderInjectors(<Injectors />, options)
+    renderInjectors()
     setEntities(store, {repositories: {[id]: repository}})
     store.dispatch(usernameFormActions.changeUsername({username: 'mxstbr'}))
   })
